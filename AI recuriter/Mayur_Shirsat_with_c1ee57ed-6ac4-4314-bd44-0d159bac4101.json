@@ -1,0 +1,171 @@
+{
+  "application_id": "c1ee57ed-6ac4-4314-bd44-0d159bac4101",
+  "candidate_info": {
+    "full_name": "Mayur Shirsat",
+    "email": "mayurshirsat1999@gmail.com",
+    "phone": "+91 9067611982",
+    "years_experience": "Fresher",
+    "desired_position": "AI/ML Engineer",
+    "location": "Puen",
+    "language": "English"
+  },
+  "notes": "Please answer the following questions to the best of your ability.",
+  "questions": [
+    {
+      "id": "Q1",
+      "title": "Basic Programming Challenge",
+      "type": "coding",
+      "difficulty": "basic",
+      "tech": "Python",
+      "prompt": "Write a function in Python to find the factorial of a number.",
+      "guidelines": "Correct implementation, handles non-negative integers, considers recursion or iteration.",
+      "expected_output": "For input 5, expected output 120.",
+      "answer": "Expected output: For input 5, expected output 120"
+    },
+    {
+      "id": "Q2",
+      "title": "System Design Concept",
+      "type": "design",
+      "difficulty": "intermediate",
+      "tech": "Python",
+      "prompt": "Describe how you would design a scalable Python application with unique considerations for this role.",
+      "guidelines": "Mention architecture, scalability, and unique components.",
+      "answer": "Expected output: For input 5, expected output 120"
+    },
+    {
+      "id": "Q3",
+      "title": "Debugging Scenario",
+      "type": "concept",
+      "difficulty": "intermediate",
+      "tech": "Python",
+      "prompt": "Explain how you would debug a unique performance issue in a Python application.",
+      "guidelines": "Include specific tools, steps, and potential issues.",
+      "answer": "Expected output: For input 5, expected output 120"
+    },
+    {
+      "id": "Q4",
+      "title": "Project Experience",
+      "type": "experience",
+      "difficulty": "intermediate",
+      "tech": "Python",
+      "prompt": "Describe a unique Python project you worked on and its specific challenges.",
+      "guidelines": "Focus on unique technical challenges and solutions.",
+      "answer": "Expected output: For input 5, expected output 120"
+    },
+    {
+      "id": "Q5",
+      "title": "Advanced Technical Concept",
+      "type": "experience",
+      "difficulty": "advanced",
+      "tech": "Python",
+      "prompt": "Explain a specific advanced Python concept you’ve applied in a unique project scenario.",
+      "guidelines": "Depth of understanding, practical application, uniqueness.",
+      "answer": "Expected output: For input 5, expected output 120"
+    }
+  ],
+  "chat_history": [
+    {
+      "role": "assistant",
+      "content": "Hello! I'm TalentScout, your personal guide to finding the perfect job opportunity. Let's get started by collecting your personal details to check if you've applied before."
+    },
+    {
+      "role": "assistant",
+      "content": "Hello! I'm TalentScout, your personal guide to finding the perfect job opportunity. Let's get started by collecting your personal details to check if you've applied before."
+    },
+    {
+      "role": "user",
+      "content": "Personal info submitted: Name: Mayur Shirsat, Email: mayurshirsat1999@gmail.com, Phone: +91 9067611982, Language: English"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you! Let's continue by selecting your tech stack."
+    },
+    {
+      "role": "user",
+      "content": "Selected techs: Python, Data Science, AI, Machine Learning, Deep Learning, SQL / Database"
+    },
+    {
+      "role": "assistant",
+      "content": "Great! Now, please select the job role you're interested in."
+    },
+    {
+      "role": "user",
+      "content": "Selected job role: AI/ML Engineer"
+    },
+    {
+      "role": "assistant",
+      "content": "Awesome! Now, please provide additional personal information."
+    },
+    {
+      "role": "user",
+      "content": "Additional info submitted: Years of Experience: Fresher, Location: Puen"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you! Now, please upload your resume (PDF, DOCX, or TXT)."
+    },
+    {
+      "role": "user",
+      "content": "Resume uploaded: mayur shirsat resume.pdf"
+    },
+    {
+      "role": "assistant",
+      "content": "Resume processed successfully! Generating your tailored technical questions..."
+    },
+    {
+      "role": "assistant",
+      "content": "Sorry, couldn't generate questions due to API issues. Using fallback questions."
+    },
+    {
+      "role": "user",
+      "content": "Answer to Q1: Expected output: For input 5, expected output 120"
+    },
+    {
+      "role": "assistant",
+      "content": "You provided the following answer for Q1: Expected output: For input 5, expected output 120"
+    },
+    {
+      "role": "user",
+      "content": "Answer to Q2: Expected output: For input 5, expected output 120"
+    },
+    {
+      "role": "assistant",
+      "content": "You provided the following answer for Q2: Expected output: For input 5, expected output 120"
+    },
+    {
+      "role": "user",
+      "content": "Answer to Q3: Expected output: For input 5, expected output 120"
+    },
+    {
+      "role": "assistant",
+      "content": "You provided the following answer for Q3: Expected output: For input 5, expected output 120"
+    },
+    {
+      "role": "user",
+      "content": "Answer to Q4: Expected output: For input 5, expected output 120"
+    },
+    {
+      "role": "assistant",
+      "content": "You provided the following answer for Q4: Expected output: For input 5, expected output 120"
+    },
+    {
+      "role": "user",
+      "content": "Answer to Q5: Expected output: For input 5, expected output 120"
+    },
+    {
+      "role": "assistant",
+      "content": "You provided the following answer for Q5: Expected output: For input 5, expected output 120"
+    }
+  ],
+  "tech_stack": [
+    "Python",
+    "Data Science",
+    "AI",
+    "Machine Learning",
+    "Deep Learning",
+    "SQL / Database"
+  ],
+  "resume_text": "Mayur Kailas Shirsat  \nPune, Maharashtra 411023 | 9067611982 |  mayurshirsat1999@gmail.com | LinkedIn: mayur -shirsat -422757151  \n \nEDUCATION  \nSYMBIOSIS INTERNATIONAL UNIVERSITY  Pune, Maharashtra  \nMaster of Science Data Science and Spatial Analytics     July 2023 – July 2025  \n \nBHARATI VIDYAPEETH DEEMED UNIVERSITY  Pune, Maharashtra  \nBachelors of Science Computer Science          July 2017 – November 2020\n \nSKILLS AND STRENGTHS  \nAI & ML Expertise: Machine Learning, Computer Vision, Image Processing, Natural Language Processing (NLP), Generative AI , Deep Learning  \nDatabase & Data Management: SQL (MySQL, PostgreSQL, Oracle), NoSQL (MongoDB), RDBMS, Data Quality & Governance . \nLanguages & Libraries: Python (NumPy, Pandas, PySpark, Matplotlib, Seaborn, Scikit -learn, TensorFlow, Keras, PyTorch, OpenCV, Selenium), R, C, C++, \nHTML, CSS.  \nData Analytics:  Exploratory Data Analysis (EDA), Data Cleaning, Data Wrangling, Data Manipulation, Statistical Analysis, Data Modeling, Predi ctive \nAnalytics, Data Visualization, Web Scraping.  \nTools & Platforms:  Power BI, MS Excel, Microsoft Azure, Linux, Agile, Dashboard Design , Roboflow, n8n.  \nSoft Skills:  Strong Reasoning, Decision Making, Insight translation and reporting , Team Collaboration, Computer Literacy.  \n \nWORK EXPERIENCE  \nAI ML Engineer  at Rajyug Solutions                                                                                                                                                                                   July 2025 – Present  \n• Designed multi -agent AI analytics systems and developed ML/DL solutions for OCR, computer vision, object detection, and behavioral analytics  using \nCNNs, LSTMs, and ensemble methods , used n8n for creating AI agents . \n• Trained and deployed deep learning models with Roboflow pipelines, TensorFlow, and Scikit -learn, improving recognition and detection accuracy across \ndiverse datasets.  \n• Built RAG -based conversational AI chatbots, delivered through FastAPI endpoints and integrated into Streamlit interfaces for interactiv e, user -friendly \nexperiences.  \n \nData Science and AI intern at Canspirit.ai                                                                                                                                       May 2024 – November  2024  \n• Developed and deployed websites and AI/ML projects using Docker, TensorFlow, and Google Cloud, improving system efficiency by  30%.  \n• Automated lead generation processes with LLMs and Machine Learning, increasing lead acquisition by 25%  and Enhanced webpage SEO with LLMs and \nAI agents, boosting visibility and user engagement by 40%.    \n• Delivered technical projects, showcasing expertise in cutting -edge AI tools and frameworks  \n \nPROJECTS  \n• Executive Dashboard for Project Performance Analysis :  \n▪ Built a Power BI dashboard using SQL to assess project performance across departments, roles, and audiences. Delivered insigh ts on revenue by \nproject category, roles, and audience, identifying corporate projects as top contributors ($510.75M).  \n▪ Optimized departmental analysis, highlighting international projects as the highest earners ($159.06M). Published on GitHub t o foster collaborative \nfeedback and data -driven decisions.  \n• RAG -Based Document Information Extraction System:   \n▪ Retrieval -Augmented Generation (RAG) system using Meta LLaMA to extract and summarize data from 5+ document types, including links, DOC , PDF, \nCSV, and text files  and integrated it with NetworkX for Knowledge Graph based RAG.  \n▪ With  90% accuracy rate in multi -format data retrieval, enhancing document analysis by 40%. Optimized query handling to support complex \ninformation requests, improving data accessibility for users by 35%.  \n• OpenCV Object Detection System:   \n▪ Created a real -time object detection and classification system using OpenCV. Achieved an 85% detection accuracy with an average confidence l evel \nof 60% on live video streams by refining the model’s architecture.  \n▪ Integrated advanced techniques to improve detection performance, enabling diverse applications in computer vision tasks.  \n• Bank Customer Churn Prediction Model:   \n▪ Designed and implemented a predictive model to assess customer churn in the banking industry. Utilized machine learning algor ithms, including \nLogistic Regression, Random Forest, and XGBoost, to fine -tune the model.  \n▪ Achieved an 85% accuracy rate by optimizing hyperparameters and employing techniques such as feature engineering and cross -validation. Analyzed \ncustomer behavior and key factors influencing churn, providing valuable insights to enhance retention strategies  \n \nCERTIFICATION  AND ACHIEVEMENTS  \nISRO AI/ML for Geodata analysis in August 2024  | Python certification from Infosys springboard in October 2023  |Prompt Engineering by Great learning",
+  "current_question_index": 5,
+  "timestamp": "2025-09-22T17:49:06.597270Z"
+}

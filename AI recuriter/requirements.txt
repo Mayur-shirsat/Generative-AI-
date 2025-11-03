@@ -1,0 +1,11 @@
+fastapi
+pydantic
+PyPDF2
+python-docx
+requests
+streamlit
+uvicorn
+pandas
+numpy
+openpyxl
+python-multipart
