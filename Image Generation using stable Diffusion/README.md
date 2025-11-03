@@ -27,7 +27,7 @@ It allows users to generate images from text prompts, experiment with styles, an
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/image-generation-project.git
+git clone https://github.com/Mayur-shirsat/image-generation-project.git
 cd image-generation-project
 
 # Create and activate a virtual environment
