@@ -1,0 +1,48 @@
+{
+  "Q1": {
+    "a": { "Concept": 3, "List Out": 3, "max": 6 },
+    "b": { "Concept": 3, "List Out": 3, "max": 6 },
+    "attempt_any_one": true
+  },
+  "Q2": {
+    "a": { "List Out": 3, "Describe": 3, "max": 6 },
+    "b": { "Concept": 3, "Discuss": 3, "max": 6 },
+    "attempt_any_one": true
+  },
+  "Q3": {
+    "a": { "Logic": 3, "Describe": 3, "max": 6 },
+    "b": { "Logic": 3, "Discuss": 3, "max": 6 },
+    "attempt_any_one": true
+  },
+  "Q4": {
+    "a": { "Logic": 3, "Discuss": 3, "max": 6 },
+    "b": { "Process": 3, "Discuss": 3, "max": 6 },
+    "attempt_any_one": true
+  },
+  "Q5": {
+    "a": { "List Out": 3, "Describe": 5, "max": 8 },
+    "b": { "Process": 3, "Discuss": 5, "max": 8 },
+    "attempt_any_one": true
+  },
+  "Q6": {
+    "a": { "Process": 3, "Discuss": 3, "max": 6 },
+    "b": { "Process": 3, "Discuss": 3, "max": 6 },
+    "attempt_any_one": true
+  },
+  "Q7": {
+    "a": { "Concept": 3, "Discuss": 5, "max": 8 },
+    "b": { "List Out": 3, "Describe": 5, "max": 8 },
+    "attempt_any_one": true
+  },
+  "Q8": {
+    "a": { "List Out": 3, "Discuss": 5, "max": 6 },
+    "b": { "List Out": 3, "Describe": 5, "max": 6 },
+    "attempt_any_one": true
+  },
+  "Q9": {
+    "a": { "List Out": 3, "Discuss": 5, "max": 8 },
+    "b": { "List Out": 3, "Justify": 5, "max": 8 },
+    "attempt_any_one": true
+  },
+  "grand_total": 60
+}
