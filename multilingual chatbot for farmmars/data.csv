@@ -1,0 +1,350 @@
+﻿Question,Answer
+What is the Digital Agriculture Mission?,The Digital Agriculture Mission aims to create a robust digital agriculture ecosystem in the country to drive innovative
+What are the main goals of the Digital Agriculture Mission?,The key objectives are: to create a robust farmer-centric digital ecosystem
+How will the Digital Agriculture Mission benefit me as a farmer?,The mission will allow you to digitally identify and authenticate yourself to access benefits and services. This means less paperwork and fewer physical visits to government offices for things like availing schemes
+What are the key components of the Digital Agriculture Mission?,The key components are (a) Digital Public Infrastructure (DPI) for Agriculture
+What is the total budget for the Digital Agriculture Mission?,The Digital Agriculture Mission has a total approved project outlay of ₹2
+How much of the mission's budget is the central government's share?,Out of the total ₹2
+What is AgriStack?,AgriStack is a digital public good
+What are the three foundational registries of AgriStack?,The three foundational registries are the Farmers' Registry
+What is the Farmer's Registry?,The Farmer's Registry is a verified and accurate database of farmers managed by the States. It contains authenticated demographic details
+How will my information in the Farmer's Registry be used?,The Aadhar-verified Farmer ID
+Will I get a unique ID as a farmer?,Yes
+What is a Digital Crop Survey (DCS)?,A Digital Crop Survey (DCS) is a system designed to collect information about the crops sown on each farmland plot using a mobile application directly from the field
+Who will conduct the Digital Crop Survey?,The survey can be conducted by Government officials
+How often will the Digital Crop Survey be conducted?,The survey will be conducted for each agricultural plot once per season (Kharif
+What is Krishi-DSS?,Krishi-DSS
+How can Krishi-DSS help me?,The information from Krishi-DSS can support crop map generation
+When was Krishi-DSS launched?,Krishi-DSS was launched on August 16
+What is the National Soil Mapping Programme (NSMP)?,The National Soil Mapping Programme is a project led by the Soil and Land Use Survey of India (SLUSI) to create a detailed inventory of soils at a village level on a 1:10
+What kind of information will the soil maps provide?,The maps will show the distribution of different soil types and include details on soil properties like slope
+What is DGCES?,DGCES stands for Digital General Crop Estimation Survey. It is a system that uses technology to re-engineer the traditional process of crop estimation surveys to improve the quality of data and accuracy of crop yield estimation. [cite: 629
+What is a Crop Cutting Experiment (CCE)?,A Crop Cutting Experiment (CCE) is a method used to estimate crop yield. It involves randomly selecting a field
+How is DGCES different from the old GCES?,Previously
+Will I get paid for participating in a Crop Cutting Experiment (CCE) under DGCES?,The central government provides funds of ₹1000 per CCE to State Agricultural Statistical Authorities (SASAs). This money is intended for incentives to primary workers
+How will I be trained for these new digital systems?,The government provides training for all new systems. For the Farmer Registry
+Who can I contact if I need help with the Digital Crop Survey app?,States are required to establish a helpdesk to assist crop surveyors
+What is the funding pattern for centrally sponsored components like the Digital Crop Survey?,For most states
+What is a 'bucket' in the Farmer Registry process?,A 'bucket' is a virtual pool of all the land plots owned by a single farmer in a village. This makes it easier for you to claim all your lands at once instead of having to identify each one separately. [cite: 241
+How is my name matched for the land bucketing process?,The bucketing tool uses fuzzy logic and a Name Match tool developed by the Centre for Development of Advanced Computing (CDAC) to match farmer names. [cite: 243]
+What data is needed from the states to start a Digital Crop Survey (DCS)?,States must have geo-referenced village maps and digitized land records (Record of Rights or RoR) before they can conduct a digital crop survey. [cite: 374]
+How will the government ensure the crop data collected is accurate?,The mobile app used for the survey uses GPS to ensure the surveyor is within the designated land parcel. The data captured includes geo-tagged and time-stamped photographs of the crop. Supervisors also review the survey details. [cite: 383
+What are Geo-Referenced Village Maps (GRVM)?,GRVMs are cadastral (revenue) maps that are digitally encoded with geographic information system (GIS) technology. They are essential for conducting accurate digital crop surveys. [cite: 324
+Who is responsible for creating Geo-Referenced Village Maps?,The Department of Land Resources (DoLR)
+Can states use their own mobile apps for crop surveys?,Yes
+What is the timeline for the National Soil Mapping Programme?,The plan is to cover the entire agricultural land of the country
+How will the government spread awareness about the Digital Agriculture Mission?,The government plans to use SMS campaigns
+What is a State Project Management Unit (SPMU)?,An SPMU is a State Project Management Unit set up in states to act as a bridge between the Centre and the State teams
+Who is the nodal agency for the National Soil Mapping Programme?,The Soil and Land Use Survey of India (SLUSI)
+Are the CCEs for crop insurance (PMFBY) and DGCES the same?,No
+What is the role of MNCFC in the Digital Agriculture Mission?,MNCFC (Mahalanobis National Crop Forecast Centre) is responsible for estimating crop acreage and production using satellite technology (FASAL project)
+How does the government decide how much funding to give a state for the Digital Crop Survey?,For DCS
+How will the Farmer Registry stay up-to-date if I sell my land?,A mechanism will be established for the automatic updation of the Farmer registry with mutation updates (changes in land records) done in the State's Record of Rights (RoR). This ensures the registry remains current and correct. [cite: 313
+How long does a Digital Crop Survey (DCS) take to complete in a season?,The crop survey is a time-limited operation that must be completed within about 45 days from its start. It generally begins in a village about one month after the crop is sown and should be finished about 15 days before harvest. [cite: 355
+Will details about tenant farmers be included in the registry?,Yes
+How many CCEs will be supervised by NSSO and SASAs respectively each year?,Each year
+What is the recommended method for training officials?,The guideline document recommends conducting the required training in a classroom setting
+What is 'Digital Krishi Diwas'?,Digital Krishi Diwas' is a planned event to be celebrated pan-India with the support of State Governments to showcase the benefits and success stories of the Digital Agriculture Mission through events
+Where does a state get funds to set up the Project Monitoring Unit (PMU) for the Farmer's Registry?,The State Governments are to use the administrative fund of the Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme to set up a Project Monitoring Unit to build the Farmers' Registry. [cite: 728]
+What was the 'NeGP-A' scheme?,NeGP-A stands for the National e-Governance Plan in Agriculture. This former scheme
+Can academic institutes get funding under this mission?,Yes
+How often should the State-level Agri Stack Implementation Committee meet?,This committee
+Will I be sent advisories on my phone?,Yes
+Which components of the mission are fully funded by the central government?,The components implemented as central sector components are 100% funded by the central government. These include AgriStack development
+What is the funding share for North-Eastern and Himalayan States?,For North-Eastern and Himalayan States
+What is the first step a state must take to build a Farmer Registry?,The state should create an overarching mechanism
+What is RoR data?,RoR stands for Record of Rights
+Why is sharing RoR data important for AgriStack?,Creating a Farmers Registry requires sharing Records of Rights (RoR) data through APIs to link farmers to their correct land holdings. [cite: 211]
+What is a Farm ID?,A Farm ID
+Is the bucketing process for the Farmer Registry easy to perform?,No
+How are draft Farmer IDs created quickly?,To shorten the process
+What are the main objectives of the Digital Crop Survey (DCS)?,The objectives of DCS are to provide reliable data for policy-making
+What are the key pre-requisites for a state to start a Digital Crop Survey?,A state must submit a proposal
+What data will my state share with the Centre from the Digital Crop Survey?,As per the MoU
+Who is the Single Point of Contact (SPOC) for the DCS in a state?,The Principal Secretary or Director of Agriculture/Revenue
+Can states use their own app for the crop survey?,Yes
+What support does the Central Government provide for DCS training?,The Central Government provides a user manual in English
+What is the role of the Central Program Management Unit (CPMU) Team?,The CPMU Team coordinates between the technical support team
+How is the State Project Management Unit (SPMU) funded?,Funding provision for setting up the SPMU is provided under the administrative funds of the PM KISAN scheme. [cite: 427]
+What is the role of the DCS Helpdesk?,The Help Desk is designed to provide timely information and resolve issues for farmers
+What is the escalation process if a Helpdesk operator can't solve my problem?,If the operator can't resolve the issue in 5-15 minutes
+What organizations collaborate to provide data for Krishi-DSS?,Krishi-DSS is a collaborative platform using data from the Indian Meteorological Department (IMD)
+What is the scale of the National Soil Mapping Programme (NSMP)?,The NSMP inventories soils at a village level on a detailed 1:10
+How are soil profiles examined under the NSMP?,A soil profile examination involves digging a pit or a vertical cross-section of soil up to 1-2 meters deep (or until bedrock) to study the properties and characteristics of the soil layers. [cite: 590]
+What are 'derivative maps' from the soil survey?,Derivative maps are created from the main soil maps and interpret the data for specific uses. Examples include land capability maps
+What is the difference between crop area and crop yield statistics?,Crop area statistics are about the land area on which a crop is sown
+How much funding will be provided per CCE under DGCES?,State Agricultural Statistical Authorities (SASAs) will receive ₹1000 per CCE for all completed and approved experiments. [cite: 780]
+Can the DGCES incentive of ₹1000 be used for anything else?,Yes
+Can a state receive DGCES funds if it is already giving incentives under another program?,No. States must provide an undertaking that they are claiming incentives under a single program only. They cannot claim for both their own program and DGCES. [cite: 785
+Will NSSO be funded for supervising CCEs?,Yes
+How will payments be made to the primary workers conducting CCEs?,The amount for primary workers
+How is the progress of the National Soil Mapping Programme monitored?,Committees will be constituted under the Secretary
+How often should the State-level Agri Stack Steering Committee meet?,The steering committee
+What is the target for accuracy of Geo-Referenced Village Maps (GRVM)?,The scale and accuracy target for GRVM is set at 1:4000 to ensure reliability and dimensional accuracy. [cite: 331]
+What is the Unified Farmer Service Interface (UFSI)?,The Unified Farmer Service Interface (UFSI) is a component of the digital ecosystem that enables various farmer-centric services. The mission includes support for call centers for UFSI. [cite: 114]
+What does AI stand for?,AI stands for Artificial Intelligence. [cite: 19]
+What does API stand for?,API stands for Application Programming Interface. [cite: 19]
+What does CCE stand for?,CCE stands for Crop Cutting Experiments. [cite: 19]
+What does DBT stand for?,DBT stands for Direct Benefit Transfer. [cite: 19]
+What does DCS stand for?,DCS stands for Digital Crop Survey. [cite: 19]
+What does DGCES stand for?,DGCES stands for Digital General Crop Estimation Survey. [cite: 19]
+What does DPI stand for?,DPI stands for Digital Public Infrastructure. [cite: 19]
+What does GIS stand for?,GIS stands for Geographical Information Systems. [cite: 19]
+What does GRVM stand for?,GRVM stands for Geo-referenced Village Maps. [cite: 19]
+What does IEC stand for?,IEC stands for Information Education and Communication. [cite: 19]
+What does KCC stand for?,KCC stands for Kisan Credit Card. [cite: 19]
+What does Krishi-DSS stand for?,Krishi-DSS stands for Krishi - Decision Support System. [cite: 19]
+What does ML stand for?,ML stands for Machine Learning. [cite: 19]
+What does MNCFC stand for?,MNCFC stands for Mahalanobis National Crop Forecasting Centre. [cite: 19]
+What does MSP stand for?,MSP stands for Minimum Support Price. [cite: 19]
+What does PMFBY stand for?,PMFBY stands for Pradhan Mantri Fasal Bima Yojana. [cite: 22]
+What does PM KISAN stand for?,PM KISAN stands for Pradhan Mantri Kisan Samman Nidhi. [cite: 22]
+What does RoR stand for?,RoR stands for Record of Rights (Land Records). [cite: 22]
+What does SASA stand for?,SASA stands for State Agricultural Statistical Authority. [cite: 22]
+What does ULPIN stand for?,ULPIN stands for Unique Land Parcel Identification Numbers. [cite: 22]
+What does UAV stand for?,UAV stands for Unmanned Aerial Vehicle. [cite: 22]
+Tell me about AgriStack's support registries.,Various support registries such as a Crop registry
+What is the overall vision for digital agriculture in India?,The vision
+How will digital identity help me as a farmer?,A digital identity will enable you to authenticate yourself to access benefits and services
+How will the mission help with MSP-based procurement?,The trustful data captured digitally
+What is the total central government share of the mission's funding?,The total Central Share for the mission over 5 years is ₹1
+What is the total state government share of the mission's funding?,The total State Share for the mission over 5 years is ₹877.19 Crores. [cite: 80]
+How are administrative expenses for the mission handled?,2.5% of the total project cost will be used for administrative expenses to source manpower and infrastructure for effective implementation at state and central levels. [cite: 88]
+What kind of support is given to states for using emerging technologies?,Under the mission
+What is FASAL 2.0?,FASAL 2.0 is a project implemented by the Mahalanobis National Crop Forecast Centre (MNCFC) that uses modern digital and geospatial technologies for agricultural forecasting. [cite: 98]
+Will the government conduct ground-level data collection?,Yes
+Who will supervise the Digital General Crop Estimation Survey?,The mission provides support to the National Sample Survey Office (NSSO) for the independent supervision of the DGCES. [cite: 110]
+How will soil mapping be funded?,The mission provides support to the Soil & Land Use Survey of India (SLUSI) for its Soil Fertility and Profile Mapping project. [cite: 111]
+What IT infrastructure is being developed under the mission?,IT infrastructure like cloud services
+Will existing IT infrastructure be maintained?,Yes
+How will startups be involved in the mission?,The mission includes provisions for engaging Start-ups and other private companies for developing innovative solutions in agriculture. [cite: 125]
+How does AgriStack give a 360-degree view of a farmer?,By integrating data from various sources like state databases
+How does AgriStack help with crop loans?,The Aadhar-verified Farmer ID
+How is a state's readiness for the Farmer Registry ensured?,To ensure readiness
+Why is a state policy decision on land extent needed for the Farmer Registry?,It is vital for the state to have a policy decision on how to assign land extents to individual farmers explicitly. This is because schemes like the Kisan Credit Card (KCC) require the exact extent of land owned by a farmer. [cite: 214
+What is the Unified Land API?,The Unified Land API is an interface that provides owner and owned extent data along with the corresponding Farm ID from the Record of Rights (RoR). It is used to verify a farmer's land claim in real-time. [cite: 234
+What is the advantage of linking Aadhaar to a land bucket?,Linking scheme-based Aadhaar data (like from PMFBY or PMKISAN) to a land bucket makes it very easy for farmers to claim their buckets
+What happens during the 'Field Activity Planning' stage of the Farmer Registry?,In this stage
+What is the purpose of a pilot for the Farmer ID?,A pilot with live farmers is conducted to test the system for providing scheme benefits
+What is the role of a State Master Trainer?,A State Master Trainer is responsible for conducting comprehensive training for district-level trainers
+What happens in the 'Sustenance' stage of the Farmer Registry?,After the initial rollout (Go-Live)
+What is the main objective of Geo-Referenced Village Maps (GRVM)?,The objective of GRVM is to establish a comprehensive database of cadastral maps that are digitally encoded with GIS technology
+How will the accuracy of GRVMs be checked?,The Ministry has developed a mobile application that states can use to check the accuracy of the Geo-Referencing for the purpose of Digital Crop Surveys. [cite: 333
+What are the specific operational steps for the Digital Crop Survey?,The state must have geo-referenced maps and digitized land records. The survey is done once per season for each plot. Data is captured via a mobile app
+What is the role of the Technical Support Team for the DCS?,The Technical Support Team handles complex technical issues escalated from the Help Desk
+What organizations will SLUSI collaborate with for the National Soil Mapping Programme?,SLUSI will take the support of other organizations like ICAR
+What is the cost-fixing process for the soil survey?,A committee under the chairmanship of DDG
+What are the main tasks in the soil survey operational procedure?,The tasks include: satellite data integration
+What are the key deliverables of the National Soil Mapping project?,The deliverables are high-resolution spatial data like soil type distribution maps
+How does a state get its CCE plan ready for DGCES?,Implementing states are required to generate or upload their Crop Cutting Experiment (CCE) plan for each crop season exclusively on the DGCES web portal
+How is DGCES data approved?,The CCE data submitted by primary workers must first be approved by the State Agricultural Statistical Authority (SASA) via the DGCES web portal
+What happens if discrepancies are found in the DGCES data by the Ministry?,If the Ministry finds discrepancies
+What are the conditions for a state using its own app to get DGCES funding?,The state must prepare its CCE plan according to GCES methodology
+What kind of IT support is available to the Department of Agriculture (DA&FW)?,Support is available for upgrading IT infrastructure
+What must a state do to get financial assistance for an IT initiative?,An MoU on Digital Public Infrastructure (DPI) between the Centre and the State is essential. The state must then submit a proposal under the Krishonnati Yojana containing a Detailed Project Report (DPR)
+How are proposals for state IT initiatives evaluated?,The proposals and DPRs are assessed by the Digital Agriculture Division. They are examined for the use of latest technology
+What are the key activities of MNCFC funded under the mission?,Key activities include crop acreage and production estimation under the FASAL scheme
+How does a state claim funds for DGCES?,After each season
+How is the Krishi-DSS project monitored?,A Project Steering Committee (PSC) chaired by the Additional Secretary (Digital Agriculture) reviews technical documents
+How is a state-level committee for DGCES structured?,SASAs shall establish a State-Level Implementation Committee chaired by the SASA Director
+How will the government engage with farmer cooperatives?,The IEC plan includes partnering with farmer cooperatives to organize workshops and training sessions on the Digital Agriculture Mission
+What are the essential features for a state's own CCE mobile app?,The mobile application must be GPS enabled
+What is the overall process for a state to create its Farmer Registry?,The process involves 6 main stages: Stage 1: State's Readiness Assessment -> Stage 2: Provisioning of Record of Rights (RoR) Data -> Stage 3: Land Bucketing -> Stage 4: Field Activity Planning -> Stage 5: Bucket Claiming by Farmers and Issuance of Farmer ID (Go-Live) -> Stage 6: Sustenance and Updation of the Registry Post-Go-Live.
+What is the first stage in setting up a state's Farmer Registry?,"""Stage 1 is 'State's Readiness'. This involves: Step 1: Create a joint committee of Revenue and Agriculture officials -> Step 2: Identify a State Nodal Officer and a State Technical Coordinator -> Step 3: Onboard a State Project Management Unit (SPMU) team -> Step 4: Get administrative direction for sharing of Record of Rights (RoR) data. """
+What is the process of 'RoR Data Provisioning' for the Farmer Registry?,"""Stage 2 is 'RoR Data Provisioning'. This involves: Step 1: The state generates a unique Farm ID for each land parcel extent -> Step 2: The state shares the Record of Rights (RoR) data through an API or ports it to servers provided by the central government -> Step 3: Data from Aadhaar-authenticated schemes (like State DBT) is also provisioned to help with Aadhaar seeding -> Step 4: A Unified Land API is created to provide land data for verification. """
+What happens during the 'Bucketing' stage of creating a Farmer Registry?,"""Stage 3 is 'Bucketing'. This involves: Step 1: A bucketing software tool uses fuzzy logic to group all lands belonging to a farmer based on name matching -> Step 2: PM-KISAN data is used to create draft Farmer IDs to speed up the process -> Step 3: Once bucketing is complete, the bucket data is migrated to the live State Farmer Registry system. """
+How does a state plan the 'Field Activity' for issuing Farmer IDs?,"The process is: Step 1: The state identifies pilot districts for the rollout -> Step 2: A campaign strategy is built, defining roles, locations, and infrastructure needed -> Step 3: Master Trainers are identified and trained -> Step 4: User IDs for officials are created and linked to the system with the correct approval workflows. """
+What happens during the 'Go-Live' stage of the Farmer Registry?,"""Stage 5 is 'Bucket Claiming and Issuance of Farmer's ID'. The process is: Step 1: Trained state officials enable the bucket claiming and consent collection campaign for all farmers -> Step 2: The Farmer Registry System is integrated with state schemes like KCC and crop insurance via APIs -> Step 3: A pilot is executed where farmers are encouraged to apply for these schemes using their new Farmer ID to avail instant benefits. """
+How is the Farmer Registry maintained after the initial rollout?,"Stage 6 is 'Sustenance Post-Go-Live'. This involves: Step 1: Establish a mechanism for automatic updation of the Farmer Registry whenever there is a land mutation in the state's Record of Rights (RoR) -> Step 2: The State builds its own capacity for the long-term sustenance of the registry -> Step 3: The State takes over the independent operation, management, and continuous monitoring of the registry."
+Who chairs the State-level Agri Stack Steering Committee?,The State-level Agri Stack Steering Committee is chaired by the Chief Secretary of the state.
+Who are the members of the State-level Agri Stack Steering Committee?,"The committee members include the Secretary of Revenue, Secretary of Agriculture, Secretary IT, other related department secretaries, and a representative from the Government of India."
+How often is the State-level Agri Stack Implementation Committee supposed to meet?,This committee is responsible for day-to-day implementation and is expected to meet at least once every month.
+From which department should the State Nodal Officer for the Farmer Registry preferably be from?,The State Nodal Officer should preferably be from the Revenue Department.
+What is the primary role of the Central Program Management Unit (CPMU) Team for the Digital Crop Survey?,"The CPMU Team coordinates between the technical support team, the development team, and the department head. They also track issues, monitor bugs, and manage change requests."
+What are the three layers of digitization for Geo-Referenced Village Maps (GRVM)?,"The digitization for GRVM is done in three layers: point, line, and polygon."
+What specific Name Match tool is used for the land bucketing process?,The bucketing tool uses a Name Match tool developed by CDAC (Centre for Development of Advanced Computing).
+What is the government's policy on intellectual property for state-led IT pilot projects?,"The Centre will co-own the intellectual property that is created during pilot projects, and States/UTs must share the details and outcomes of these pilots."
+What undertaking must a state provide to receive funds for DGCES?,States have to provide an undertaking that the funds claimed are the only source of incentives for the primary workers and are not being claimed under any other program.
+"According to the IEC plan, how often will press releases be issued?","The plan is for 4 press releases on the key highlights of the mission, which is at least one press release in every quarter."
+How often will SMS or WhatsApp messages be sent to farmers regarding the mission?,The IEC plan suggests sending SMS/WhatsApp messages to farmers and beneficiaries once every month.
+What is the planned budget for the Digital Crop Survey (DCS) for the year 2024-25?,The component-wise outlay shows a planned budget of ₹1200 crore for the Digital Crop Survey for the year 2024-25.
+What is the approved central share for the Krishi-DSS and related integrations for 2023-24?,"The approved central share for 'Krishi DSS, Crop Health and Crop Assessment' for the year 2023-24 was ₹40 crore."
+How many soil survey parties does SLUSI currently have?,The Soil and Land Use Survey of India (SLUSI) presently has 52 soil survey parties spread across the country.
+What is the annual survey capacity of a single soil survey party?,"Each soil survey party can survey about 1.5 to 2.0 lakh acres annually, depending on the terrain of the study area."
+How many villages can a state expect to survey during a DCS season?,"A large-scale DCS operation can involve surveying anywhere from 20,000 to over 1,00,000 villages per state in a tight timeframe."
+What is the target for soil mapping in the first year of the program?,"The target for the first year of the National Soil Mapping Programme is to cover 112 districts, which is approximately 110 lakh hectares."
+How much agricultural land has SLUSI already surveyed and profiled?,The Soil and Land Use Survey of India has already surveyed and profiled soils in about 29 million hectares of the country.
+What kind of IT system preparation is needed by states before a Digital Crop Survey?,"States must have essential IT infrastructure in place, which includes having SSL certificates, adequate bandwidth, and storage requirements ready two weeks before the DCS start date."
+What remote support tools are mentioned for the DCS Help Desk?,The guideline mentions that the Help Desk can utilize tools like Team Viewer or AnyDesk to offer remote support to users.
+Who chairs the Project Implementation Committee (PIC) for the Krishi-DSS project?,"The Project Implementation Committee (PIC) for Krishi-DSS is constituted under the chairmanship of the Director, MNCFC."
+Who chairs the Project Steering Committee (PSC) for Krishi-DSS?,"The Project Steering Committee (PSC) for Krishi-DSS is under the chairpersonship of the Additional Secretary (Digital Agriculture), DA&FW."
+What is the 'whole of government' approach mentioned in the document?,"This approach involves participation and collaboration from multiple Ministries, Departments, and organizations working together. The Krishi Decision Support System (Krishi-DSS) is a prime example."
+With which organization has collaboration been done for crop yield models in Krishi-DSS?,"Collaboration has been done with the Space Application Center (SAC), Ahmedabad, for the implementation of Crop yield models and drought modules through Krishi-DSS."
+What is the WINDS platform?,The WINDS (Weather Information Network and Data Systems) platform is being developed in association with IMD for weather-related information and will be integrated into Krishi-DSS.
+What are the three access levels for data in Krishi-DSS?,"The three access levels are: A1 (Central data with open access), A2 (State-specific data with limited access), and A3 (Central and State data with restricted access)."
+Who is responsible for providing a user manual for the DCS reference app?,"The Central Government will supply a user manual in English, and the States are responsible for translating it into the local or official language."
+What is the role of a District Trainer for the Digital Crop Survey?,District trainers are responsible for supporting crop surveyors and supervisors and helping them resolve issues during the 45-day survey period. Each trainer should oversee no more than 20 surveyors.
+What is the first stage in setting up a state's Farmer Registry?,"Stage 1 is 'State's Readiness'. This involves creating a joint committee, identifying a State Nodal Officer, onboarding an SPMU team, and getting administrative direction for sharing RoR data."
+What is the process of 'RoR Data Provisioning' for the Farmer Registry?,"This is Stage 2. It involves the state generating a unique Farm ID for each land parcel, sharing the RoR data via API, provisioning data from other Aadhaar-authenticated schemes, and creating a Unified Land API."
+What specific support does the mission provide to MNCFC?,"The mission provides support to MNCFC for implementing the FASAL 2.0 project and other projects that use modern digital and geo-spatial technology, so that it can become a centre of excellence."
+How are special surveys conducted under the mission?,The mission includes provisions for conducting special surveys with the use of technology by government or private entities.
+How will the mission support AI initiatives in agriculture?,The mission will provide funding for specific Artificial Intelligence (AI) initiatives for the agriculture sector.
+Can the mission's funds be used to pay the salary of regular government employees?,"No, the guidelines explicitly state that funds received from the Government of India for the Digital Crop Survey will not be used to pay the salary of regular employees."
+What is the purpose of the state-level DGCES Implementation Committee?,This committee is established to review the implementation of DGCES every fortnight during each season and share progress updates with the Ministry.
+What are the main components of a State Level PMU (SPMU) for DCS?,"An SPMU should comprise administrative staff from agriculture and revenue departments, technical staff for managing databases and systems, and staff for coordinating with the help desk."
+What is the role of the Subject Matter Expert (SME) in the DCS helpdesk structure?,The SME is there to offer advanced knowledge and solutions for specialized issues that cannot be resolved by the primary tele-executives or team leaders.
+How does the mission support compliance with the Data Governance Quality Index (DGQI)?,The mission provides support for DA&FW's compliance with NITI Aayog's DGQI initiative and various Cyber Security guidelines.
+What is the purpose of the 'bucket claim' process?,"The advantage of claiming a 'bucket' is twofold: a farmer doesn't need to remember and claim each land parcel separately, and linking scheme-based Aadhaar to the bucket makes the claiming process easier."
+"What is the ""go-live"" stage of the Farmer Registry?","Stage 5 is the ""Go-Live"" stage, where officials participate in the campaign to enable bucket claiming and consent from all farmers across the state, and the system is integrated with schemes like KCC."
+How is the Farmer Registry sustained after the initial rollout?,"Stage 6, the 'Sustenance' stage, involves establishing a mechanism for automatic updation of the registry with land record mutations and the state building its own capacity to manage and monitor the system independently."
+How is the cost fixed for soil surveys done by partner institutes?,"A committee of the DA&FW, chaired by the DDG of NRM (ICAR), has been constituted to fix the cost norms for the soil survey and mapping work done by partner institutes like State Agricultural Universities."
+What are the specific tasks involved in the soil survey fieldwork?,"The fieldwork involves a Soil Profile examination, which is done by digging a pit or a vertical cross-section of the soil up to 1-2 meters deep to study the properties and characteristics of the soil."
+What kind of soil property attributes will be included in the soil maps?,"The maps will contain attributes like slope, soil depth, texture, structure, pH, EC, organic matter content, cation exchange capacity, and nutrient levels."
+What is the first thing a state must do to get funding for a new IT project?,An MoU on Digital Public Infrastructure (DPI) between the Centre and the State is essential for the State to obtain financial assistance for an IT initiative project.
+Who acts as the project nodal officer for state IT initiatives?,"The Principal Secretary, Production Commissioner, Secretary, or Director (Agriculture) will act as the project nodal officer for the state's IT initiatives."
+What must a state IT project proposal contain?,"The proposal, submitted under the Krishonnati Yojana, must contain the Detailed Project Report (DPR), financial implications, timelines, and the technologies involved."
+What is a 'State Aadhaar-seeded Database' (SASDB)?,"This is an abbreviation listed in the document, referring to a state-level database where farmer details are linked with their Aadhaar numbers."
+What is the 'Unified Farmer Service Interface' (UFSI)?,The UFSI is a platform for delivering farmer-centric services. The mission includes funding for call centres to support this interface.
+Where are the seven regional centres of SLUSI located?,"The seven regional centres of the Soil and Land Use Survey of India (SLUSI) are located in Ahmedabad, Bengaluru, Hyderabad, Kolkata, Nagpur, Noida, and Ranchi."
+What happens during the 'pre-field interpretation map' stage of soil mapping?,"This stage involves preparing a soil physiography map and a pre-field interpretation map, which helps in preparing for the actual soil survey and fieldwork."
+What is the process for a state to get geo-referenced village maps (GRVM) funded under the mission?,The state can send a detailed proposal for GRVM under the IT initiatives component through the Annual Action Plan of Krishonnati Yojana. Funds can then be provided through the mission to establish these maps.
+How will a 'social media campaign' be used to promote the mission?,"The plan includes a 7-day social media campaign every quarter to promote and showcase achievements, post photos from the ground, and share videos or interviews with stakeholders."
+What is the purpose of the 'online quiz' mentioned in the IEC plan?,"An online quiz and 'Krishi competitions' are planned to be played at event sites, with prizes distributed, to generate awareness and engagement, especially during the 'Digital Krishi Diwas'."
+What is the role of the State Agricultural Statistical Authority (SASA) in DGCES?,The SASA in each State or Union Territory serves as the nodal department for implementing and coordinating the Digital GCES in their respective state.
+How is the CCE plan for DGCES created?,"States must prepare a Crop Cutting Experiment (CCE) plan for all major and minor crops at the start of each season, strictly adhering to the GCES methodology, and enter it into the DGCES web portal."
+Can a state correct errors in CCE data submitted by primary workers?,"Yes, before approval, SASAs must verify the data. They may correct data in specific fields, provided they include justifications and upload supporting documents."
+What happens if a CCE is rejected?,Rejected experiments will not be included in the final yield estimation.
+What is the 'NeGP-A' scheme and what happened to it?,"The National e-Governance Plan in Agriculture (NeGP-A), a scheme launched in 2010-11, has been subsumed into the Digital Agriculture Mission."
+How is the Farmer Registry linked to land records?,"The Farmer Registry must be dynamically linked to the land records to ensure it is updated with every land mutation, keeping the information current."
+What are the two ways a farmer can register for the Farmer Registry?,"A farmer can either register themselves directly (or with assistance), followed by authentication from an official, OR they can be authenticated directly by officials at camps organised at the village level."
+How does the mission support the development of reference applications?,The mission supports the development of reference applications for the Centre by states or other entities. 100% of the funds for such projects will be released.
+How will the mission provide capacity building for officials?,The mission includes funding for the capacity building of both Centre and State officials in using new and emerging technologies.
+What is the purpose of a 'Project Monitoring Unit' (PMU) at the central level?,The mission includes funding for setting up Project Monitoring Units (PMUs) in the Centre to help implement the Digital Public Infrastructure and related initiatives.
+Who provides the tool to generate the Farm ID?,The Central team will provide a utility for the generation of the Farmland Plot ID (Farm ID). The state can use this utility as is or customize it.
+What is the role of the Unified Land API in the Farmer Registry?,"The Unified Land API is used to cross-verify a farmer's bucket claim with the Record of Rights (RoR) database in real time, confirming land ownership with a simple Yes/No response."
+How is the hardware for the land bucketing process managed?,"Since bucketing is very hardware-intensive, the Centre has a dedicated team and infrastructure available for this one-time activity, which states can choose to use if they have capacity constraints."
+What are some of the user groups for the Krishi-DSS platform?,"Different user groups have varying access levels. Farmers can access their own farm-specific data, while government officials will have access to aggregated data for policymaking."
+What is the goal of the DGCES in terms of standardization?,DGCES aims to standardize the Crop Cutting Experiments (CCEs) across the country by using a common digital platform.
+What is the 'Krishonnati Yojana' and how does it relate to this mission?,Krishonnati Yojana is an umbrella scheme for agricultural development. States must submit their proposals for DCS or IT initiatives as part of their Annual Action Plan under this yojana.
+What is the role of the Integrated Finance Division (IFD) of DA&FW?,"The concurrence of the IFD is required before funds can be released for various projects, such as IT initiatives and support to academic institutions, ensuring financial oversight."
+What is the role of the Director of MNCFC in the Krishi-DSS project?,"The Director of MNCFC is the designated nodal officer for the conceptualization, development, operation, and maintenance of the Krishi-DSS platform."
+Will the mission support sending advisories through new technologies?,"Yes, the mission supports sending advisories to farmers through SMS, mobile applications, and also mentions 'new social media communication technologies'."
+What are some examples of 'support registries' in AgriStack?,"Besides the three foundational registries, various support registries are also being built, such as a Crop registry, seed registry, fertiliser registry, and pest registry."
+How will the mission help in making crop diversification more effective?,"The digitally captured crop-sown data and remote-sensing data will help in accurate crop area estimation, which in turn helps in planning for crop diversification and evaluating irrigation needs."
+Who can be a surveyor for the Digital Crop Survey?,"States can use Government officials, 'Krishi Sakhis', or private persons, including farmers themselves, for the surveys, as long as they are knowledgeable about the local agronomy."
+What happens during the 'Laboratory analysis' stage of soil mapping?,This stage supports the field observations by analyzing soil samples for different chemical and physio-chemical properties and their fertility status.
+How does a state get its DGCES plan approved?,"Before each season, the Ministry will notify states of the minimum number of CCEs required per crop. SASAs must ensure at least this specified number of CCEs is planned in the DGCES Portal."
+What is the 'FASAL' scheme?,"FASAL stands for 'Forecasting Agricultural output using Space, Agro-meteorology and Land based observations'. It is a scheme for crop acreage and production estimation run by MNCFC."
+What is the 'Improvement of Agriculture Statistics (IAS)' scheme?,This is an existing scheme that already provides support to SASAs for supervising agricultural statistics activities.
+What is a 'Detailed Project Report' (DPR)?,"A DPR is a comprehensive report that states must submit when applying for funding for IT initiatives. It contains details on the project's finances, timelines, and technology."
+How will the mission engage with schools?,The IEC plan includes collaborating with government schools to organize awareness programs to educate students and their families about the Digital Agriculture Mission during parent-teacher meetings or special assemblies.
+What is the role of a 'Tehsildar' or 'Village Accountant/Patwari' in the DCS?,"The Central Government provides a draft of recommended roles and responsibilities for various state and local officials, including Tehsildars and Village Accountants/Patwaris, who are involved in the project's execution on the ground."
+How does the DCS mobile app ensure data is captured from the correct location?,The mobile app uses the device's GPS to locate the surveyor and ensures they are within the designated land parcel boundaries before they can capture and record data for that plot.
+What is a 'State Farmer Database' (SFDB)?,The SFDB is the bucketing database where the initial process of grouping lands belonging to a farmer occurs before the data is moved to the live Farmer Registry.
+What is the 'Local Government Directory' (LGD)?,"The LGD provides standardized codes for districts, talukas, and villages. The mission requires that state masters for these administrative units are finalized according to LGD Codes for system compatibility."
+What does the abbreviation 'PMU' stand for?,PMU stands for Project Monitoring Units.
+What is the purpose of a 'sandbox environment' under AgriStack?,The mission supports the development of a sandbox environment under AgriStack. This is a testing environment where developers can build and test new applications and services using the platform's APIs without affecting the live system.
+How are state proposals for IT initiatives aligned with central government goals?,Proposals are evaluated for their alignment with central Government Digital Public Infrastructures (DPIs) before being approved for pilot projects or funding.
+What is the first step for a farmer to access benefits under the mission?,The first step for a farmer is to digitally identify and authenticate himself/herself. This digital identity will be the key to accessing services and benefits with less paperwork.
+How does the mission help in case of natural calamities?,"The Aadhar-verified Farmer ID, linked to land records and crops sown, would aid in providing transparent and efficient compensation for crop loss due to natural calamities."
+Can the mission's funds be used for developing applications for the department itself?,"Yes, the guidelines state that funds can be used for the 'Development of various IT Applications and Apps for the Department'."
+How will the mission ensure data privacy and security for the Krishi-DSS platform?,"The platform is designed to be a secure framework with strict data security and privacy measures, allowing for collaborative decision-making while protecting sensitive data."
+What is the process of soil classification in the NSMP?,"After fieldwork and lab analysis, the soils are correlated and classified into defined taxonomic units using a standardised and universally accepted soil classification system."
+Who chairs the National level Agri Stack Steering Committee?,"The National level Agri Stack Steering Committee is constituted under the chairpersonship of the Secretary of the Department of Agriculture & Farmers’ Welfare, Government of India."
+What is the primary function of the State-level Agri Stack Implementation Committee?,"This committee is responsible for the day-to-day implementation of the three main tasks of AgriStack (Farmer Registry, GRVM, DCS) and is expected to meet at least once every month."
+Who chairs the Project Steering Committee (PSC) for the Krishi-DSS platform?,"A Project Steering Committee (PSC) under the chairpersonship of the Additional Secretary (Digital Agriculture), DA&FW, is responsible for reviewing and finalizing technical documents for Krishi-DSS."
+Who monitors the day-to-day implementation of the Krishi-DSS project?,"A Project Implementation Committee (PIC) constituted under the chairmanship of the Director, MNCFC, monitors the day-to-day implementation of the project, including module development and testing."
+Who chairs the state-level implementation committee for the Digital General Crop Estimation Survey (DGCES)?,The State-Level Implementation Committee for DGCES is chaired by the Director of the State Agricultural Statistical Authority (SASA).
+What specific action must a state take to get its own CCE app approved for DGCES funding?,"The state must give a demonstration of its own application to the Ministry, after which a central technical team will check its compatibility and features before it can be onboarded for funding."
+What are the three essential image-capturing requirements for a CCE app?,"Any CCE mobile application must be able to capture an image of the plot, an image of the crop harvesting process, and an image of the crop weighment process."
+What is the purpose of the 'sandbox environment' being developed under AgriStack?,"The mission supports developing a sandbox environment, which is a testing area where startups, researchers, and companies can build and test new applications using AgriStack APIs without affecting the live system."
+What is the government's policy on intellectual property (IP) for state-led IT pilot projects?,"The Centre will co-own the intellectual property created during state-led pilot projects, and states must share all details and outcomes of these projects with the Centre."
+What specific details must a state IT project proposal contain to be considered for funding?,"The proposal, submitted as part of the Krishonnati Yojana, must contain the Detailed Project Report (DPR), financial implications, clear implementation timelines, and details on the technologies involved."
+How are unspent funds from a previous DGCES season handled?,"When a state's SASA applies for funds for a new season, they must provide details of any unspent funds from the previous season, which will be factored into the new fund release."
+Can the ₹1000 per CCE incentive be used for administrative costs?,"Yes, 2.5% of the total amount allocated to a State's SASA for CCEs may be utilized for administrative expenses, such as organizing training sessions, workshops, or purchasing equipment."
+What is the process for an academic institution to get project funding under the mission?,The process is: Step 1: The institution submits a DPR for a scalable digital solution -> Step 2: The Assessment Committee of DA&FW approves the project -> Step 3: Concurrence of the Integrated Finance Division (IFD) is obtained -> Step 4: Funds are then released.
+"According to the IEC plan, what is the 'Video Creative' activity?","This activity involves circulating video bytes about the Digital Agriculture Mission among States and other bodies with a request to play them in office premises, at events, and even in movie halls. A new byte is planned every quarter."
+What is the 'Booklet on Success Stories' mentioned in the IEC plan?,"This is a planned compendium with infographics and storylines on achievements and success stories of the mission's initiatives, scheduled to be printed in January."
+How often is a major social media campaign for the mission planned?,A 7-day social media campaign to promote and showcase achievements is planned to be rolled out every quarter.
+What is the specific target for soil mapping in the third year of the program?,"The target for the third year of the National Soil Mapping Programme is to cover 153 districts, which corresponds to approximately 285 lakh hectares."
+What is the total approved budget for the DGCES component over five years?,"The total approved project outlay for the Digital General Crop Estimation Survey (DGCES) component is ₹100 crore, which is fully funded by the central government."
+How much funding is allocated for 'Support to MNCFC' over the five-year mission period?,The total approved project outlay for 'Support to MNCFC' is ₹60 crore.
+What is the total funding allocated for 'Comprehensive Soil Fertility and Profile Mapping' over the five-year mission period?,The total approved project outlay for this component is ₹100 crore.
+What is the role of the State Technical Coordinator in the Farmer Registry setup?,The State Technical Coordinator is nominated by the state to facilitate the technical enablement and system rollout required for creating the Farmer Registry.
+What is the primary responsibility of a 'Master Trainer' for the Farmer Registry?,"The primary responsibility is to conduct comprehensive training sessions for district-level trainers, effectively creating a cascading learning model down to the village level."
+Who makes up the 'District Level Team' (DLT) for the Farmer Registry?,A district-level committee needs to be formed to effectively coordinate and monitor field activities for Farmer ID issuance. The specific composition is decided by the state.
+What is the 'Subdivisional Agriculture Extension Officer' (SDAEO)?,This is a designation for an agricultural officer at the sub-divisional level who may be involved in the mission's activities.
+What is a 'State Farmer Database' (SFDB)?,The SFDB is the name for the bucketing database application that is set up to enable the process of grouping farmer lands before they are moved to the final registry.
+What is the 'State Aadhaar-seeded Database' (SASDB)?,"This refers to a state-level database where farmer details are linked or 'seeded' with their Aadhaar numbers, which can be used to enrich the Farmer Registry."
+What is the role of the 'Project Implementation Committee' (PIC) for the National Soil Mapping Programme?,"A PIC will be constituted under the chairmanship of the Chief Soil Survey Officer, SLUSI, to plan, execute, manage funds, and monitor the activities of the National Soil Mapping Programme."
+What is the official title for the list of abbreviations in the document?,The section is titled 'List of Abbreviations'.
+How will the mission support global initiatives?,"Through MNCFC, the mission will support existing global programs like UNESCAP, Sentinel Asia (a disaster management program), and Geo-Glam (for sharing information products)."
+What specific crop details must be shared via API for states using their own DGCES app?,"The parameters include Crop Name, Crop Type, Crop Variety, whether it is a Picking Crop (Yes/No), Date of Sowing, and Date of Harvesting."
+What 'green weight' measurements are required for API data sharing in DGCES?,"Three separate green weight measurements are required: Green Weight with fodder/cob (in Kgs), Green Weight without fodder/cob (in Kgs), and Green Weight taken for driage (in Kgs)."
+What is the format for sharing data on CCEs that have been edited by the state?,States using their own app must share data for edited experiments in a specific format (as per Annexure IV) that shows the data entered by the Primary Worker alongside the data as edited by the State.
+What bank account details are required on the DGCES Fund Requisition Form?,"The form requires the Name of the Bank, Branch Address, Account Number, and the IFSC Number of the SASA's account."
+What is the 'Krishi Monitoring Support Center'?,This is a piece of IT infrastructure that the mission will support setting up and maintaining for the Department of Agriculture & Farmers' Welfare.
+How will the mission support the maintenance of the department's e-office?,"The mission provides financial support for maintaining the e-office, the department's websites, mobile apps, and for holding Virtual Conferences."
+What is a 'consent manager' in the context of AgriStack?,A 'Consent Manager' is a software component being developed under AgriStack. It will manage the consent given by farmers for sharing their data for various services.
+Who has the final say on the rates for soil mapping work done by partner institutes?,"The partner institutes will undertake the work at rates fixed by the Department of Agriculture & Farmers' Welfare (DA&FW), which are based on the recommendation of a specially constituted committee."
+What is the purpose of a 'pre-field interpretation map' in soil mapping?,This map is prepared before the fieldwork begins. It helps the survey team in their preparation and planning for the soil survey.
+What are 'legacy thematic data' and how are they used in soil mapping?,"This refers to older, existing thematic data layers. They are used along with new satellite data during the post-field interpretation stage to help draw the soil boundaries accurately."
+When did the pilot for DGCES begin?,The DGCES was pilot implemented during Kharif 2023 in selected districts of 10 States.
+How was DGCES expanded after the initial pilot?,"In Rabi 2024, it was expanded and implemented in all districts of 16 major States, with a full rollout planned from Kharif 2024."
+What is the process for registering primary workers for DGCES?,"The registration of primary workers is a one-time exercise that needs to be done through the DGCES web portal. However, modifications can be made if workers are transferred."
+What is the 'Data Approval Module' in the DGCES portal?,This is the specific module within the web portal through which state-level and district-level users can approve the CCE data submitted by primary workers.
+Can a state get funding for a project that lasts longer than one year?,"The guidelines advise states to propose IT initiative projects with a lifecycle of preferably one year, along with clear implementation timelines."
+Who provides the draft of recommended roles and responsibilities for DCS stakeholders?,"The Central Government will provide a draft of recommended roles and responsibilities for each stakeholder, including local officials like Collectors, Tehsildars, and Village Accountants."
+How many surveyors should a district trainer oversee for the DCS?,"To ensure effective management, it is recommended that each district trainer should oversee no more than 20 surveyors."
+What departments might personnel be drawn from for the large-scale DCS operation?,"To get the required number of surveyors, personnel may be drawn from various government departments, including Revenue, Panchayati Raj, Agriculture, Horticulture, Sericulture, and Animal Husbandry."
+What is the role of the Project Head of the SPMU?,The Project Head is responsible for high-level supervision of the unit's activities and for reporting progress and issues to senior government officials.
+How is the SPMU different from the Help Desk?,"The Help Desk provides day-to-day technical support for field operations, whereas the SPMU is a higher-level unit that controls, supervises, and manages the Help Desk activities and handles administrative issues."
+What is the first step the DCS Help Desk team takes when a user calls?,The Help Desk team uses CRM (Customer Relationship Management) software to manage and allocate incoming calls. Their first responsibility is to provide step-by-step guidance and assistance to users.
+What is a 'State Project Management Unit' (SPMU)?,"SPMU is a State Project Management Unit set up in states to act as a bridge between the Centre and the State teams, oversee operations, and enable the successful rollout of initiatives like AgriStack and DCS."
+What is the 'Unified Farmer Service Interface' (UFSI)?,The UFSI is a platform for delivering farmer-centric services. The mission includes funding for call centres to support this interface.
+How will the mission support global initiatives?,"Through MNCFC, the mission will support existing global programs like UNESCAP, Sentinel Asia (a disaster management program), and Geo-Glam (for sharing information products)."
+What is the 'Krishi Monitoring Support Center'?,This is a piece of IT infrastructure that the mission will support setting up and maintaining for the Department of Agriculture & Farmers' Welfare.
+Who has the final say on the rates for soil mapping work done by partner institutes?,"The partner institutes will undertake the work at rates fixed by the Department of Agriculture & Farmers' Welfare (DA&FW), which are based on the recommendation of a specially constituted committee."
+When did the pilot for DGCES begin?,The DGCES was pilot implemented during Kharif 2023 in selected districts of 10 States.
+What is the process for registering primary workers for DGCES?,"The registration of primary workers is a one-time exercise that needs to be done through the DGCES web portal. However, modifications can be made if workers are transferred."
+Can a state get funding for a project that lasts longer than one year?,"The guidelines advise states to propose IT initiative projects with a lifecycle of preferably one year, along with clear implementation timelines."
+What is the role of the Project Head of the State PMU (SPMU)?,The Project Head is responsible for high-level supervision of the unit's activities and for reporting progress and issues to senior government officials.
+What does CDAC stand for?,CDAC stands for Centre for Development of Advanced Computing.
+What does CRM stand for?,CRM stands for Customer Relationship Management.
+What does CSCS stand for?,CSCS stands for Common Service Centers.
+What does DGQI stand for?,DGQI stands for Data Governance Quality Index.
+What does DLT stand for?,DLT stands for District Level Team.
+What does DOLR stand for?,DOLR stands for Department of Land Resources.
+What does DPR stand for?,DPR stands for Detailed Project Report.
+What does FASAL stand for?,"FASAL stands for Forecasting Agricultural output using Space, Agro-meteorology and Land based observations."
+What does IFD stand for?,IFD stands for Integrated Finance Division.
+What does IMD stand for?,IMD stands for Indian Meteorological Department.
+What does loTs stand for?,loTs stands for Internet of Things.
+What does ISRO stand for?,ISRO stands for Indian Space Research Organization.
+What does KY stand for?,KY stands for Krishonnati Yojana.
+What does LGD stand for?,LGD stands for Local Government Directory.
+What does MIS stand for?,MIS stands for Management Information System.
+What does MoU stand for?,MoU stands for Memorandum of Understanding.
+What does NBSS&LUP stand for?,NBSS&LUP stands for National Bureau Of Soil Survey And Land Use Planning.
+What does NeGP-A stand for?,NeGP-A stands for National e-Governance Plan in Agriculture.
+What does NIC stand for?,NIC stands for National Informatics Centre.
+What does NRSC stand for?,NRSC stands for National Remote Sensing Centre.
+What does NSMP stand for?,NSMP stands for National Soil Mapping Programme.
+What does NSSO stand for?,NSSO stands for National Sample Survey Office.
+What does NWIC stand for?,NWIC stands for National Water Informatics Centre.
+What does PIC stand for?,PIC stands for Project Implementation Committee.
+What does POC stand for?,POC stands for Proof of Concept.
+What does PPOC stand for?,PPOC stands for Primary Points of Contact.
+What does PSC stand for?,PSC stands for Project Steering Committee.
+What does SAC stand for?,SAC stands for Space Application Center.
+What does SLUSI stand for?,SLUSI stands for Soil and Land Use Survey of India.
+What does SME stand for?,SME stands for Subject Matter Expert.
+What does UAT stand for?,UAT stands for User Acceptance Testing.
+What does USDA stand for?,USDA stands for United States Department of Agriculture.
+What does WINDS stand for?,WINDS stands for Weather Information Network and Data Systems.
+How will the government use hoardings to promote the mission?,"The IEC plan includes placing hoardings on key DAM initiatives in public places such as bus stops, railway stations, and market areas, to be done twice a year."
+What is the timeline for celebrating 'Digital Krishi Diwas'?,The celebration of 'Digital Krishi Diwas' pan-India is planned for December.
+What is the role of a 'Primary Point of Contact' (PPOC)?,"State Master Trainers will act as the Primary Points of Contact (PPOCs) for the District Trainers, sharing updates on progress and issues to ensure smooth operations."
+What is the main condition for a state to receive financial assistance for IT initiatives?,An MoU on DPI (Digital Public Infrastructure) between the Centre and the State is essential for the State to obtain financial assistance for IT initiative projects.
+what are any new schemes from government,https://pmkisan.gov.in/ 
+I want to know my status for beneficiary,https://pmkisan.gov.in/BeneficiaryStatus_New.aspx
