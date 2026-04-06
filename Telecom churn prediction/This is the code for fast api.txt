@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Telecom Dashboard</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+
+  <style>
+    :root{
+      --primary-gradient:linear-gradient(90deg,#3b82f6,#8b5cf6);
+      --success-gradient:linear-gradient(90deg,#059669,#10b981);
+      --danger-gradient:linear-gradient(45deg,#ef4444,#dc2626);
+      --info-gradient:linear-gradient(45deg,#3b82f6,#2563eb);
+      --warning-gradient:linear-gradient(45deg,#f59e0b,#d97706);
+      --purple-gradient:linear-gradient(45deg,#6366f1,#4f46e5);
+    }
+    body{background:#f8fafc;font-family:'Segoe UI',sans-serif;}
+    .main-title{font-size:2.5em;font-weight:800;text-align:center;margin:2rem 0;
+      background:var(--primary-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .plan-card{border:2px solid #e5e7eb;border-radius:16px;padding:20px;margin:12px 0;
+      background:linear-gradient(145deg,#fff,#f8fafc);box-shadow:0 4px 12px rgba(0,0,0,.08);transition:all .3s;
+      height:100%;display:flex;flex-direction:column;position:relative;overflow:hidden;}
+    .plan-card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,.15);border-color:#3b82f6;}
+    .plan-header{font-weight:700;font-size:1.2em;color:#1e293b;margin-bottom:12px;
+      display:flex;align-items:center;gap:8px;}
+    .badge-custom{background:var(--danger-gradient);color:#fff;padding:4px 12px;border-radius:20px;
+      font-size:.75em;font-weight:600;box-shadow:0 2px 4px rgba(239,68,68,.3);}
+    .badge-standard{background:var(--info-gradient);color:#fff;padding:4px 12px;border-radius:20px;
+      font-size:.75em;font-weight:600;box-shadow:0 2px 4px rgba(59,130,246,.3);}
+    .data-highlight{font-size:1.4em;font-weight:700;color:#059669;margin:8px 0;
+      background:var(--success-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .price-highlight{font-size:1.6em;font-weight:800;color:#16a34a;margin:12px 0;}
+    .features{flex-grow:1;font-size:.9em;color:#64748b;line-height:1.6;margin-bottom:auto;}
+    .select-btn{background:var(--info-gradient);color:#fff;border:none;padding:12px 24px;
+      border-radius:12px;font-weight:600;cursor:pointer;margin-top:16px;
+      box-shadow:0 4px 12px rgba(59,130,246,.3);}
+    .select-btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(59,130,246,.4);}
+    .profile-box{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border:2px solid #0ea5e9;
+      border-radius:16px;padding:20px;box-shadow:0 4px 12px rgba(14,116,144,.1);margin:16px 0;}
+    .profile-title{font-size:1.3em;font-weight:700;color:#0c4a6b;margin-bottom:16px;
+      display:flex;align-items:center;gap:8px;}
+    .profile-metric{display:flex;justify-content:space-between;padding:8px 0;
+      border-bottom:1px dashed #bae6fd;color:#0369a1;font-size:.95em;}
+    .profile-metric:last-child{border-bottom:none;}
+    .profile-label{font-weight:600;}
+    .analysis-card{border:2px solid #e5e7eb;border-radius:16px;padding:20px;margin:12px 0;
+      background:linear-gradient(145deg,#fff,#f8fafc);box-shadow:0 4px 12px rgba(0,0,0,.08);
+      transition:all .3s;height:100%;}
+    .analysis-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.12);border-color:#3b82f6;}
+    .model-header{font-weight:700;font-size:1.2em;color:#1e293b;margin-bottom:12px;
+      display:flex;align-items:center;gap:8px;}
+    .badge-anomaly{background:var(--warning-gradient);color:#fff;padding:4px 12px;border-radius:20px;
+      font-size:.75em;font-weight:600;}
+    .badge-matching{background:var(--success-gradient);color:#fff;padding:4px 12px;border-radius:20px;
+      font-size:.75em;font-weight:600;}
+    .badge-fraud{background:var(--danger-gradient);color:#fff;padding:4px 12px;border-radius:20px;
+      font-size:.75em;font-weight:600;}
+    .badge-valued{background:var(--purple-gradient);color:#fff;padding:4px 12px;border-radius:20px;
+      font-size:.75em;font-weight:600;}
+    .score-highlight{font-size:2em;font-weight:800;color:#059669;margin:8px 0;}
+    .risk-high{color:#ef4444;}.risk-medium{color:#f59e0b;}.risk-low{color:#10b981;}
+    .recommend-box{background:linear-gradient(135deg,rgb(38,39,48),rgb(14,17,23));
+      border-left:5px solid #3b82f6;padding:16px;border-radius:0 12px 12px 0;margin:16px 0;color:#fff;}
+    .bulk-stats{background:linear-gradient(135deg,#030e06,rgb(38,39,48));
+      border:2px solid #22c55e;border-radius:12px;padding:16px;margin-top:16px;color:#fff;}
+    .filter-section{background:linear-gradient(135deg,#f8fafc,#e2e8f0);
+      border-radius:12px;padding:16px;margin:8px 0;}
+    .table th{background:#f1f5f9;font-weight:600;}
+    .category-table{margin-bottom:16px;}
+    .category-table table{width:100%;border-collapse:collapse;}
+    .category-table th,.category-table td{border:1px solid #e2e8f0;padding:8px;text-align:left;}
+    .category-table th{background:#f1f5f9;color:#1e293b;}
+  </style>
+</head>
+<body>
+
+<div class="container py-4">
+  <h1 class="main-title">Telecom AI System</h1>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs mb-4" id="mainTabs" role="tablist">
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#recommender">Plan Recommender</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#analysis">Bill Analysis</button></li>
+  </ul>
+
+  <div class="tab-content">
+
+    <!-- ==== RECOMMENDER TAB ==== -->
+    <div class="tab-pane fade show active" id="recommender">
+      <h3>Smart Telecom Plan Recommender</h3>
+      <p class="text-muted">AI analyzes usage & recommends perfect plans</p>
+
+      <div class="mb-4">
+        <label class="form-label">Upload usage CSV</label>
+        <input type="file" class="form-control" id="usageFile" accept=".csv"/>
+      </div>
+
+      <!-- Preview + Charts -->
+      <div class="accordion mb-4" id="dataPreviewAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#previewCollapse">Data Preview</button>
+          </h2>
+          <div id="previewCollapse" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <table class="table table-sm table-hover" id="previewTable"><thead><tr><th>No data</th></tr></thead><tbody></tbody></table>
+
+              <div class="row mt-4">
+                <div class="col-md-4"><strong>Avg Data per Plan</strong><div id="chart1" class="mt-2"></div></div>
+                <div class="col-md-4"><strong>Avg Data Over Time</strong><div id="chart2" class="mt-2"></div></div>
+                <div class="col-md-4"><strong>Plan Distribution</strong><div id="chart3" class="mt-2"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary w-100 mb-4" id="analyzeBtn">Analyze All Customers</button>
+
+      <!-- Standard Plans -->
+      <h4>Standard Plans</h4>
+      <div class="row" id="standardPlans"></div>
+
+      <!-- Recommendations -->
+      <div id="recommendationsSection" class="d-none">
+        <h4 class="mt-5">Your Personalized Recommendations</h4>
+        <select class="form-select mb-3" id="customerSelect"></select>
+        <div id="profileBox" class="profile-box mb-4"></div>
+
+        <button class="btn btn-secondary w-100 mb-3" id="genAiBtn">Generate AI Recommendations</button>
+
+        <h5 class="mt-4">Custom Plans (AI-generated)</h5>
+        <div class="row mb-4" id="customPlans"></div>
+
+        <h5 class="mt-4">Top 3 AI Recommendations</h5>
+        <div id="topRecommendations"></div>
+      </div>
+    </div>
+
+    <!-- ==== BILL ANALYSIS TAB ==== -->
+    <div class="tab-pane fade" id="analysis">
+      <h3>Telecom Bill Analysis Dashboard</h3>
+      <p class="text-muted">AI anomaly detection, matching, fraud, valued customers</p>
+
+      <div class="mb-4">
+        <label class="form-label">Upload bill CSV</label>
+        <input type="file" class="form-control" id="billFile" accept=".csv"/>
+      </div>
+
+      <!-- Bill Preview -->
+      <div class="accordion mb-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#billPreview">Dataset Preview</button>
+          </h2>
+          <div id="billPreview" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <table class="table table-sm" id="billTable"><thead><tr><th>No data</th></tr></thead><tbody></tbody></table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <h5>Dataset Statistics</h5>
+      <div class="row text-center mb-4">
+        <div class="col"><div class="p-3 bg-light rounded"><strong>Total Customers</strong><div id="stat1">0</div></div></div>
+        <div class="col"><div class="p-3 bg-light rounded"><strong>Anomalous</strong><div id="stat2">0</div></div></div>
+        <div class="col"><div class="p-3 bg-light rounded"><strong>Mismatched</strong><div id="stat3">0</div></div></div>
+        <div class="col"><div class="p-3 bg-light rounded"><strong>Disputed</strong><div id="stat4">0</div></div></div>
+        <div class="col"><div class="p-3 bg-light rounded"><strong>Valued</strong><div id="stat5">0</div></div></div>
+      </div>
+
+      <!-- Charts -->
+      <h5>Data Insights</h5>
+      <div class="row">
+        <div class="col-md-6 mb-4"><div id="pieChart"></div></div>
+        <div class="col-md-6 mb-4"><div id="barChart"></div></div>
+        <div class="col-md-6 mb-4"><div id="lineChart"></div></div>
+        <div class="col-md-6 mb-4"><div id="statusBar"></div></div>
+      </div>
+
+      <!-- Categories -->
+      <h5 class="mt-5">Customer Categorisation</h5>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="category-table">
+            <h6>Anomaly Detected</h6>
+            <div id="anomalyTableContainer"><p class="text-muted">No data</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="category-table">
+            <h6>Mismatched Bills</h6>
+            <div id="mismatchTableContainer"><p class="text-muted">No data</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="category-table">
+            <h6>Disputed Bills</h6>
+            <div id="disputeTableContainer"><p class="text-muted">No data</p></div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="category-table">
+            <h6>Valued Customers</h6>
+            <div id="valuedTableContainer"><p class="text-muted">No data</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detailed Analysis -->
+      <h5>Detailed Bill Analysis</h5>
+      <div class="row mb-3">
+        <div class="col-md-6"><label>Customer ID</label><select class="form-select" id="detailCustomer"></select></div>
+        <div class="col-md-6"><label>Month</label><select class="form-select" id="detailMonth"></select></div>
+      </div>
+      <div id="detailProfile" class="profile-box mb-4"></div>
+      <button class="btn btn-secondary w-100" id="bulkAnalyzeBtn">Analyze all bills of selected customer</button>
+      <div id="bulkResults" class="d-none mt-4"></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const API = 'http://127.0.0.1:8000';
+
+  // ==== HELPERS ====
+  function showError(msg){alert('Error: '+msg);}
+  function clearTable(id){document.querySelector(`#${id} tbody`).innerHTML='';}
+  function populateTable(id,data,cols=null){
+    const tbody=document.querySelector(`#${id} tbody`);
+    clearTable(id);
+    if(!data||data.length===0){tbody.innerHTML='<tr><td colspan="10">No data</td></tr>';return;}
+    const headers=cols||Object.keys(data[0]);
+    const thead=document.querySelector(`#${id} thead tr`);
+    thead.innerHTML=headers.map(h=>`<th>${h}</th>`).join('');
+    data.forEach(row=>{
+      const tr=document.createElement('tr');
+      headers.forEach(h=>{
+        const td=document.createElement('td');
+        td.textContent=row[h]??'';
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+  }
+
+  function renderCategoryTable(containerId, title, data, columns) {
+    const container = document.getElementById(containerId);
+    if (!data || data.length === 0) {
+      container.innerHTML = `<p class="text-muted">No ${title.toLowerCase()} found</p>`;
+      return;
+    }
+    let html = `<table class="table table-sm table-hover"><thead><tr>`;
+    columns.forEach(col => html += `<th>${col.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</th>`);
+    html += `</tr></thead><tbody>`;
+    data.forEach(row => {
+      html += `<tr>`;
+      columns.forEach(col => {
+        let val = row[col] ?? '';
+        if (col === 'invoice_month' && val) {
+          val = new Date(val).toLocaleDateString('en-GB', { year: 'numeric', month: 'short' });
+        } else if (col === 'reconciliation_match_score' && val) {
+          val = val.toFixed(2);
+        }
+        html += `<td>${val}</td>`;
+      });
+      html += `</tr>`;
+    });
+    html += `</tbody></table>`;
+    container.innerHTML = html;
+  }
+
+  // ==== STANDARD PLANS ====
+  async function loadStandardPlans(){
+    try{
+      const res=await fetch(`${API}/api/plans/standard`);
+      const json=await res.json();
+      const plans=json.plans;
+      const container=document.getElementById('standardPlans');
+      container.innerHTML='';
+      Object.entries(plans).forEach(([name,info])=>{
+        const col=document.createElement('div');col.className='col-md-4';
+        const dataTxt=info.data==='Unlimited'?'Unlimited Data':`${info.data}GB`;
+        const priceTxt=`£${info.price.toFixed(2)}<small>/mo</small>`;
+        col.innerHTML=`
+          <div class="plan-card">
+            <div class="plan-header"><span class="badge badge-standard">STANDARD</span> ${name}</div>
+            <div class="data-highlight">${dataTxt}</div>
+            <div class="price-highlight">${priceTxt}</div>
+            <div class="features">${info.features.replace(/\n/g,'<br>')}</div>
+            <button class="select-btn">Select</button>
+          </div>`;
+        container.appendChild(col);
+      });
+    }catch(e){showError(e);}
+  }
+  loadStandardPlans();
+
+  // ==== USAGE UPLOAD ====
+  document.getElementById('usageFile').addEventListener('change',async e=>{
+    const file=e.target.files[0];
+    if(!file) return;
+    const form=new FormData();form.append('file',file);
+    try{
+      const res=await fetch(`${API}/api/usage/upload`,{method:'POST',body:form});
+      const data=await res.json();
+      if(!res.ok) throw new Error(data.detail||'Upload failed');
+
+      // Preview table
+      populateTable('previewTable',data.preview);
+
+      // Charts
+      const c1=Object.entries(data.stats.avg_data_per_plan).map(([k,v])=>[k,v]);
+      Plotly.newPlot('chart1',[{type:'bar',x:c1.map(i=>i[0]),y:c1.map(i=>i[1])}],{title:'Avg Data per Plan',height:250});
+
+      const c2=Object.entries(data.stats.avg_data_over_time).map(([k,v])=>[k,v]);
+      Plotly.newPlot('chart2',[{type:'line',x:c2.map(i=>i[0]),y:c2.map(i=>i[1]),mode:'lines+markers'}],{title:'Avg Data Over Time',height:250});
+
+      const c3=Object.entries(data.stats.plan_distribution).map(([k,v])=>[k,v]);
+      Plotly.newPlot('chart3',[{type:'pie',labels:c3.map(i=>i[0]),values:c3.map(i=>i[1])}],{title:'Plan Distribution',height:250});
+
+      document.getElementById('analyzeBtn').disabled=false;
+    }catch(err){showError(err);}
+  });
+
+  // ==== ANALYZE ALL ====
+  document.getElementById('analyzeBtn').addEventListener('click',async()=>{
+    try{
+      const res=await fetch(`${API}/api/usage/analyze`,{method:'POST'});
+      const data=await res.json();
+      if(!res.ok) throw new Error(data.detail);
+
+      const select=document.getElementById('customerSelect');
+      select.innerHTML='';
+      data.summaries.forEach(s=>{
+        const opt=document.createElement('option');opt.value=s.customer_id;opt.textContent=`${s.customer_id} – ${s.customer_name}`;
+        select.appendChild(opt);
+      });
+      document.getElementById('recommendationsSection').classList.remove('d-none');
+      select.dispatchEvent(new Event('change'));
+    }catch(err){showError(err);}
+  });
+
+  // ==== CUSTOMER CHANGE ====
+  document.getElementById('customerSelect').addEventListener('change',async e=>{
+    const cid=e.target.value;
+    if(!cid) return;
+
+    // Profile
+    try{
+      const res=await fetch(`${API}/api/usage/customer/${cid}`);
+      const data=await res.json();
+      const s=data.summary;
+      document.getElementById('profileBox').innerHTML=`
+        <div class="profile-title"><i class="bi bi-person-fill"></i> ${s.customer_name}</div>
+        <div class="profile-metric"><span class="profile-label">ID</span><span>${s.customer_id}</span></div>
+        <div class="profile-metric"><span class="profile-label">Phone</span><span>${s.uk_contact_number}</span></div>
+        <div class="profile-metric"><span class="profile-label">Email</span><span>${s.email}</span></div>
+        <div class="profile-metric"><span class="profile-label">Current Plan</span><span>${s.current_plan}</span></div>
+        <div class="profile-metric"><span class="profile-label">Avg Data</span><span>${s.avg_data_used_gb} GB</span></div>
+        <div class="profile-metric"><span class="profile-label">Overage</span><span>£${s.avg_overage_GBP}</span></div>
+        <div class="profile-metric"><span class="profile-label">Churn Risk</span><span class="${'risk-'+s.churn_risk.toLowerCase()}">${s.churn_risk}</span></div>
+        <div class="profile-metric"><span class="profile-label">Tenure</span><span>${s.tenure_years} yrs</span></div>
+      `;
+    }catch(err){showError(err);}
+  });
+
+  // ==== GENERATE AI RECOMMENDATIONS ====
+  document.getElementById('genAiBtn').addEventListener('click',async()=>{
+    const cid=document.getElementById('customerSelect').value;
+    if(!cid) return showError('Select a customer first');
+
+    try{
+      const recRes=await fetch(`${API}/api/recommendations/generate`,{
+        method:'POST',
+        headers:{'Content-Type':'application/x-www-form-urlencoded'},
+        body:new URLSearchParams({customer_id:cid})
+      });
+      const rec=await recRes.json();
+
+      // Custom Plans
+      const custContainer=document.getElementById('customPlans');
+      custContainer.innerHTML='';
+      (rec.custom_plans||[]).forEach(p=>{
+        const col=document.createElement('div');col.className='col-md-4';
+        const dataTxt=p.data==='Unlimited'?'Unlimited':`${p.data}GB`;
+        col.innerHTML=`
+          <div class="plan-card">
+            <div class="plan-header"><span class="badge badge-custom">CUSTOM</span> ${p.name}</div>
+            <div class="data-highlight">${dataTxt}</div>
+            <div class="price-highlight">£${p.price.toFixed(2)}</div>
+            <div class="features">${p.features.replace(/\n/g,'<br>')}</div>
+            <button class="select-btn">Select</button>
+          </div>`;
+        custContainer.appendChild(col);
+      });
+
+      // Top 3
+      const topDiv=document.getElementById('topRecommendations');
+      topDiv.innerHTML='';
+      rec.top_three.forEach((name,i)=>{
+        const box=document.createElement('div');box.className='recommend-box mb-3';
+        box.innerHTML=`
+          <strong>#${i+1} ${name}</strong><br>
+          <em>Justification:</em> ${rec.justifications[i]}<br>
+          <em>Message:</em> ${rec.customer_messages[i]}<br>
+          <em>Ops:</em> ${rec.ops_notes[i]}
+        `;
+        topDiv.appendChild(box);
+      });
+    }catch(err){showError(err);}
+  });
+
+  // ==== BILL UPLOAD ====
+  document.getElementById('billFile').addEventListener('change',async e=>{
+    const file=e.target.files[0];
+    if(!file) return;
+    const form=new FormData();form.append('file',file);
+    try{
+      const res=await fetch(`${API}/api/bills/upload`,{method:'POST',body:form});
+      const data=await res.json();
+      if(!res.ok) throw new Error(data.detail||'Upload failed');
+
+      // Preview
+      populateTable('billTable',data.preview);
+
+      // Stats
+      document.getElementById('stat1').textContent=data.statistics.total_customers;
+      document.getElementById('stat2').textContent=data.statistics.anomalous_customers;
+      document.getElementById('stat3').textContent=data.statistics.mismatched_bills;
+      document.getElementById('stat4').textContent=data.statistics.disputed_bills;
+      document.getElementById('stat5').textContent=data.statistics.valued_customers;
+
+      // Charts
+      const status = data.charts.status_counts || {};
+      Plotly.newPlot('pieChart',[{type:'pie',labels:Object.keys(status),values:Object.values(status)}],{title:'Customer Status Distribution',height:300});
+
+      const billDist = data.charts.bill_distribution || {};
+      Plotly.newPlot('barChart',[{type:'bar',x:Object.keys(billDist),y:Object.values(billDist),text:Object.values(billDist)}],{title:'Bill Amount Distribution',height:300});
+
+      const disputeTrend = data.charts.dispute_trend || {};
+      const months = Object.keys(disputeTrend).sort();
+      const noDispute = months.map(m => disputeTrend[m]?.no_dispute || 0);
+      const dispute = months.map(m => disputeTrend[m]?.dispute || 0);
+      Plotly.newPlot('lineChart',[
+        {type:'scatter',mode:'lines+markers',x:months,y:noDispute,name:'No Dispute',line:{color:'#10b981',width:3},fill:'tozeroy'},
+        {type:'scatter',mode:'lines+markers',x:months,y:dispute,name:'Dispute',line:{color:'#ef4444',width:3},fill:'tonexty'}
+      ],{title:'Dispute vs Non-Dispute Trend Over Time',height:300});
+
+      const statusBarData = data.charts.status_bar || {};
+      Plotly.newPlot('statusBar',[{type:'bar',x:Object.keys(statusBarData),y:Object.values(statusBarData),text:Object.values(statusBarData)}],{title:'Customer Distribution by Status',height:300});
+
+      // Customer & Month dropdowns
+      const custSel=document.getElementById('detailCustomer');
+      custSel.innerHTML='';
+      (data.customers || []).forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;custSel.appendChild(o);});
+      const monthSel=document.getElementById('detailMonth');
+      monthSel.innerHTML='';
+      (data.months || []).forEach(m=>{const o=document.createElement('option');o.value=m;o.textContent=m;monthSel.appendChild(o);});
+
+      // Categories
+      const cats=await (await fetch(`${API}/api/bills/categories`)).json();
+      renderCategoryTable('anomalyTableContainer', 'Anomalous Customers', cats.categories.anomalous || [], ['customer_id', 'customer_name', 'uk_contact_number', 'email']);
+      renderCategoryTable('mismatchTableContainer', 'Mismatched Bills', cats.categories.mismatched || [], ['customer_id', 'invoice_month', 'reconciliation_match_score', 'customer_name', 'uk_contact_number', 'email']);
+      renderCategoryTable('disputeTableContainer', 'Disputed Bills', cats.categories.disputed || [], ['customer_id', 'invoice_month', 'dispute_type', 'customer_name', 'uk_contact_number', 'email']);
+      renderCategoryTable('valuedTableContainer', 'Valued Customers', cats.categories.valued || [], ['customer_id', 'customer_name', 'uk_contact_number', 'email']);
+
+    }catch(err){showError(err);}
+  });
+
+  // ==== DETAILED ANALYSIS ====
+  document.getElementById('detailCustomer').addEventListener('change',async()=>{
+    const cid=document.getElementById('detailCustomer').value;
+    const month=document.getElementById('detailMonth').value;
+    if(!cid||!month) return;
+    try{
+      const res=await fetch(`${API}/api/bills/analyze`,{
+        method:'POST',
+        headers:{'Content-Type':'application/x-www-form-urlencoded'},
+        body:new URLSearchParams({customer_id:cid,month})
+      });
+      const data=await res.json();
+
+      const profile=document.getElementById('detailProfile');
+      profile.innerHTML=`
+        <div class="profile-title"><i class="bi bi-receipt"></i> Bill Analysis – ${cid} – ${month}</div>
+        <div class="profile-metric"><span class="profile-label">Anomaly Score</span><span class="score-highlight">${(data.anomaly_detection.score*100).toFixed(0)}%</span></div>
+        <div class="profile-metric"><span class="profile-label">Is Anomalous?</span><span>${data.anomaly_detection.is_anomalous?'Yes':'No'}</span></div>
+        <div class="profile-metric"><span class="profile-label">Reason</span><span>${data.anomaly_detection.reason}</span></div>
+
+        <div class="profile-metric"><span class="profile-label">Match Score</span><span class="score-highlight">${(data.matching_model.match_score*100).toFixed(0)}%</span></div>
+        <div class="profile-metric"><span class="profile-label">Discrepancy</span><span>£${data.matching_model.discrepancy_amount.toFixed(2)}</span></div>
+        <div class="profile-metric"><span class="profile-label">Reason</span><span>${data.matching_model.reason}</span></div>
+
+        <div class="profile-metric"><span class="profile-label">Fraud Probability</span><span class="score-highlight">${(data.fraud_dispute_classifier.fraud_probability*100).toFixed(0)}%</span></div>
+        <div class="profile-metric"><span class="profile-label">Classification</span><span>${data.fraud_dispute_classifier.classification}</span></div>
+        <div class="profile-metric"><span class="profile-label">Reason</span><span>${data.fraud_dispute_classifier.reason}</span></div>
+      `;
+    }catch(err){showError(err);}
+  });
+  document.getElementById('detailMonth').addEventListener('change',()=>document.getElementById('detailCustomer').dispatchEvent(new Event('change')));
+
+  // ==== BULK ANALYZE ====
+  document.getElementById('bulkAnalyzeBtn').addEventListener('click',async()=>{
+    const cid=document.getElementById('detailCustomer').value;
+    if(!cid) return showError('Select a customer');
+    try{
+      const res=await fetch(`${API}/api/bills/bulk_analyze`,{
+        method:'POST',
+        headers:{'Content-Type':'application/x-www-form-urlencoded'},
+        body:new URLSearchParams({customer_id:cid})
+      });
+      const data=await res.json();
+
+      const container=document.getElementById('bulkResults');
+      container.classList.remove('d-none');
+      container.innerHTML='';
+
+      // Table
+      const table=document.createElement('table');
+      table.className='table table-sm table-hover';
+      const thead=document.createElement('thead');
+      thead.innerHTML='<tr><th>Month</th><th>Bill (£)</th><th>Anomaly</th><th>Match</th><th>Fraud</th></tr>';
+      const tbody=document.createElement('tbody');
+      data.bulk_results.forEach(r=>{
+        const tr=document.createElement('tr');
+        tr.innerHTML=`<td>${r.invoice_month}</td><td>£${r.bill_amount.toFixed(2)}</td>
+          <td>${(r.anomaly_score*100).toFixed(0)}%</td><td>${(r.match_score*100).toFixed(0)}%</td>
+          <td>${(r.fraud_prob*100).toFixed(0)}%</td>`;
+        tbody.appendChild(tr);
+      });
+      table.appendChild(thead);table.appendChild(tbody);
+      container.appendChild(table);
+
+      // Stats box
+      const stats=document.createElement('div');
+      stats.className='bulk-stats mt-4';
+      stats.innerHTML=`
+        <div style="font-weight:700;font-size:1.2em;margin-bottom:12px;color:#166534;">Bulk Analysis Summary</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;font-size:.95em;">
+          <div><strong>Total Bill Amount:</strong> <span style="color:#15803d;">£${data.stats.total_bill_amount.toFixed(2)}</span></div>
+          <div><strong>Anomaly Score / ${data.stats.total_bills}:</strong> <span style="color:#ca8a04;">${data.stats.avg_anomaly.toFixed(3)}</span></div>
+          <div><strong>Match Score / ${data.stats.total_bills}:</strong> <span style="color:#16a34a;">${data.stats.avg_match.toFixed(3)}</span></div>
+          <div><strong>Fraud Prob / ${data.stats.total_bills}:</strong> <span style="color:#dc2626;">${data.stats.avg_fraud.toFixed(3)}</span></div>
+        </div>`;
+      container.appendChild(stats);
+    }catch(err){showError(err);}
+  });
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# fast.py
+from fastapi import FastAPI, UploadFile, File, HTTPException, Form
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse, JSONResponse
+from typing import Dict, Any
+import pandas as pd
+import numpy as np
+import requests
+import json
+import io
+import os
+
+app = FastAPI(title="Telecom AI System API", version="1.0.0")
+
+# CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# ------------------------------
+# CONFIG
+# ------------------------------
+OPENROUTER_API_KEY = "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"
+OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
+OPENROUTER_MODEL = "openai/gpt-3.5-turbo"
+
+# ------------------------------
+# PLANS
+# ------------------------------
+standard_plans = {
+    "Bronze 10GB": {"data": 10, "price": 12.00, "features": "• Unlimited minutes & texts\n• 4G/5G access\n• Basic perks & rewards"},
+    "Silver 20GB": {"data": 20, "price": 18.99, "features": "• Unlimited minutes & texts\n• 4G/5G, 100Mbps max\n• Enhanced perks"},
+    "Gold 50GB": {"data": 50, "price": 29.99, "features": "• Unlimited minutes & texts\n• Full 5G, unlimited speed\n• Premium perks"},
+    "Platinum 100GB": {"data": 100, "price": 44.99, "features": "• Unlimited minutes & texts\n• 5G, VIP perks\n• Free add-ons"},
+    "Diamond Unlimited": {"data": "Unlimited", "price": 59.99, "features": "• Unlimited everything\n• 5G+, priority support\n• Exclusive gifts"},
+    "Family Bronze 10GB": {"data": 40, "price": 34.99, "features": "• Shared 40GB (up to 4 lines)\n• Unlimited mins/texts\n• Family basics"},
+    "Family Silver 20GB": {"data": 80, "price": 52.99, "features": "• Shared 80GB (4 lines)\n• 100Mbps, enhanced family perks"},
+    "Family Gold 50GB": {"data": 200, "price": 82.99, "features": "• Shared 200GB (4 lines)\n• Unlimited speed, premium family"},
+    "Family Platinum 100GB": {"data": 400, "price": 119.99, "features": "• Shared 400GB (4 lines)\n• VIP family, free add-ons"},
+    "Family Diamond Unlimited": {"data": "Unlimited", "price": 149.99, "features": "• Unlimited shared data\n• 5G+, priority family support"}
+}
+
+# In-memory stores
+usage_data_store = {}
+summary_store = {}
+analysis_done = {}
+bill_data_store = {}
+
+# ------------------------------
+# SAFE JSON RESPONSE (handles NaN, inf, NaT)
+# ------------------------------
+def safe_json_response(data: Dict[str, Any], **kwargs):
+    def clean(obj):
+        if isinstance(obj, dict):
+            return {k: clean(v) for k, v in obj.items()}
+        if isinstance(obj, list):
+            return [clean(i) for i in obj]
+        if pd.isna(obj):  # Handles NaN, NaT, None
+            return None
+        if isinstance(obj, float) and (np.isnan(obj) or np.isinf(obj)):
+            return None
+        if isinstance(obj, (np.integer, np.int64)):
+            return int(obj)
+        if isinstance(obj, (np.floating, np.float64)):
+            return float(obj) if not (np.isnan(obj) or np.isinf(obj)) else None
+        if isinstance(obj, pd.Timestamp):
+            return obj.isoformat()
+        return obj
+    return JSONResponse(content=clean(data), **kwargs)
+
+# ------------------------------
+# HELPERS
+# ------------------------------
+def load_and_clean_usage_data(file_content: bytes) -> pd.DataFrame:
+    df = pd.read_csv(io.BytesIO(file_content))
+    required = ["customer_id", "month", "plan_name", "data_used_gb", "overage_charges_GBP"]
+    missing = [c for c in required if c not in df.columns]
+    if missing:
+        raise HTTPException(status_code=400, detail=f"Missing columns: {missing}")
+
+    df["month"] = pd.to_datetime(df["month"], errors='coerce')
+    numeric_cols = ["data_used_gb", "overage_charges_GBP", "text_messages_sent", "call_minutes_used"]
+    for col in numeric_cols:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0.0)
+
+    def infer_limit(plan_name):
+        s = str(plan_name)
+        for p, info in standard_plans.items():
+            if p in s:
+                return info["data"] if info["data"] != "Unlimited" else np.inf
+        return np.inf
+    df["data_limit_gb"] = df["plan_name"].apply(infer_limit)
+    df["tenure_years"] = pd.to_numeric(df.get("tenure_years", 1), errors='coerce').fillna(1).astype(int)
+    df["satisfaction_score"] = pd.to_numeric(df.get("satisfaction_score", 8.0), errors='coerce').fillna(8.0)
+
+    for col in ["customer_name", "uk_contact_number", "email"]:
+        if col in df.columns:
+            df[col] = df[col].fillna("N/A" if col != "customer_name" else "Unknown").astype(str)
+
+    return df
+
+def compute_summary(df: pd.DataFrame) -> pd.DataFrame:
+    summaries = []
+    for cid, g in df.groupby("customer_id"):
+        avg_data = float(g["data_used_gb"].mean())
+        limit = g.iloc[-1]["data_limit_gb"]
+        limit_val = np.inf if limit == np.inf else float(limit)
+        months_over = int((g["data_used_gb"] > 1.1 * limit_val).sum())
+        avg_overage = float(g["overage_charges_GBP"].mean())
+        avg_sat = float(g["satisfaction_score"].mean())
+        tenure = int(g.iloc[-1]["tenure_years"])
+        plan = str(g.iloc[-1]["plan_name"])
+
+        name = g["customer_name"].iloc[0] if "customer_name" in g.columns else "Unknown"
+        phone = g["uk_contact_number"].iloc[0] if "uk_contact_number" in g.columns else "N/A"
+        email = g["email"].iloc[0] if "email" in g.columns else "N/A"
+
+        churn = "Low"
+        if avg_sat < 6.0 or (months_over >= 6 and avg_overage > 2.5):
+            churn = "High"
+        elif avg_sat < 7.0:
+            churn = "Medium"
+
+        summaries.append({
+            "customer_id": cid,
+            "customer_name": name,
+            "uk_contact_number": phone,
+            "email": email,
+            "current_plan": plan,
+            "avg_data_used_gb": round(avg_data, 2),
+            "data_limit_gb": "Unlimited" if limit_val == np.inf else round(limit_val, 1),
+            "months_over_110pct": months_over,
+            "avg_overage_GBP": round(avg_overage, 2),
+            "avg_satisfaction": round(avg_sat, 1),
+            "tenure_years": tenure,
+            "churn_risk": churn
+        })
+    return pd.DataFrame(summaries)
+
+def get_ai_recommendations(summary: Dict[str, Any]) -> Dict[str, Any]:
+    discount_reasons = []
+    discount = 0.0
+    if summary['tenure_years'] >= 3:
+        discount += 0.10
+        discount_reasons.append("Loyalty (3+ years)")
+    if summary['avg_satisfaction'] >= 8.0:
+        discount += 0.05
+        discount_reasons.append("High satisfaction")
+    if summary['churn_risk'] == "High":
+        discount += 0.15
+        discount_reasons.append("High churn retention")
+    elif summary['churn_risk'] == "Medium":
+        discount += 0.05
+        discount_reasons.append("Medium churn retention")
+    if summary['months_over_110pct'] >= 3:
+        discount += 0.05
+        discount_reasons.append("Frequent overages")
+    discount = min(discount, 0.30)
+
+    discount_pct = int(discount * 100)
+    disc_str = "; ".join(discount_reasons) or "Standard pricing"
+
+    is_family = "Family" in summary['current_plan']
+    avg_data = summary['avg_data_used_gb']
+    step_size = 40 if is_family else 10
+    family_base = 30 if is_family else 10
+
+    custom_plans = []
+    variants = [
+        ("Economy", 1.1, "4G/5G, Basic perks"),
+        ("Balanced", 1.2, "5G access, Standard perks"),
+        ("Premium", 1.5, "5G+, Priority support, Premium perks")
+    ]
+
+    for name, buffer, perks in variants:
+        target_data = avg_data * buffer
+        if (not is_family and target_data > 80) or (is_family and target_data > 320):
+            data_limit = "Unlimited"
+            base_price = 149.99 if is_family else 59.99
+        else:
+            data_limit = max(step_size, round(target_data / step_size) * step_size)
+            base_price = family_base + 0.35 * data_limit if is_family else 10 + 0.40 * data_limit
+
+        final_price = round(base_price * (1 - discount), 2)
+        full_name = f"Custom {name}{' Family' if is_family else ''} {data_limit if data_limit != 'Unlimited' else ''}{'GB' if data_limit != 'Unlimited' else 'Unlimited'}"
+        features = f"• Unlimited minutes & texts\n• {perks}\n• {discount_pct}% discount ({disc_str})"
+        custom_plans.append({
+            "name": full_name.strip(),
+            "data": data_limit,
+            "price": final_price,
+            "features": features
+        })
+
+    all_plans = {**standard_plans,
+                 **{p["name"]: {"data": p["data"], "price": p["price"], "features": p["features"].replace("\n", ", ")} for p in custom_plans}}
+
+    prompt = f"""You are an expert telecom advisor. Analyze this customer:
+
+{json.dumps(summary, indent=2)}
+
+Key facts to use in justifications:
+- Average data: {summary['avg_data_used_gb']}GB/month
+- Over limit months: {summary['months_over_110pct']}
+- Average overage cost: £{summary['avg_overage_GBP']}
+- Current plan: {summary['current_plan']}
+- Churn risk: {summary['churn_risk']}
+- Tenure: {summary['tenure_years']} years
+
+Available plans:
+{json.dumps(all_plans, indent=2)}
+
+Recommend EXACTLY 3 plans (mix 1-2 standard + custom). For each recommendation:
+
+1. **Justification** (200 chars max): Data-driven reason why perfect fit
+2. **Customer Message**: Exciting sales pitch mentioning their exact usage
+3. **Ops Note**: Internal action items
+
+Output ONLY valid JSON:
+{{
+  "top_three": ["Plan Name 1", "Plan Name 2", "Plan Name 3"],
+  "justifications": ["reason1", "reason2", "reason3"],
+  "customer_messages": ["msg1", "msg2", "msg3"],
+  "ops_notes": ["note1", "note2", "note3"],
+  "custom_plans": {json.dumps(custom_plans)}
+}}"""
+
+    try:
+        response = requests.post(
+            OPENROUTER_API_URL,
+            headers={"Authorization": f"Bearer {OPENROUTER_API_KEY}", "Content-Type": "application/json"},
+            json={
+                "model": OPENROUTER_MODEL,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.1,
+                "max_tokens": 2000
+            },
+            timeout=45
+        )
+        response.raise_for_status()
+        content = response.json()["choices"][0]["message"]["content"].strip()
+        if content.startswith("```json"):
+            content = content[7:-3].strip()
+        elif content.startswith("```"):
+            content = content[3:-3].strip()
+        return json.loads(content)
+    except Exception as e:
+        return {"error": f"AI failed: {str(e)}"}
+
+def load_and_clean_bill_data(file_content: bytes) -> pd.DataFrame:
+    df = pd.read_csv(io.BytesIO(file_content))
+    rename_map = {
+        'month': 'invoice_month',
+        'invoice_total_GBP': 'bill_amount',
+        'payment_received_GBP': 'payment_amount',
+        'data_used_gb': 'data_usage_gb'
+    }
+    df = df.rename(columns=rename_map)
+    df['dispute_flag'] = df.get('dispute_description', pd.Series()).notna() | df.get('dispute_type', pd.Series()).notna()
+
+    numeric_cols = ["bill_amount", "payment_amount", "data_usage_gb",
+                    "base_plan_charge_GBP", "overage_charges_expected_GBP",
+                    "overage_charges_billed_GBP", "tax_GBP", "reconciliation_match_score"]
+    for col in numeric_cols:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0.0)
+
+    df['dispute_flag'] = df['dispute_flag'].astype(bool)
+    df['invoice_month'] = pd.to_datetime(df['invoice_month'], errors='coerce')
+    df = df.sort_values(['customer_id', 'invoice_month'])
+    return df
+
+def analyze_bill_with_llm(record: Dict[str, Any]) -> Dict[str, Any]:
+    prompt_template = """You are a telecom billing expert. Analyze this bill record:
+
+{record_json}
+
+Provide three model outputs (keep reasons <100 chars):
+
+1. Anomaly Detection – score (0-1), is_anomalous (bool), reason
+2. Matching Model – match_score (0-1), discrepancy_amount, reason
+3. Fraud Dispute Classifier – fraud_probability (0-1), classification ('fraud'|'legitimate'|'no_dispute'), reason
+
+Return **only** valid JSON:
+{{
+  "anomaly_detection": {{"score":0.0,"is_anomalous":false,"reason":""}},
+  "matching_model": {{"match_score":1.0,"discrepancy_amount":0.0,"reason":""}},
+  "fraud_dispute_classifier": {{"fraud_probability":0.0,"classification":"no_dispute","reason":""}}
+}}"""
+
+    record_json = json.dumps(record, indent=2, default=str)
+    prompt = prompt_template.format(record_json=record_json)
+
+    try:
+        resp = requests.post(
+            OPENROUTER_API_URL,
+            headers={"Authorization": f"Bearer {OPENROUTER_API_KEY}", "Content-Type": "application/json"},
+            json={"model": OPENROUTER_MODEL, "messages": [{"role": "user", "content": prompt}],
+                  "temperature": 0.2, "max_tokens": 800},
+            timeout=30
+        )
+        resp.raise_for_status()
+        txt = resp.json()["choices"][0]["message"]["content"].strip()
+        if txt.startswith("```json"): txt = txt[7:-3].strip()
+        elif txt.startswith("```"): txt = txt[3:-3].strip()
+        return json.loads(txt)
+    except Exception as e:
+        return {"error": str(e)}
+
+# ------------------------------
+# ENDPOINTS
+# ------------------------------
+@app.get("/")
+async def root():
+    return {"message": "Telecom AI System API", "version": "1.0.0", "status": "running"}
+
+@app.get("/api/plans/standard")
+async def get_standard_plans():
+    return safe_json_response({"plans": standard_plans})
+
+@app.post("/api/usage/upload")
+async def upload_usage_file(file: UploadFile = File(...)):
+    try:
+        if not file.filename.endswith('.csv'):
+            raise HTTPException(400, "Only CSV files allowed")
+
+        content = await file.read()
+        df = load_and_clean_usage_data(content)
+        session_id = "default"
+        usage_data_store[session_id] = df
+        analysis_done[session_id] = False
+
+        avg_plan = {k: float(v) for k, v in df.groupby('plan_name')['data_used_gb'].mean().items()}
+        avg_time = df.groupby(df['month'].dt.to_period('M'))['data_used_gb'].mean()
+        avg_time.index = avg_time.index.astype(str)
+        avg_time = {k: float(v) for k, v in avg_time.items()}
+        plan_dist = {k: int(v) for k, v in df['plan_name'].value_counts().items()}
+
+        preview = df.head(15).replace([np.nan], [None]).to_dict(orient='records')
+
+        return safe_json_response({
+            "message": "File processed",
+            "rows": len(df),
+            "columns": list(df.columns),
+            "preview": preview,
+            "stats": {
+                "avg_data_per_plan": avg_plan,
+                "avg_data_over_time": avg_time,
+                "plan_distribution": plan_dist
+            },
+            "hint": "Next: POST /api/usage/analyze"
+        })
+    except Exception as e:
+        raise HTTPException(500, f"Upload failed: {str(e)}")
+
+@app.post("/api/usage/analyze")
+async def analyze_usage():
+    try:
+        session_id = "default"
+        if session_id not in usage_data_store:
+            raise HTTPException(400, "Upload usage data first")
+
+        df = usage_data_store[session_id]
+        summary_df = compute_summary(df)
+        summary_store[session_id] = summary_df
+        analysis_done[session_id] = True
+
+        return safe_json_response({
+            "message": "Analysis complete",
+            "total_customers": len(summary_df),
+            "summaries": summary_df.to_dict(orient='records'),
+            "hint": "Now call /api/recommendations/generate"
+        })
+    except Exception as e:
+        raise HTTPException(500, f"Analysis failed: {str(e)}")
+
+@app.post("/api/recommendations/generate")
+async def generate_recommendations(customer_id: str = Form(...)):
+    try:
+        session_id = "default"
+        if not analysis_done.get(session_id):
+            raise HTTPException(400, "Run /api/usage/analyze first")
+
+        summary_df = summary_store[session_id]
+        row = summary_df[summary_df['customer_id'] == customer_id]
+        if row.empty:
+            raise HTTPException(404, "Customer not found")
+
+        result = get_ai_recommendations(row.iloc[0].to_dict())
+        return safe_json_response(result)
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(500, f"AI failed: {str(e)}")
+
+@app.get("/api/usage/customer/{customer_id}")
+async def get_customer_details(customer_id: str):
+    try:
+        session_id = "default"
+        if session_id not in usage_data_store or session_id not in summary_store:
+            raise HTTPException(400, "Upload & analyze first")
+
+        df = usage_data_store[session_id]
+        summary_df = summary_store[session_id]
+        s = summary_df[summary_df['customer_id'] == customer_id]
+        if s.empty:
+            raise HTTPException(404, "Customer not found")
+
+        recent = df[df['customer_id'] == customer_id][['month', 'data_used_gb', 'overage_charges_GBP']].tail(6)
+        recent = recent.replace([np.nan], [None]).to_dict(orient='records')
+
+        return safe_json_response({
+            "summary": s.iloc[0].to_dict(),
+            "recent_usage": recent
+        })
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(500, str(e))
+
+@app.get("/api/usage/recent/{customer_id}")
+async def get_recent_usage(customer_id: str):
+    try:
+        session_id = "default"
+        if session_id not in usage_data_store:
+            raise HTTPException(400, "Upload usage data first")
+
+        df = usage_data_store[session_id]
+        recent = df[df['customer_id'] == customer_id][['month', 'data_used_gb', 'overage_charges_GBP']].tail(6)
+        if recent.empty:
+            raise HTTPException(404, "No recent usage found")
+
+        recent = recent.replace([np.nan], [None]).to_dict(orient='records')
+        return safe_json_response({"recent_usage": recent})
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(500, str(e))
+
+@app.post("/api/bills/upload")
+async def upload_bill_file(file: UploadFile = File(...)):
+    try:
+        if not file.filename.endswith('.csv'):
+            raise HTTPException(400, "Only CSV allowed")
+
+        content = await file.read()
+        df = load_and_clean_bill_data(content)
+        session_id = "default"
+        bill_data_store[session_id] = df
+
+        total_customers = len(df['customer_id'].unique())
+
+        anom_cust = set(df[df.get('billing_anomaly_flag', False) == True]['customer_id']) if 'billing_anomaly_flag' in df.columns else set()
+        num_anom_cust = len(anom_cust)
+
+        mis_bills = df[df.get('reconciliation_match_score', 1) < 0.8][['customer_id', 'invoice_month', 'reconciliation_match_score']] if 'reconciliation_match_score' in df.columns else pd.DataFrame(columns=['customer_id', 'invoice_month', 'reconciliation_match_score'])
+        num_mis_bills = len(mis_bills)
+        mis_cust = set(mis_bills['customer_id'])
+
+        disp_bills = df[df['dispute_flag'] == True][['customer_id', 'invoice_month', 'dispute_type']]
+        num_disp_bills = len(disp_bills)
+        disp_cust = set(disp_bills['customer_id'])
+
+        bad = anom_cust | mis_cust | disp_cust
+        valued_cust = [c for c in df['customer_id'].unique() if c not in bad]
+        num_valued_cust = len(valued_cust)
+
+        # Additional aggregations for charts
+        monthly_bills = df.groupby(df['invoice_month'].dt.to_period('M')).agg({
+            'bill_amount': 'sum',
+            'customer_id': 'nunique',
+            'dispute_flag': 'sum'
+        }).reset_index()
+        monthly_bills['invoice_month'] = monthly_bills['invoice_month'].dt.to_timestamp()
+
+        bill_dist = pd.cut(df['bill_amount'], bins=[0, 50, 100, 200, 500, 1000, float('inf')], 
+                           labels=['£0-50', '£50-100', '£100-200', '£200-500', '£500-1000', '£1000+']).value_counts().reset_index()
+        bill_dist.columns = ['Bill Range', 'Count']
+        bill_dist_dict = {row['Bill Range']: int(row['Count']) for _, row in bill_dist.iterrows()}
+
+        monthly_dispute_status = df.groupby([df['invoice_month'].dt.to_period('M'), 'dispute_flag']).size().unstack(fill_value=0).reset_index()
+        monthly_dispute_status.columns = ['Invoice Month', 'No Dispute', 'Dispute']
+        monthly_dispute_status['Invoice Month'] = monthly_dispute_status['Invoice Month'].dt.to_timestamp()
+        if 'No Dispute' not in monthly_dispute_status.columns:
+            monthly_dispute_status['No Dispute'] = 0
+        if 'Dispute' not in monthly_dispute_status.columns:
+            monthly_dispute_status['Dispute'] = 0
+        dispute_trend = {row['Invoice Month'].strftime('%Y-%m'): {'no_dispute': int(row['No Dispute']), 'dispute': int(row['Dispute'])} for _, row in monthly_dispute_status.iterrows()}
+
+        status_counts = {
+            'Anomalous': num_anom_cust,
+            'Mismatched': len(mis_cust),
+            'Disputed': len(disp_cust),
+            'Valued': num_valued_cust
+        }
+
+        status_bar = status_counts
+
+        preview = df.head(10).replace([np.nan], [None]).to_dict(orient='records')
+        customers = sorted(df['customer_id'].unique().tolist())
+        months = sorted(df['invoice_month'].dt.strftime('%Y-%m').dropna().unique().tolist())
+
+        return safe_json_response({
+            "message": "Bill file processed",
+            "rows": len(df),
+            "statistics": {
+                "total_customers": total_customers,
+                "anomalous_customers": num_anom_cust,
+                "mismatched_bills": num_mis_bills,
+                "disputed_bills": num_disp_bills,
+                "valued_customers": num_valued_cust
+            },
+            "charts": {
+                "status_counts": status_counts,
+                "bill_distribution": bill_dist_dict,
+                "dispute_trend": dispute_trend,
+                "status_bar": status_bar
+            },
+            "preview": preview,
+            "customers": customers,
+            "months": months
+        })
+    except Exception as e:
+        raise HTTPException(500, str(e))
+
+@app.post("/api/bills/analyze")
+async def analyze_bill(customer_id: str = Form(...), month: str = Form(...)):
+    try:
+        session_id = "default"
+        if session_id not in bill_data_store:
+            raise HTTPException(400, "Upload bill data first")
+
+        df = bill_data_store[session_id]
+        rec = df[(df['customer_id'] == customer_id) & (df['invoice_month'].dt.strftime('%Y-%m') == month)]
+        if rec.empty:
+            raise HTTPException(404, "Bill not found")
+
+        result = analyze_bill_with_llm(rec.iloc[0].to_dict())
+        return safe_json_response(result)
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(500, str(e))
+
+@app.post("/api/bills/bulk_analyze")
+async def bulk_analyze_bills(customer_id: str = Form(...)):
+    try:
+        session_id = "default"
+        if session_id not in bill_data_store:
+            raise HTTPException(400, "Upload bill data first")
+
+        df = bill_data_store[session_id]
+        sub = df[df['customer_id'] == customer_id]
+        if sub.empty:
+            raise HTTPException(404, "No bills found for customer")
+
+        out = []
+        for _, r in sub.iterrows():
+            res = analyze_bill_with_llm(r.to_dict())
+            flat = {
+                'anomaly_score': res.get('anomaly_detection', {}).get('score', 0.0),
+                'match_score': res.get('matching_model', {}).get('match_score', 0.0),
+                'fraud_prob': res.get('fraud_dispute_classifier', {}).get('fraud_probability', 0.0),
+            }
+            bill_info = r.to_dict()
+            out.append({**bill_info, **flat})
+
+        # Compute bulk stats
+        bulk_df = pd.DataFrame(out)
+        total_bills = len(bulk_df)
+        total_bill_amount = float(bulk_df['bill_amount'].sum())
+        avg_anomaly = float(bulk_df['anomaly_score'].mean())
+        avg_match = float(bulk_df['match_score'].mean())
+        avg_fraud = float(bulk_df['fraud_prob'].mean())
+
+        return safe_json_response({
+            "message": "Bulk analysis complete",
+            "bulk_results": out,
+            "stats": {
+                "total_bills": total_bills,
+                "total_bill_amount": total_bill_amount,
+                "avg_anomaly": avg_anomaly,
+                "avg_match": avg_match,
+                "avg_fraud": avg_fraud
+            }
+        })
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(500, str(e))
+
+@app.get("/api/bills/categories")
+async def get_bill_categories():
+    try:
+        session_id = "default"
+        if session_id not in bill_data_store:
+            raise HTTPException(400, "Upload bill data first")
+
+        df = bill_data_store[session_id]
+        anom = df[df.get('billing_anomaly_flag', False) == True][['customer_id', 'customer_name', 'uk_contact_number', 'email']].drop_duplicates().to_dict(orient='records')
+        mis = df[df.get('reconciliation_match_score', 1) < 0.8][['customer_id', 'invoice_month', 'reconciliation_match_score', 'customer_name', 'uk_contact_number', 'email']].drop_duplicates().to_dict(orient='records')
+        disp = df[df['dispute_flag'] == True][['customer_id', 'invoice_month', 'dispute_type', 'customer_name', 'uk_contact_number', 'email']].drop_duplicates().to_dict(orient='records')
+
+        bad = set([item['customer_id'] for item in anom] + [item['customer_id'] for item in mis] + [item['customer_id'] for item in disp])
+        valued = df[~df['customer_id'].isin(bad)][['customer_id', 'customer_name', 'uk_contact_number', 'email']].drop_duplicates().to_dict(orient='records')
+
+        return safe_json_response({
+            "categories": {
+                "anomalous": anom,
+                "mismatched": mis,
+                "disputed": disp,
+                "valued": valued
+            }
+        })
+    except Exception as e:
+        raise HTTPException(500, str(e))
+
+# Static files
+if os.path.exists("static"):
+    app.mount("/static", StaticFiles(directory="static"), name="static")
+
+@app.get("/index.html")
+async def serve_index():
+    if os.path.exists("index.html"):
+        return FileResponse("index.html")
+    return {"message": "index.html not found"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)

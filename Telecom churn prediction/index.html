@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Telecom Dashboard</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+
+  <style>
+    :root{
+      --primary-gradient:linear-gradient(90deg,#3b82f6,#8b5cf6);
+      --success-gradient:linear-gradient(90deg,#059669,#10b981);
+      --danger-gradient:linear-gradient(45deg,#ef4444,#dc2626);
+      --info-gradient:linear-gradient(45deg,#3b82f6,#2563eb);
+      --warning-gradient:linear-gradient(45deg,#f59e0b,#d97706);
+      --purple-gradient:linear-gradient(45deg,#6366f1,#4f46e5);
+    }
+    body{background:#f8fafc;font-family:'Segoe UI',sans-serif;}
+    .main-title{font-size:2.5em;font-weight:800;text-align:center;margin:2rem 0;
+      background:var(--primary-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    
+    /* === PLAN CARDS === */
+    .plan-card{border:2px solid #e5e7eb;border-radius:16px;padding:20px;margin:12px 0;
+      background:linear-gradient(145deg,#fff,#f8fafc);box-shadow:0 4px 12px rgba(0,0,0,.08);transition:all .3s;
+      height:100%;display:flex;flex-direction:column;position:relative;overflow:hidden;}
+    .plan-card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,.15);border-color:#3b82f6;}
+    .plan-header{font-weight:700;font-size:1.2em;color:#1e293b;margin-bottom:12px;
+      display:flex;align-items:center;gap:8px;}
+    .badge-custom{background:var(--danger-gradient);color:#fff;padding:4px 12px;border-radius:20px;
+      font-size:.75em;font-weight:600;box-shadow:0 2px 4px rgba(239,68,68,.3);}
+    .badge-standard{background:var(--info-gradient);color:#fff;padding:4px 12px;border-radius:20px;
+      font-size:.75em;font-weight:600;box-shadow:0 2px 4px rgba(59,130,246,.3);}
+    .data-highlight{font-size:1.4em;font-weight:700;color:#059669;margin:8px 0;
+      background:var(--success-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .price-highlight{font-size:1.6em;font-weight:800;color:#16a34a;margin:12px 0;}
+    .features{flex-grow:1;font-size:.9em;color:#64748b;line-height:1.6;margin-bottom:auto;}
+    .select-btn{background:var(--info-gradient);color:#fff;border:none;padding:12px 24px;
+      border-radius:12px;font-weight:600;cursor:pointer;margin-top:16px;
+      box-shadow:0 4px 12px rgba(59,130,246,.3);}
+    .select-btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(59,130,246,.4);}
+
+    /* === PROFILE & ANALYSIS === */
+    .profile-box{background:linear-gradient(135deg,#f0f9ff,#e0f2fe);border:2px solid #0ea5e9;
+      border-radius:16px;padding:20px;box-shadow:0 4px 12px rgba(14,116,144,.1);margin:16px 0;}
+    .profile-title{font-size:1.3em;font-weight:700;color:#0c4a6b;margin-bottom:16px;
+      display:flex;align-items:center;gap:8px;}
+    .profile-metric{display:flex;justify-content:space-between;padding:8px 0;
+      border-bottom:1px dashed #bae6fd;color:#0369a1;font-size:.95em;}
+    .profile-metric:last-child{border-bottom:none;}
+    .profile-label{font-weight:600;}
+
+    .analysis-card{border:2px solid #e5e7eb;border-radius:16px;padding:20px;margin:12px 0;
+      background:linear-gradient(145deg,#fff,#f8fafc);box-shadow:0 4px 12px rgba(0,0,0,.08);
+      transition:all .3s;height:100%;}
+    .analysis-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.12);border-color:#3b82f6;}
+
+    .model-header{font-weight:700;font-size:1.2em;color:#1e293b;margin-bottom:12px;
+      display:flex;align-items:center;gap:8px;}
+    .badge-anomaly{background:var(--warning-gradient);color:#fff;padding:4px 12px;border-radius:20px;
+      font-size:.75em;font-weight:600;}
+    .badge-matching{background:var(--success-gradient);color:#fff;padding:4px 12px;border-radius:20px;
+      font-size:.75em;font-weight:600;}
+    .badge-fraud{background:var(--danger-gradient);color:#fff;padding:4px 12px;border-radius:20px;
+      font-size:.75em;font-weight:600;}
+    .badge-valued{background:var(--purple-gradient);color:#fff;padding:4px 12px;border-radius:20px;
+      font-size:.75em;font-weight:600;}
+    .score-highlight{font-size:2em;font-weight:800;color:#059669;margin:8px 0;}
+    .risk-high{color:#ef4444;}.risk-medium{color:#f59e0b;}.risk-low{color:#10b981;}
+
+    .recommend-box{background:linear-gradient(135deg,rgb(38,39,48),rgb(14,17,23));
+      border-left:5px solid #3b82f6;padding:16px;border-radius:0 12px 12px 0;margin:16px 0;color:#fff;}
+    .bulk-stats{background:linear-gradient(135deg,#030e06,rgb(38,39,48));
+      border:2px solid #22c55e;border-radius:12px;padding:16px;margin-top:16px;color:#fff;}
+
+    /* === TABLES - SMALLER TEXT & SPACING === */
+    .table{font-size:0.85rem !important;}
+    .table th{font-size:0.9rem !important;background:#f1f5f9;color:#1e293b;text-align:center;}
+    .table td, .table th{padding:10px 12px;}
+    .table-hover tbody tr:hover{background-color:#f0f9ff;}
+    
+    /* === CATEGORY TABLE WITH SCROLL === */
+    .category-table{margin-bottom:2.5rem;}
+    .category-table h6{font-size:1.1rem;margin-bottom:0.75rem;color:#1e293b;font-weight:600;}
+    .table-scroll-container {
+      max-height: 420px; /* Show ~10 rows */
+      overflow-y: auto;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .table-scroll-container .table {
+      margin-bottom: 0;
+    }
+    .table-scroll-container thead th {
+      position: sticky;
+      top: 0;
+      background: #f8fafc;
+      z-index: 1;
+      border-bottom: 2px solid #e2e8f0;
+    }
+
+    /* === DATA PREVIEW FRAME === */
+    .preview-frame {
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 12px;
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      overflow-x: auto;
+    }
+
+    /* === ENHANCED PLOTLY CHARTS === */
+    .plotly-graph-div {
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      background: #ffffff;
+      padding: 12px;
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
+    }
+    .plotly-graph-div:hover {
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+      transform: translateY(-2px);
+    }
+    .chart-title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #1e293b;
+      margin-bottom: 8px;
+    }
+    .chart-container {
+      background: linear-gradient(145deg, #ffffff, #f8fafc);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      border: 1px solid #e2e8f0;
+    }
+
+    /* === FILTER SECTION === */
+    .filter-section{background:linear-gradient(135deg,#f8fafc,#e2e8f0);
+      border-radius:12px;padding:16px;margin:8px 0;}
+  </style>
+</head>
+<body>
+
+<div class="container py-4">
+  <h1 class="main-title">Telecom AI System</h1>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs mb-4" id="mainTabs" role="tablist">
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#recommender">Plan Recommender</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#analysis">Bill Analysis</button></li>
+  </ul>
+
+  <div class="tab-content">
+
+    <!-- ==== RECOMMENDER TAB ==== -->
+    <div class="tab-pane fade show active" id="recommender">
+      <h3>Smart Telecom Plan Recommender</h3>
+      <p class="text-muted">AI analyzes usage & recommends perfect plans</p>
+
+      <div class="mb-4">
+        <label class="form-label">Upload usage CSV</label>
+        <input type="file" class="form-control" id="usageFile" accept=".csv"/>
+      </div>
+
+      <!-- Preview + Charts -->
+      <div class="accordion mb-4" id="dataPreviewAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#previewCollapse">Data Preview</button>
+          </h2>
+          <div id="previewCollapse" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <div class="preview-frame">
+                <table class="table table-sm table-hover" id="previewTable">
+                  <thead><tr><th>No data</th></tr></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+
+              <div class="row mt-4 g-4">
+                <div class="col-md-4">
+                  <div class="chart-container">
+                    <div class="chart-title">Avg Data per Plan</div>
+                    <div id="chart1"></div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="chart-container">
+                    <div class="chart-title">Avg Data Over Time</div>
+                    <div id="chart2"></div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="chart-container">
+                    <div class="chart-title">Plan Distribution</div>
+                    <div id="chart3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary w-100 mb-4" id="analyzeBtn">Analyze All Customers</button>
+
+      <!-- Standard Plans -->
+      <h4>Standard Plans</h4>
+      <div class="row g-4" id="standardPlans"></div>
+
+      <!-- Recommendations -->
+      <div id="recommendationsSection" class="d-none">
+        <h4 class="mt-5">Your Personalized Recommendations</h4>
+        <select class="form-select mb-3" id="customerSelect"></select>
+        <div id="profileBox" class="profile-box mb-4"></div>
+
+        <button class="btn btn-secondary w-100 mb-3" id="genAiBtn">Generate AI Recommendations</button>
+
+        <h5 class="mt-4">Custom Plans (AI-generated)</h5>
+        <div class="row g-4 mb-4" id="customPlans"></div>
+
+        <h5 class="mt-4">Top 3 AI Recommendations</h5>
+        <div id="topRecommendations"></div>
+      </div>
+    </div>
+
+    <!-- ==== BILL ANALYSIS TAB ==== -->
+    <div class="tab-pane fade" id="analysis">
+      <h3>Telecom Bill Analysis Dashboard</h3>
+      <p class="text-muted">AI anomaly detection, matching, fraud, valued customers</p>
+
+      <div class="mb-4">
+        <label class="form-label">Upload bill CSV</label>
+        <input type="file" class="form-control" id="billFile" accept=".csv"/>
+      </div>
+
+      <!-- Bill Preview -->
+      <div class="accordion mb-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#billPreview">Dataset Preview</button>
+          </h2>
+          <div id="billPreview" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <div class="preview-frame">
+                <table class="table table-sm" id="billTable"><thead><tr><th>No data</th></tr></thead><tbody></tbody></table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <h5>Dataset Statistics</h5>
+      <div class="row text-center mb-4 g-3">
+        <div class="col"><div class="p-3 bg-light rounded shadow-sm"><strong>Total Customers</strong><div id="stat1" class="fs-4 text-primary">0</div></div></div>
+        <div class="col"><div class="p-3 bg-light rounded shadow-sm"><strong>Anomalous</strong><div id="stat2" class="fs-4 text-warning">0</div></div></div>
+        <div class="col"><div class="p-3 bg-light rounded shadow-sm"><strong>Mismatched</strong><div id="stat3" class="fs-4 text-info">0</div></div></div>
+        <div class="col"><div class="p-3 bg-light rounded shadow-sm"><strong>Disputed</strong><div id="stat4" class="fs-4 text-danger">0</div></div></div>
+        <div class="col"><div class="p-3 bg-light rounded shadow-sm"><strong>Valued</strong><div id="stat5" class="fs-4 text-success">0</div></div></div>
+      </div>
+
+      <!-- Charts -->
+      <h5>Data Insights</h5>
+      <div class="row g-4">
+        <div class="col-md-6"><div class="chart-container"><div class="chart-title">Customer Status Distribution</div><div id="pieChart"></div></div></div>
+        <div class="col-md-6"><div class="chart-container"><div class="chart-title">Bill Amount Distribution</div><div id="barChart"></div></div></div>
+        <div class="col-md-6"><div class="chart-container"><div class="chart-title">Dispute vs Non-Dispute Trend</div><div id="lineChart"></div></div></div>
+        <div class="col-md-6"><div class="chart-container"><div class="chart-title">Customer Distribution by Status</div><div id="statusBar"></div></div></div>
+      </div>
+
+      <!-- Customer Categorisation - One Table at a Time with Scroll -->
+      <h5 class="mt-5">Customer Categorisation</h5>
+      <div class="mb-3">
+        <select class="form-select" id="categorySelect">
+          <option value="anomaly">Anomaly Detected</option>
+          <option value="mismatch">Mismatched Bills</option>
+          <option value="dispute">Disputed Bills</option>
+          <option value="valued">Valued Customers</option>
+        </select>
+      </div>
+
+      <div id="categoryDisplay"></div>
+
+      <!-- Detailed Analysis -->
+      <h5 class="mt-5">Detailed Bill Analysis</h5>
+      <div class="row mb-3 g-3">
+        <div class="col-md-6"><label>Customer ID</label><select class="form-select" id="detailCustomer"></select></div>
+        <div class="col-md-6"><label>Month</label><select class="form-select" id="detailMonth"></select></div>
+      </div>
+      <div id="detailProfile" class="profile-box mb-4"></div>
+      <button class="btn btn-secondary w-100" id="bulkAnalyzeBtn">Analyze all bills of selected customer</button>
+      <div id="bulkResults" class="d-none mt-4"></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const API = 'http://127.0.0.1:8000';
+
+  // ==== HELPERS ====
+  function showError(msg){alert('Error: '+msg);}
+  function clearTable(id){document.querySelector(`#${id} tbody`).innerHTML='';}
+
+  // Format column names: replace underscores with spaces and capitalize
+  function formatHeader(str) {
+    return str.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+  }
+
+  function populateTable(id, data, cols = null) {
+    const tbody = document.querySelector(`#${id} tbody`);
+    clearTable(id);
+    if (!data || data.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="10">No data</td></tr>';
+      return;
+    }
+    const headers = cols || Object.keys(data[0]);
+    const thead = document.querySelector(`#${id} thead tr`);
+    thead.innerHTML = headers.map(h => `<th>${formatHeader(h)}</th>`).join('');
+    data.forEach(row => {
+      const tr = document.createElement('tr');
+      headers.forEach(h => {
+        const td = document.createElement('td');
+        td.textContent = row[h] ?? '';
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+  }
+
+  function renderCategoryTable(containerId, title, data, columns) {
+    const container = document.getElementById(containerId);
+    if (!data || data.length === 0) {
+      container.innerHTML = `<p class="text-muted">No ${title.toLowerCase()} found</p>`;
+      return;
+    }
+
+    let html = `
+      <div class="category-table">
+        <h6>${title} (${data.length} total)</h6>
+        <div class="table-scroll-container">
+          <table class="table table-sm table-hover">
+            <thead><tr>`;
+    columns.forEach(col => html += `<th>${formatHeader(col)}</th>`);
+    html += `</tr></thead><tbody>`;
+
+    data.forEach(row => {
+      html += `<tr>`;
+      columns.forEach(col => {
+        let val = row[col] ?? '';
+        if (col === 'invoice_month' && val) {
+          val = new Date(val).toLocaleDateString('en-GB', { year: 'numeric', month: 'short' });
+        } else if (col === 'reconciliation_match_score' && val) {
+          val = val.toFixed(2);
+        }
+        html += `<td>${val}</td>`;
+      });
+      html += `</tr>`;
+    });
+
+    html += `</tbody></table></div></div>`;
+    container.innerHTML = html;
+  }
+
+  // ==== STANDARD PLANS ====
+  async function loadStandardPlans(){
+    try{
+      const res = await fetch(`${API}/api/plans/standard`);
+      const json = await res.json();
+      const plans = json.plans;
+      const container = document.getElementById('standardPlans');
+      container.innerHTML = '';
+      Object.entries(plans).forEach(([name, info]) => {
+        const col = document.createElement('div'); col.className = 'col-md-4';
+        const dataTxt = info.data === 'Unlimited' ? 'Unlimited Data' : `${info.data}GB`;
+        const priceTxt = `£${info.price.toFixed(2)}<small>/mo</small>`;
+        col.innerHTML = `
+          <div class="plan-card">
+            <div class="plan-header"><span class="badge badge-standard">STANDARD</span> ${name}</div>
+            <div class="data-highlight">${dataTxt}</div>
+            <div class="price-highlight">${priceTxt}</div>
+            <div class="features">${info.features.replace(/\n/g,'<br>')}</div>
+            <button class="select-btn">Select</button>
+          </div>`;
+        container.appendChild(col);
+      });
+    } catch(e) { showError(e); }
+  }
+  loadStandardPlans();
+
+  // ==== USAGE UPLOAD ====
+  document.getElementById('usageFile').addEventListener('change', async e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const form = new FormData(); form.append('file', file);
+    try {
+      const res = await fetch(`${API}/api/usage/upload`, { method: 'POST', body: form });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || 'Upload failed');
+
+      populateTable('previewTable', data.preview);
+
+      // Enhanced Layout
+      const layout = {
+        margin: { t: 40, b: 70, l: 60, r: 30 },
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        font: { family: 'Segoe UI, sans-serif', size: 11 },
+        hoverlabel: { bgcolor: '#1e293b', font: { color: '#fff' } },
+        showlegend: false,
+        barmode: 'group'
+      };
+
+      // === CHART 1: Avg Data per Plan - Slim bars, vertical labels ===
+      const c1 = Object.entries(data.stats.avg_data_per_plan).map(([k,v]) => [k,v]);
+      Plotly.newPlot('chart1', [{
+        type: 'bar',
+        x: c1.map(i => i[0]),
+        y: c1.map(i => i[1]),
+        marker: {
+          color: '#3b82f6',
+          line: { color: '#1e40af', width: 1.5 }
+        },
+        text: c1.map(i => i[1].toFixed(1) + ' GB'),
+        textposition: 'outside',
+        width: 0.4  // Slim bars
+      }], {
+        ...layout,
+        xaxis: {
+          tickangle: -45,
+          automargin: true,
+          title: { text: 'Plan', standoff: 15 }
+        },
+        yaxis: { title: { text: 'Avg Data (GB)' } }
+      }, { responsive: true });
+
+      // === CHART 2: Avg Data Over Time ===
+      const c2 = Object.entries(data.stats.avg_data_over_time).map(([k,v]) => [k,v]);
+      Plotly.newPlot('chart2', [{
+        type: 'scatter',
+        mode: 'lines+markers',
+        x: c2.map(i => i[0]),
+        y: c2.map(i => i[1]),
+        line: { color: '#10b981', width: 3.5, shape: 'spline' },
+        marker: { size: 9, color: '#059669', line: { width: 2, color: '#065f46' } },
+        fill: 'tozeroy',
+        fillcolor: 'rgba(16, 185, 129, 0.15)'
+      }], {
+        ...layout,
+        xaxis: { title: { text: 'Month' } },
+        yaxis: { title: { text: 'Avg Data (GB)' } }
+      }, { responsive: true });
+
+      // === CHART 3: Plan Distribution (Donut) ===
+      const c3 = Object.entries(data.stats.plan_distribution).map(([k,v]) => [k,v]);
+      Plotly.newPlot('chart3', [{
+        type: 'pie',
+        labels: c3.map(i => i[0]),
+        values: c3.map(i => i[1]),
+        hole: 0.5,
+        textinfo: 'label+percent',
+        textposition: 'inside',
+        marker: {
+          colors: ['#3b82f6', '#8b5cf6', '#10b981', '#f59e0b', '#ef4444'],
+          line: { color: '#fff', width: 2 }
+        },
+        insidetextorientation: 'radial'
+      }], {
+        ...layout
+      }, { responsive: true });
+
+      document.getElementById('analyzeBtn').disabled = false;
+    } catch(err) { showError(err); }
+  });
+
+  // ==== ANALYZE ALL ====
+  document.getElementById('analyzeBtn').addEventListener('click', async () => {
+    try {
+      const res = await fetch(`${API}/api/usage/analyze`, { method: 'POST' });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail);
+
+      const select = document.getElementById('customerSelect');
+      select.innerHTML = '';
+      data.summaries.forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = s.customer_id; opt.textContent = `${s.customer_id} – ${s.customer_name}`;
+        select.appendChild(opt);
+      });
+      document.getElementById('recommendationsSection').classList.remove('d-none');
+      select.dispatchEvent(new Event('change'));
+    } catch(err) { showError(err); }
+  });
+
+  // ==== CUSTOMER CHANGE ====
+  document.getElementById('customerSelect').addEventListener('change', async e => {
+    const cid = e.target.value;
+    if (!cid) return;
+
+    try {
+      const res = await fetch(`${API}/api/usage/customer/${cid}`);
+      const data = await res.json();
+      const s = data.summary;
+      document.getElementById('profileBox').innerHTML = `
+        <div class="profile-title"><i class="bi bi-person-fill"></i> ${s.customer_name}</div>
+        <div class="profile-metric"><span class="profile-label">ID</span><span>${s.customer_id}</span></div>
+        <div class="profile-metric"><span class="profile-label">Phone</span><span>${s.uk_contact_number}</span></div>
+        <div class="profile-metric"><span class="profile-label">Email</span><span>${s.email}</span></div>
+        <div class="profile-metric"><span class="profile-label">Current Plan</span><span>${s.current_plan}</span></div>
+        <div class="profile-metric"><span class="profile-label">Avg Data</span><span>${s.avg_data_used_gb} GB</span></div>
+        <div class="profile-metric"><span class="profile-label">Overage</span><span>£${s.avg_overage_GBP}</span></div>
+        <div class="profile-metric"><span class="profile-label">Churn Risk</span><span class="${'risk-'+s.churn_risk.toLowerCase()}">${s.churn_risk}</span></div>
+        <div class="profile-metric"><span class="profile-label">Tenure</span><span>${s.tenure_years} yrs</span></div>
+      `;
+    } catch(err) { showError(err); }
+  });
+
+  // ==== GENERATE AI RECOMMENDATIONS ====
+  document.getElementById('genAiBtn').addEventListener('click', async () => {
+    const cid = document.getElementById('customerSelect').value;
+    if (!cid) return showError('Select a customer first');
+
+    try {
+      const recRes = await fetch(`${API}/api/recommendations/generate`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: new URLSearchParams({customer_id: cid})
+      });
+      const rec = await recRes.json();
+
+      const custContainer = document.getElementById('customPlans');
+      custContainer.innerHTML = '';
+      (rec.custom_plans || []).forEach(p => {
+        const col = document.createElement('div'); col.className = 'col-md-4';
+        const dataTxt = p.data === 'Unlimited' ? 'Unlimited' : `${p.data}GB`;
+        col.innerHTML = `
+          <div class="plan-card">
+            <div class="plan-header"><span class="badge badge-custom">CUSTOM</span> ${p.name}</div>
+            <div class="data-highlight">${dataTxt}</div>
+            <div class="price-highlight">£${p.price.toFixed(2)}</div>
+            <div class="features">${p.features.replace(/\n/g,'<br>')}</div>
+            <button class="select-btn">Select</button>
+          </div>`;
+        custContainer.appendChild(col);
+      });
+
+      const topDiv = document.getElementById('topRecommendations');
+      topDiv.innerHTML = '';
+      rec.top_three.forEach((name, i) => {
+        const box = document.createElement('div'); box.className = 'recommend-box mb-3';
+        box.innerHTML = `
+          <strong>#${i+1} ${name}</strong><br>
+          <em>Justification:</em> ${rec.justifications[i]}<br>
+          <em>Message:</em> ${rec.customer_messages[i]}<br>
+          <em>Ops:</em> ${rec.ops_notes[i]}
+        `;
+        topDiv.appendChild(box);
+      });
+    } catch(err) { showError(err); }
+  });
+
+  // ==== BILL UPLOAD ====
+  document.getElementById('billFile').addEventListener('change', async e => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const form = new FormData(); form.append('file', file);
+    try {
+      const res = await fetch(`${API}/api/bills/upload`, { method: 'POST', body: form });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || 'Upload failed');
+
+      populateTable('billTable', data.preview);
+
+      document.getElementById('stat1').textContent = data.statistics.total_customers;
+      document.getElementById('stat2').textContent = data.statistics.anomalous_customers;
+      document.getElementById('stat3').textContent = data.statistics.mismatched_bills;
+      document.getElementById('stat4').textContent = data.statistics.disputed_bills;
+      document.getElementById('stat5').textContent = data.statistics.valued_customers;
+
+      const layout = {
+        margin: { t: 50, b: 70, l: 70, r: 30 },
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
+        font: { family: 'Segoe UI, sans-serif', size: 11 },
+        hoverlabel: { bgcolor: '#1e293b', font: { color: '#fff' } },
+        legend: { orientation: 'h', y: -0.25 }
+      };
+
+      const status = data.charts.status_counts || {};
+      Plotly.newPlot('pieChart', [{
+        type:'pie', labels:Object.keys(status), values:Object.values(status),
+        hole: 0.5, textinfo: 'label+percent', textposition: 'inside',
+        marker:{colors:['#3b82f6','#10b981','#f59e0b','#ef4444','#8b5cf6'], line:{color:'#fff', width:2}}
+      }], {...layout}, {responsive: true});
+
+      const billDist = data.charts.bill_distribution || {};
+      Plotly.newPlot('barChart', [{
+        type:'bar', x:Object.keys(billDist), y:Object.values(billDist),
+        marker:{color:'#8b5cf6', line:{color:'#6d28d9', width:1.5}},
+        text:Object.values(billDist).map(v=>`£${v.toFixed(0)}`), textposition:'outside',
+        width: 0.5
+      }], {
+        ...layout,
+        xaxis: { tickangle: -45, title: { text: 'Bill Range (£)' } },
+        yaxis: { title: { text: 'Number of Bills' } }
+      }, {responsive: true});
+
+      const disputeTrend = data.charts.dispute_trend || {};
+      const months = Object.keys(disputeTrend).sort();
+      const noDispute = months.map(m => disputeTrend[m]?.no_dispute || 0);
+      const dispute = months.map(m => disputeTrend[m]?.dispute || 0);
+      Plotly.newPlot('lineChart', [
+        {type:'scatter', mode:'lines+markers', x:months, y:noDispute, name:'No Dispute',
+         line:{color:'#10b981', width:4}, marker:{size:9}, fill:'tozeroy', fillcolor:'rgba(16,185,129,0.2)'},
+        {type:'scatter', mode:'lines+markers', x:months, y:dispute, name:'Dispute',
+         line:{color:'#ef4444', width:4}, marker:{size:9}, fill:'tonexty', fillcolor:'rgba(239,68,68,0.2)'}
+      ], {
+        ...layout,
+        xaxis: { title: { text: 'Month' } },
+        yaxis: { title: { text: 'Number of Bills' } }
+      }, {responsive: true});
+
+      const statusBarData = data.charts.status_bar || {};
+      Plotly.newPlot('statusBar', [{
+        type:'bar', x:Object.keys(statusBarData), y:Object.values(statusBarData),
+        marker:{color:'#3b82f6'}, text:Object.values(statusBarData), textposition:'outside',
+        width: 0.4
+      }], {
+        ...layout,
+        xaxis: { title: { text: 'Status' } },
+        yaxis: { title: { text: 'Count' } }
+      }, {responsive: true});
+
+      const custSel = document.getElementById('detailCustomer');
+      custSel.innerHTML = '';
+      (data.customers || []).forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; custSel.appendChild(o); });
+      const monthSel = document.getElementById('detailMonth');
+      monthSel.innerHTML = '';
+      (data.months || []).forEach(m => { const o = document.createElement('option'); o.value = m; o.textContent = m; monthSel.appendChild(o); });
+
+      // Load all categories once
+      const cats = await (await fetch(`${API}/api/bills/categories`)).json();
+
+      // Store categories globally for switching
+      window.billCategories = {
+        anomaly: { title: 'Anomaly Detected', data: cats.categories.anomalous || [], cols: ['customer_id', 'customer_name', 'uk_contact_number', 'email'] },
+        mismatch: { title: 'Mismatched Bills', data: cats.categories.mismatched || [], cols: ['customer_id', 'invoice_month', 'reconciliation_match_score', 'customer_name', 'uk_contact_number', 'email'] },
+        dispute: { title: 'Disputed Bills', data: cats.categories.disputed || [], cols: ['customer_id', 'invoice_month', 'dispute_type', 'customer_name', 'uk_contact_number', 'email'] },
+        valued: { title: 'Valued Customers', data: cats.categories.valued || [], cols: ['customer_id', 'customer_name', 'uk_contact_number', 'email'] }
+      };
+
+      // Initial render
+      renderCurrentCategory();
+
+    } catch(err) { showError(err); }
+  });
+
+  // Render selected category
+  function renderCurrentCategory() {
+    const selected = document.getElementById('categorySelect').value;
+    const cat = window.billCategories[selected];
+    if (!cat) return;
+    renderCategoryTable('categoryDisplay', cat.title, cat.data, cat.cols);
+  }
+
+  // Listen to category change
+  document.getElementById('categorySelect').addEventListener('change', renderCurrentCategory);
+
+  // ==== DETAILED ANALYSIS ====
+  document.getElementById('detailCustomer').addEventListener('change', async () => {
+    const cid = document.getElementById('detailCustomer').value;
+    const month = document.getElementById('detailMonth').value;
+    if (!cid || !month) return;
+    try {
+      const res = await fetch(`${API}/api/bills/analyze`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: new URLSearchParams({customer_id: cid, month})
+      });
+      const data = await res.json();
+
+      const profile = document.getElementById('detailProfile');
+      profile.innerHTML = `
+        <div class="profile-title"><i class="bi bi-receipt"></i> Bill Analysis – ${cid} – ${month}</div>
+        <div class="profile-metric"><span class="profile-label">Anomaly Score</span><span class="score-highlight">${(data.anomaly_detection.score*100).toFixed(0)}%</span></div>
+        <div class="profile-metric"><span class="profile-label">Is Anomalous?</span><span>${data.anomaly_detection.is_anomalous?'Yes':'No'}</span></div>
+        <div class="profile-metric"><span class="profile-label">Reason</span><span>${data.anomaly_detection.reason}</span></div>
+
+        <div class="profile-metric"><span class="profile-label">Match Score</span><span class="score-highlight">${(data.matching_model.match_score*100).toFixed(0)}%</span></div>
+        <div class="profile-metric"><span class="profile-label">Discrepancy</span><span>£${data.matching_model.discrepancy_amount.toFixed(2)}</span></div>
+        <div class="profile-metric"><span class="profile-label">Reason</span><span>${data.matching_model.reason}</span></div>
+
+        <div class="profile-metric"><span class="profile-label">Fraud Probability</span><span class="score-highlight">${(data.fraud_dispute_classifier.fraud_probability*100).toFixed(0)}%</span></div>
+        <div class="profile-metric"><span class="profile-label">Classification</span><span>${data.fraud_dispute_classifier.classification}</span></div>
+        <div class="profile-metric"><span class="profile-label">Reason</span><span>${data.fraud_dispute_classifier.reason}</span></div>
+      `;
+    } catch(err) { showError(err); }
+  });
+  document.getElementById('detailMonth').addEventListener('change', () => document.getElementById('detailCustomer').dispatchEvent(new Event('change')));
+
+  // ==== BULK ANALYZE ====
+  document.getElementById('bulkAnalyzeBtn').addEventListener('click', async () => {
+    const cid = document.getElementById('detailCustomer').value;
+    if (!cid) return showError('Select a customer');
+    try {
+      const res = await fetch(`${API}/api/bills/bulk_analyze`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: new URLSearchParams({customer_id: cid})
+      });
+      const data = await res.json();
+
+      const container = document.getElementById('bulkResults');
+      container.classList.remove('d-none');
+      container.innerHTML = '';
+
+      const table = document.createElement('table');
+      table.className = 'table table-sm table-hover';
+      const thead = document.createElement('thead');
+      thead.innerHTML = '<tr><th>Month</th><th>Bill (£)</th><th>Anomaly</th><th>Match</th><th>Fraud</th></tr>';
+      const tbody = document.createElement('tbody');
+      data.bulk_results.forEach(r => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${r.invoice_month}</td><td>£${r.bill_amount.toFixed(2)}</td>
+          <td>${(r.anomaly_score*100).toFixed(0)}%</td><td>${(r.match_score*100).toFixed(0)}%</td>
+          <td>${(r.fraud_prob*100).toFixed(0)}%</td>`;
+        tbody.appendChild(tr);
+      });
+      table.appendChild(thead); table.appendChild(tbody);
+      container.appendChild(table);
+
+      const stats = document.createElement('div');
+      stats.className = 'bulk-stats mt-4';
+      stats.innerHTML = `
+        <div style="font-weight:700;font-size:1.2em;margin-bottom:12px;color:#166534;">Bulk Analysis Summary</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;font-size:.95em;">
+          <div><strong>Total Bill Amount:</strong> <span style="color:#15803d;">£${data.stats.total_bill_amount.toFixed(2)}</span></div>
+          <div><strong>Anomaly Score / ${data.stats.total_bills}:</strong> <span style="color:#ca8a04;">${data.stats.avg_anomaly.toFixed(3)}</span></div>
+          <div><strong>Match Score / ${data.stats.total_bills}:</strong> <span style="color:#16a34a;">${data.stats.avg_match.toFixed(3)}</span></div>
+          <div><strong>Fraud Prob / ${data.stats.total_bills}:</strong> <span style="color:#dc2626;">${data.stats.avg_fraud.toFixed(3)}</span></div>
+        </div>`;
+      container.appendChild(stats);
+    } catch(err) { showError(err); }
+  });
+</script>
+</body>
+</html>

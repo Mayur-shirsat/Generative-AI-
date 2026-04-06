@@ -1,0 +1,601 @@
+invoice_id,customer_id,customer_name,uk_contact_number,email,month,plan_name,base_plan_charge_GBP,data_used_gb,overage_charges_expected_GBP,overage_charges_billed_GBP,tax_GBP,invoice_total_GBP,payment_received_GBP,payment_status,reconciliation_match_score,billing_anomaly_flag,dispute_description,dispute_type
+c4bd9669,CUST_1000,Amelia Davis,07617 716 127,amelia.davis@icloud.com,2024-11,Platinum 100GB,44.99,77.54,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+beee7cb4,CUST_1000,Amelia Davis,07617 716 127,amelia.davis@icloud.com,2024-12,Platinum 100GB,44.99,32.9,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+348b4e71,CUST_1000,Amelia Davis,07617 716 127,amelia.davis@icloud.com,2025-01,Platinum 100GB,44.99,78.5,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+7954ee80,CUST_1000,Amelia Davis,07617 716 127,amelia.davis@icloud.com,2025-02,Platinum 100GB,44.99,45.21,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+5412737a,CUST_1000,Amelia Davis,07617 716 127,amelia.davis@icloud.com,2025-03,Platinum 100GB,44.99,36.97,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+e5606d39,CUST_1000,Amelia Davis,07617 716 127,amelia.davis@icloud.com,2025-04,Platinum 100GB,44.99,39.98,0.0,0.0,8.1,53.09,44.99,Paid,0.92,False,,None
+bc4d715c,CUST_1000,Amelia Davis,07617 716 127,amelia.davis@icloud.com,2025-05,Platinum 100GB,44.99,38.53,0.0,0.0,8.1,53.09,44.99,Paid,1.0,False,,None
+eefed332,CUST_1000,Amelia Davis,07617 716 127,amelia.davis@icloud.com,2025-06,Platinum 100GB,44.99,94.57,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+4c69c7f8,CUST_1000,Amelia Davis,07617 716 127,amelia.davis@icloud.com,2025-07,Platinum 100GB,44.99,54.76,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+5213d47b,CUST_1000,Amelia Davis,07617 716 127,amelia.davis@icloud.com,2025-07,Platinum 100GB,44.99,45.59,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+5b5690f3,CUST_1000,Amelia Davis,07617 716 127,amelia.davis@icloud.com,2025-08,Platinum 100GB,44.99,141.01,21.81,21.81,12.02,78.82,66.8,Paid,0.97,False,,None
+e7bdda18,CUST_1000,Amelia Davis,07617 716 127,amelia.davis@icloud.com,2025-09,Platinum 100GB,44.99,91.33,0.0,0.0,8.1,53.09,44.99,Paid,0.95,False,,None
+1bcbe76e,CUST_1001,Mia Lee,07818 658 529,mia.lee@outlook.com,2024-11,Family Gold 50GB,52.99,21.78,0.0,0.0,9.54,62.53,52.99,Paid,0.5,True,,None
+5c373470,CUST_1001,Mia Lee,07818 658 529,mia.lee@outlook.com,2024-12,Family Gold 50GB,82.99,18.52,0.0,0.0,14.94,97.93,82.99,Paid,1.0,False,,None
+c2e114a5,CUST_1001,Mia Lee,07818 658 529,mia.lee@outlook.com,2025-01,Family Gold 50GB,82.99,19.97,0.0,0.0,14.94,97.93,82.99,Paid,0.98,False,,None
+965000c4,CUST_1001,Mia Lee,07818 658 529,mia.lee@outlook.com,2025-02,Family Gold 50GB,82.99,34.28,0.0,0.0,14.94,97.93,82.99,Paid,0.93,False,,None
+2315efd0,CUST_1001,Mia Lee,07818 658 529,mia.lee@outlook.com,2025-03,Family Gold 50GB,82.99,49.67,0.0,0.0,14.94,97.93,46.1,Partial,0.51,True,,None
+f33786df,CUST_1001,Mia Lee,07818 658 529,mia.lee@outlook.com,2025-04,Family Gold 50GB,82.99,30.94,0.0,0.0,14.94,97.93,82.99,Paid,0.93,False,,None
+4edfb806,CUST_1001,Mia Lee,07818 658 529,mia.lee@outlook.com,2025-05,Family Gold 50GB,82.99,34.02,0.0,0.0,14.94,97.93,82.99,Paid,0.96,False,,None
+d56c2ace,CUST_1001,Mia Lee,07818 658 529,mia.lee@outlook.com,2025-06,Family Gold 50GB,82.99,25.69,0.0,0.0,14.94,97.93,34.5,Partial,0.62,True,,None
+705aa597,CUST_1001,Mia Lee,07818 658 529,mia.lee@outlook.com,2025-07,Family Gold 50GB,82.99,27.71,0.0,0.0,14.94,97.93,50.22,Partial,0.66,True,,None
+6d1be169,CUST_1001,Mia Lee,07818 658 529,mia.lee@outlook.com,2025-07,Family Gold 50GB,82.99,16.92,0.0,0.0,14.94,97.93,82.99,Paid,0.99,False,,None
+6cc2fb5a,CUST_1001,Mia Lee,07818 658 529,mia.lee@outlook.com,2025-08,Family Gold 50GB,82.99,49.75,0.0,0.0,14.94,97.93,82.99,Paid,0.93,False,,None
+6d9938e1,CUST_1001,Mia Lee,07818 658 529,mia.lee@outlook.com,2025-09,Family Gold 50GB,82.99,49.05,0.0,0.0,14.94,97.93,82.99,Paid,0.95,False,,None
+c4856730,CUST_1002,Sophia Rodriguez,07928 990 106,sophia.rodriguez@outlook.com,2024-11,Family Silver 20GB,52.99,8.28,0.0,0.0,9.54,62.53,52.99,Paid,0.99,False,,None
+a4b3e8d0,CUST_1002,Sophia Rodriguez,07928 990 106,sophia.rodriguez@outlook.com,2024-12,Family Silver 20GB,52.99,11.11,0.0,0.0,9.54,62.53,52.99,Paid,0.93,False,,None
+dbc5b616,CUST_1002,Sophia Rodriguez,07928 990 106,sophia.rodriguez@outlook.com,2025-01,Family Silver 20GB,52.99,15.43,0.0,0.0,9.54,62.53,52.99,Paid,0.49,True,Billing skipped my additional usage,Missing Charge
+4ff76155,CUST_1002,Sophia Rodriguez,07928 990 106,sophia.rodriguez@outlook.com,2025-02,Family Silver 20GB,52.99,12.96,0.0,0.0,9.54,62.53,52.99,Paid,1.0,False,,None
+bfbc3d64,CUST_1002,Sophia Rodriguez,07928 990 106,sophia.rodriguez@outlook.com,2025-03,Family Silver 20GB,52.99,15.77,0.0,0.0,9.54,62.53,52.99,Paid,0.95,False,,None
+6b17bde6,CUST_1002,Sophia Rodriguez,07928 990 106,sophia.rodriguez@outlook.com,2025-04,Family Silver 20GB,52.99,12.81,0.0,0.0,9.54,62.53,52.99,Paid,0.96,False,,None
+b30fa4f3,CUST_1002,Sophia Rodriguez,07928 990 106,sophia.rodriguez@outlook.com,2025-05,Family Silver 20GB,52.99,6.81,0.0,0.0,9.54,62.53,52.99,Paid,0.98,False,,None
+f48a317a,CUST_1002,Sophia Rodriguez,07928 990 106,sophia.rodriguez@outlook.com,2025-06,Family Silver 20GB,52.99,15.83,0.0,0.0,9.54,62.53,52.99,Paid,0.98,False,,None
+25f7a3ca,CUST_1002,Sophia Rodriguez,07928 990 106,sophia.rodriguez@outlook.com,2025-07,Family Silver 20GB,52.99,11.08,0.0,0.0,9.54,62.53,52.99,Paid,0.95,False,,None
+2b0942dd,CUST_1002,Sophia Rodriguez,07928 990 106,sophia.rodriguez@outlook.com,2025-07,Family Silver 20GB,52.99,13.11,0.0,0.0,9.54,62.53,23.74,Partial,0.73,True,,None
+c9c9d42f,CUST_1002,Sophia Rodriguez,07928 990 106,sophia.rodriguez@outlook.com,2025-08,Family Silver 20GB,52.99,11.18,0.0,0.0,9.54,62.53,52.99,Paid,0.98,False,,None
+b90223e7,CUST_1002,Sophia Rodriguez,07928 990 106,sophia.rodriguez@outlook.com,2025-09,Family Silver 20GB,52.99,11.41,0.0,0.0,9.54,62.53,52.99,Paid,0.93,False,,None
+1f82013d,CUST_1003,Abigail Rodriguez,07259 320 881,abigail.rodriguez@yahoo.co.uk,2024-11,Silver 20GB,18.99,26.13,2.01,2.01,3.78,24.78,21.0,Paid,1.0,False,,None
+80ef559b,CUST_1003,Abigail Rodriguez,07259 320 881,abigail.rodriguez@yahoo.co.uk,2024-12,Silver 20GB,18.99,14.83,0.0,0.0,3.42,22.41,18.99,Paid,0.98,False,,None
+9e4a81de,CUST_1003,Abigail Rodriguez,07259 320 881,abigail.rodriguez@yahoo.co.uk,2025-01,Silver 20GB,18.99,20.57,0.21,0.21,3.46,22.66,19.2,Paid,0.99,False,,None
+11d5e5b2,CUST_1003,Abigail Rodriguez,07259 320 881,abigail.rodriguez@yahoo.co.uk,2025-02,Silver 20GB,18.99,20.36,0.16,0.16,3.45,22.6,19.15,Paid,0.95,False,,None
+0140b90a,CUST_1003,Abigail Rodriguez,07259 320 881,abigail.rodriguez@yahoo.co.uk,2025-03,Silver 20GB,18.99,20.92,0.31,0.31,3.47,22.77,19.3,Paid,0.96,False,,None
+240146c0,CUST_1003,Abigail Rodriguez,07259 320 881,abigail.rodriguez@yahoo.co.uk,2025-04,Silver 20GB,18.99,15.94,0.0,0.0,3.42,22.41,18.99,Paid,0.96,False,,None
+b346c90d,CUST_1003,Abigail Rodriguez,07259 320 881,abigail.rodriguez@yahoo.co.uk,2025-05,Silver 20GB,18.99,9.66,0.0,0.0,3.42,22.41,18.99,Paid,0.94,False,,None
+6cdf0a1b,CUST_1003,Abigail Rodriguez,07259 320 881,abigail.rodriguez@yahoo.co.uk,2025-06,Silver 20GB,18.99,11.09,0.0,0.0,3.42,22.41,18.99,Paid,0.97,False,,None
+0274d178,CUST_1003,Abigail Rodriguez,07259 320 881,abigail.rodriguez@yahoo.co.uk,2025-07,Silver 20GB,18.99,25.89,3.08,3.08,3.97,26.04,22.07,Paid,0.95,False,,None
+19f8d42d,CUST_1003,Abigail Rodriguez,07259 320 881,abigail.rodriguez@yahoo.co.uk,2025-07,Silver 20GB,18.99,12.69,0.0,0.0,3.42,22.41,18.99,Paid,0.96,False,,None
+1245626f,CUST_1003,Abigail Rodriguez,07259 320 881,abigail.rodriguez@yahoo.co.uk,2025-08,Silver 20GB,18.99,13.69,0.0,0.0,3.42,22.41,18.99,Paid,0.96,False,,None
+42364467,CUST_1003,Abigail Rodriguez,07259 320 881,abigail.rodriguez@yahoo.co.uk,2025-09,Silver 20GB,18.99,14.83,0.0,0.0,3.42,22.41,18.99,Paid,0.95,False,,None
+d1ef40b8,CUST_1004,Olivia Gonzalez,07199 467 967,olivia.gonzalez@yahoo.co.uk,2024-11,Family Diamond Unlimited,149.99,173.97,0.0,0.0,27.0,176.99,149.99,Paid,1.0,False,,None
+3e0a4e24,CUST_1004,Olivia Gonzalez,07199 467 967,olivia.gonzalez@yahoo.co.uk,2024-12,Family Diamond Unlimited,149.99,92.81,0.0,0.0,27.0,176.99,149.99,Paid,0.94,False,,None
+de224c1b,CUST_1004,Olivia Gonzalez,07199 467 967,olivia.gonzalez@yahoo.co.uk,2025-01,Family Diamond Unlimited,149.99,125.64,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+b7263d5d,CUST_1004,Olivia Gonzalez,07199 467 967,olivia.gonzalez@yahoo.co.uk,2025-02,Family Diamond Unlimited,149.99,147.1,0.0,0.0,27.0,176.99,149.99,Paid,0.99,False,,None
+50a58fbc,CUST_1004,Olivia Gonzalez,07199 467 967,olivia.gonzalez@yahoo.co.uk,2025-03,Family Diamond Unlimited,149.99,91.97,0.0,0.0,27.0,176.99,149.99,Paid,0.97,False,,None
+dbaf772f,CUST_1004,Olivia Gonzalez,07199 467 967,olivia.gonzalez@yahoo.co.uk,2025-04,Family Diamond Unlimited,149.99,140.97,0.0,0.0,27.0,176.99,149.99,Paid,0.94,False,,None
+3c208759,CUST_1004,Olivia Gonzalez,07199 467 967,olivia.gonzalez@yahoo.co.uk,2025-05,Family Diamond Unlimited,149.99,134.83,0.0,0.0,27.0,176.99,149.99,Paid,0.93,False,,None
+b8174c0b,CUST_1004,Olivia Gonzalez,07199 467 967,olivia.gonzalez@yahoo.co.uk,2025-06,Family Diamond Unlimited,149.99,200.51,0.0,0.0,27.0,176.99,149.99,Paid,0.94,False,,None
+e14d9a92,CUST_1004,Olivia Gonzalez,07199 467 967,olivia.gonzalez@yahoo.co.uk,2025-07,Family Diamond Unlimited,149.99,151.36,0.0,0.0,27.0,176.99,149.99,Paid,0.97,False,,None
+dfa22224,CUST_1004,Olivia Gonzalez,07199 467 967,olivia.gonzalez@yahoo.co.uk,2025-07,Family Diamond Unlimited,149.99,93.87,0.0,0.0,27.0,176.99,149.99,Paid,0.97,False,,None
+50e1b77c,CUST_1004,Olivia Gonzalez,07199 467 967,olivia.gonzalez@yahoo.co.uk,2025-08,Family Diamond Unlimited,149.99,113.03,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+acc482bc,CUST_1004,Olivia Gonzalez,07199 467 967,olivia.gonzalez@yahoo.co.uk,2025-09,Family Diamond Unlimited,149.99,88.63,0.0,0.0,27.0,176.99,149.99,Paid,0.92,False,,None
+2a77114c,CUST_1005,Christopher Sanchez,07144 847 570,christopher.sanchez@icloud.com,2024-11,Silver 20GB,12.0,10.38,0.0,0.0,2.16,14.16,12.0,Paid,0.45,True,Plan billed incorrectly,Wrong Plan
+4b6e5d4d,CUST_1005,Christopher Sanchez,07144 847 570,christopher.sanchez@icloud.com,2024-12,Silver 20GB,18.99,28.71,4.43,4.43,4.21,27.63,23.42,Paid,0.92,False,,None
+759011e9,CUST_1005,Christopher Sanchez,07144 847 570,christopher.sanchez@icloud.com,2025-01,Silver 20GB,12.0,11.37,0.0,0.0,2.16,14.16,12.0,Paid,0.5,True,,None
+5ec900da,CUST_1005,Christopher Sanchez,07144 847 570,christopher.sanchez@icloud.com,2025-02,Silver 20GB,18.99,25.66,2.84,2.84,3.93,25.76,21.83,Paid,0.95,False,,None
+88e948e4,CUST_1005,Christopher Sanchez,07144 847 570,christopher.sanchez@icloud.com,2025-03,Silver 20GB,18.99,7.38,0.0,0.0,3.42,22.41,18.99,Paid,0.65,True,,None
+fe2b3ccd,CUST_1005,Christopher Sanchez,07144 847 570,christopher.sanchez@icloud.com,2025-04,Silver 20GB,18.99,9.99,0.0,0.0,3.42,22.41,18.99,Paid,0.94,False,,None
+41868607,CUST_1005,Christopher Sanchez,07144 847 570,christopher.sanchez@icloud.com,2025-05,Silver 20GB,18.99,6.81,0.0,0.0,3.42,22.41,18.99,Paid,0.92,False,,None
+690a319f,CUST_1005,Christopher Sanchez,07144 847 570,christopher.sanchez@icloud.com,2025-06,Silver 20GB,18.99,19.33,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+4b60de53,CUST_1005,Christopher Sanchez,07144 847 570,christopher.sanchez@icloud.com,2025-07,Silver 20GB,18.99,19.91,0.0,0.0,3.42,22.41,11.73,Partial,0.66,True,,None
+ab6f8bb1,CUST_1005,Christopher Sanchez,07144 847 570,christopher.sanchez@icloud.com,2025-07,Silver 20GB,18.99,11.66,0.0,0.0,3.42,22.41,18.99,Paid,0.95,False,,None
+4cafcc0d,CUST_1005,Christopher Sanchez,07144 847 570,christopher.sanchez@icloud.com,2025-08,Silver 20GB,18.99,6.94,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+3a8136b4,CUST_1005,Christopher Sanchez,07144 847 570,christopher.sanchez@icloud.com,2025-09,Silver 20GB,18.99,13.63,0.0,0.0,3.42,22.41,18.99,Paid,0.62,True,,None
+113753b2,CUST_1006,Avery Gonzalez,07180 665 400,avery.gonzalez@btinternet.com,2024-11,Family Diamond Unlimited,149.99,187.97,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+236c9fe3,CUST_1006,Avery Gonzalez,07180 665 400,avery.gonzalez@btinternet.com,2024-12,Family Diamond Unlimited,119.99,186.4,0.0,0.0,21.6,141.59,119.99,Paid,0.7,True,,None
+97e2fdf9,CUST_1006,Avery Gonzalez,07180 665 400,avery.gonzalez@btinternet.com,2025-01,Family Diamond Unlimited,149.99,191.98,0.0,0.0,27.0,176.99,149.99,Paid,0.42,True,,None
+ea4207ee,CUST_1006,Avery Gonzalez,07180 665 400,avery.gonzalez@btinternet.com,2025-02,Family Diamond Unlimited,149.99,189.21,0.0,0.0,27.0,176.99,149.99,Paid,0.97,False,,None
+058e878c,CUST_1006,Avery Gonzalez,07180 665 400,avery.gonzalez@btinternet.com,2025-03,Family Diamond Unlimited,149.99,239.84,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+e383816a,CUST_1006,Avery Gonzalez,07180 665 400,avery.gonzalez@btinternet.com,2025-04,Family Diamond Unlimited,149.99,189.36,0.0,0.0,27.0,176.99,149.99,Paid,0.96,False,,None
+3b787664,CUST_1006,Avery Gonzalez,07180 665 400,avery.gonzalez@btinternet.com,2025-05,Family Diamond Unlimited,149.99,240.05,0.0,0.0,27.0,176.99,132.08,Partial,0.72,True,,None
+27310121,CUST_1006,Avery Gonzalez,07180 665 400,avery.gonzalez@btinternet.com,2025-06,Family Diamond Unlimited,149.99,113.28,0.0,0.0,27.0,176.99,149.99,Paid,0.93,False,,None
+88d84afd,CUST_1006,Avery Gonzalez,07180 665 400,avery.gonzalez@btinternet.com,2025-07,Family Diamond Unlimited,149.99,83.1,0.0,0.0,27.0,176.99,149.99,Paid,0.53,True,Invoice total seems higher than expected,Overcharge
+fc938f98,CUST_1006,Avery Gonzalez,07180 665 400,avery.gonzalez@btinternet.com,2025-07,Family Diamond Unlimited,149.99,195.87,0.0,0.0,27.0,176.99,149.99,Paid,0.49,True,Plan billed incorrectly,Wrong Plan
+0105cb3b,CUST_1006,Avery Gonzalez,07180 665 400,avery.gonzalez@btinternet.com,2025-08,Family Diamond Unlimited,149.99,164.33,0.0,0.0,27.0,176.99,149.99,Paid,0.52,True,,None
+62905638,CUST_1006,Avery Gonzalez,07180 665 400,avery.gonzalez@btinternet.com,2025-09,Family Diamond Unlimited,149.99,239.23,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+bd0607a5,CUST_1007,Ryan Ramirez,07470 691 296,ryan.ramirez@btinternet.com,2024-11,Silver 20GB,18.99,26.38,2.41,2.41,3.85,25.25,21.4,Paid,0.97,False,,None
+6362e4a1,CUST_1007,Ryan Ramirez,07470 691 296,ryan.ramirez@btinternet.com,2024-12,Silver 20GB,18.99,7.28,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+2ac788b9,CUST_1007,Ryan Ramirez,07470 691 296,ryan.ramirez@btinternet.com,2025-01,Silver 20GB,18.99,8.39,0.0,0.0,3.42,22.41,18.99,Paid,0.58,True,Free data usage not intended,Missing Charge
+4fbc4dda,CUST_1007,Ryan Ramirez,07470 691 296,ryan.ramirez@btinternet.com,2025-02,Silver 20GB,18.99,18.96,0.0,0.0,3.42,22.41,18.99,Paid,0.92,False,,None
+51907760,CUST_1007,Ryan Ramirez,07470 691 296,ryan.ramirez@btinternet.com,2025-03,Silver 20GB,18.99,18.27,0.0,0.0,3.42,22.41,18.99,Paid,1.0,False,,None
+55322a71,CUST_1007,Ryan Ramirez,07470 691 296,ryan.ramirez@btinternet.com,2025-04,Silver 20GB,18.99,12.32,0.0,0.0,3.42,22.41,18.99,Paid,0.95,False,,None
+acde70a4,CUST_1007,Ryan Ramirez,07470 691 296,ryan.ramirez@btinternet.com,2025-05,Silver 20GB,18.99,13.52,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+99527506,CUST_1007,Ryan Ramirez,07470 691 296,ryan.ramirez@btinternet.com,2025-06,Silver 20GB,18.99,6.58,0.0,0.0,3.42,22.41,18.99,Paid,0.74,True,Invoice total seems higher than expected,Overcharge
+f50d153b,CUST_1007,Ryan Ramirez,07470 691 296,ryan.ramirez@btinternet.com,2025-07,Silver 20GB,18.99,14.37,0.0,0.0,3.42,22.41,18.99,Paid,0.95,False,,None
+84ba69cd,CUST_1007,Ryan Ramirez,07470 691 296,ryan.ramirez@btinternet.com,2025-07,Silver 20GB,18.99,9.97,0.0,0.0,3.42,22.41,18.99,Paid,0.96,False,,None
+b597b987,CUST_1007,Ryan Ramirez,07470 691 296,ryan.ramirez@btinternet.com,2025-08,Silver 20GB,18.99,11.81,0.0,0.0,3.42,22.41,18.99,Paid,0.94,False,,None
+542d6ee8,CUST_1007,Ryan Ramirez,07470 691 296,ryan.ramirez@btinternet.com,2025-09,Silver 20GB,18.99,19.78,0.0,0.0,3.42,22.41,18.99,Paid,0.96,False,,None
+5b78cd57,CUST_1008,James Perez,07333 891 396,james.perez@gmail.com,2024-11,Platinum 100GB,44.99,65.25,0.0,0.0,8.1,53.09,44.99,Paid,0.56,True,,None
+a7fe0ed2,CUST_1008,James Perez,07333 891 396,james.perez@gmail.com,2024-12,Platinum 100GB,44.99,35.94,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+078699f7,CUST_1008,James Perez,07333 891 396,james.perez@gmail.com,2025-01,Platinum 100GB,44.99,78.11,0.0,0.0,8.1,53.09,44.99,Paid,0.99,False,,None
+6a1fef7d,CUST_1008,James Perez,07333 891 396,james.perez@gmail.com,2025-02,Platinum 100GB,44.99,78.16,0.0,0.0,8.1,53.09,44.99,Paid,0.92,False,,None
+f34b2a2c,CUST_1008,James Perez,07333 891 396,james.perez@gmail.com,2025-03,Platinum 100GB,44.99,97.92,0.0,0.0,8.1,53.09,44.99,Paid,0.59,True,,None
+1adade64,CUST_1008,James Perez,07333 891 396,james.perez@gmail.com,2025-04,Platinum 100GB,44.99,130.92,13.57,13.57,10.54,69.1,58.56,Paid,0.96,False,,None
+3434db02,CUST_1008,James Perez,07333 891 396,james.perez@gmail.com,2025-05,Platinum 100GB,44.99,59.22,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+24d4eb13,CUST_1008,James Perez,07333 891 396,james.perez@gmail.com,2025-06,Platinum 100GB,44.99,145.61,17.64,17.64,11.27,73.9,62.63,Paid,0.94,False,,None
+d57afd22,CUST_1008,James Perez,07333 891 396,james.perez@gmail.com,2025-07,Platinum 100GB,44.99,53.18,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+9373535f,CUST_1008,James Perez,07333 891 396,james.perez@gmail.com,2025-07,Platinum 100GB,44.99,149.45,22.72,42.48,15.74,103.21,87.47,Paid,0.49,True,,None
+7fe0fa68,CUST_1008,James Perez,07333 891 396,james.perez@gmail.com,2025-08,Platinum 100GB,44.99,33.81,0.0,0.0,8.1,53.09,44.99,Paid,0.73,True,,None
+eb0d2fc5,CUST_1008,James Perez,07333 891 396,james.perez@gmail.com,2025-09,Platinum 100GB,59.99,90.68,0.0,0.0,10.8,70.79,59.99,Paid,0.68,True,Plan billed incorrectly,Wrong Plan
+f2b19569,CUST_1009,Elizabeth Brown,07489 384 564,elizabeth.brown@btinternet.com,2024-11,Family Bronze 10GB,34.99,11.6,0.69,0.69,6.42,42.1,35.68,Paid,1.0,False,,None
+9f48e74a,CUST_1009,Elizabeth Brown,07489 384 564,elizabeth.brown@btinternet.com,2024-12,Family Bronze 10GB,34.99,10.26,0.1,0.1,6.32,41.41,35.09,Paid,0.94,False,,None
+d2bf7e10,CUST_1009,Elizabeth Brown,07489 384 564,elizabeth.brown@btinternet.com,2025-01,Family Bronze 10GB,34.99,7.32,0.0,0.0,6.3,41.29,34.99,Paid,1.0,False,,None
+e99f93a5,CUST_1009,Elizabeth Brown,07489 384 564,elizabeth.brown@btinternet.com,2025-02,Family Bronze 10GB,34.99,6.84,0.0,0.0,6.3,41.29,34.99,Paid,0.94,False,,None
+84144811,CUST_1009,Elizabeth Brown,07489 384 564,elizabeth.brown@btinternet.com,2025-03,Family Bronze 10GB,34.99,3.65,0.0,0.0,6.3,41.29,34.99,Paid,0.94,False,,None
+a992e309,CUST_1009,Elizabeth Brown,07489 384 564,elizabeth.brown@btinternet.com,2025-04,Family Bronze 10GB,34.99,6.09,0.0,0.0,6.3,41.29,34.99,Paid,0.97,False,,None
+7f7efafd,CUST_1009,Elizabeth Brown,07489 384 564,elizabeth.brown@btinternet.com,2025-05,Family Bronze 10GB,34.99,6.86,0.0,0.0,6.3,41.29,34.99,Paid,0.96,False,,None
+59184c60,CUST_1009,Elizabeth Brown,07489 384 564,elizabeth.brown@btinternet.com,2025-06,Family Bronze 10GB,34.99,7.38,0.0,0.0,6.3,41.29,34.99,Paid,0.92,False,,None
+cc906081,CUST_1009,Elizabeth Brown,07489 384 564,elizabeth.brown@btinternet.com,2025-07,Family Bronze 10GB,34.99,6.1,0.0,0.0,6.3,41.29,34.99,Paid,0.93,False,,None
+0120c636,CUST_1009,Elizabeth Brown,07489 384 564,elizabeth.brown@btinternet.com,2025-07,Family Bronze 10GB,34.99,4.75,0.0,0.0,6.3,41.29,34.99,Paid,0.95,False,,None
+377a5c54,CUST_1009,Elizabeth Brown,07489 384 564,elizabeth.brown@btinternet.com,2025-08,Family Bronze 10GB,34.99,9.52,0.0,0.0,6.3,41.29,34.99,Paid,0.95,False,,None
+b154daf7,CUST_1009,Elizabeth Brown,07489 384 564,elizabeth.brown@btinternet.com,2025-09,Family Bronze 10GB,34.99,7.31,0.0,0.0,6.3,41.29,34.99,Paid,0.99,False,,None
+67cf6165,CUST_1010,Joseph Lopez,07463 314 786,joseph.lopez@yahoo.co.uk,2024-11,Silver 20GB,18.99,8.58,0.0,0.0,3.42,22.41,18.99,Paid,0.96,False,,None
+6299bd62,CUST_1010,Joseph Lopez,07463 314 786,joseph.lopez@yahoo.co.uk,2024-12,Silver 20GB,18.99,12.33,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+75b27fe7,CUST_1010,Joseph Lopez,07463 314 786,joseph.lopez@yahoo.co.uk,2025-01,Silver 20GB,18.99,7.52,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+3e177c65,CUST_1010,Joseph Lopez,07463 314 786,joseph.lopez@yahoo.co.uk,2025-02,Silver 20GB,18.99,14.97,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+76630bec,CUST_1010,Joseph Lopez,07463 314 786,joseph.lopez@yahoo.co.uk,2025-03,Silver 20GB,18.99,6.41,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+b67ac0df,CUST_1010,Joseph Lopez,07463 314 786,joseph.lopez@yahoo.co.uk,2025-04,Silver 20GB,18.99,7.21,0.0,0.0,3.42,22.41,18.99,Paid,0.95,False,,None
+4f089ab2,CUST_1010,Joseph Lopez,07463 314 786,joseph.lopez@yahoo.co.uk,2025-05,Silver 20GB,18.99,12.9,0.0,0.0,3.42,22.41,18.99,Paid,0.97,False,,None
+4756cccd,CUST_1010,Joseph Lopez,07463 314 786,joseph.lopez@yahoo.co.uk,2025-06,Silver 20GB,18.99,14.74,0.0,0.0,3.42,22.41,18.99,Paid,0.94,False,,None
+a02a9034,CUST_1010,Joseph Lopez,07463 314 786,joseph.lopez@yahoo.co.uk,2025-07,Silver 20GB,18.99,20.24,0.07,0.07,3.43,22.49,19.06,Paid,0.95,False,,None
+0055da82,CUST_1010,Joseph Lopez,07463 314 786,joseph.lopez@yahoo.co.uk,2025-07,Silver 20GB,18.99,12.18,0.0,0.0,3.42,22.41,18.99,Paid,0.98,False,,None
+6c489222,CUST_1010,Joseph Lopez,07463 314 786,joseph.lopez@yahoo.co.uk,2025-08,Silver 20GB,18.99,8.52,0.0,0.0,3.42,22.41,18.99,Paid,0.96,False,,None
+4a762550,CUST_1010,Joseph Lopez,07463 314 786,joseph.lopez@yahoo.co.uk,2025-09,Silver 20GB,18.99,7.07,0.0,0.0,3.42,22.41,18.99,Paid,0.94,False,,None
+90aafa67,CUST_1011,David Lee,07275 646 846,david.lee@outlook.com,2024-11,Gold 50GB,29.99,24.43,0.0,0.0,5.4,35.39,29.99,Paid,0.94,False,,None
+325c8f17,CUST_1011,David Lee,07275 646 846,david.lee@outlook.com,2024-12,Gold 50GB,29.99,17.99,0.0,0.0,5.4,35.39,29.99,Paid,0.97,False,,None
+cd5f9d91,CUST_1011,David Lee,07275 646 846,david.lee@outlook.com,2025-01,Gold 50GB,29.99,27.46,0.0,0.0,5.4,35.39,29.99,Paid,0.97,False,,None
+d708c6e6,CUST_1011,David Lee,07275 646 846,david.lee@outlook.com,2025-02,Gold 50GB,29.99,25.79,0.0,0.0,5.4,35.39,29.99,Paid,0.95,False,,None
+95efbac3,CUST_1011,David Lee,07275 646 846,david.lee@outlook.com,2025-03,Gold 50GB,29.99,29.27,0.0,0.0,5.4,35.39,29.99,Paid,0.97,False,,None
+6872f174,CUST_1011,David Lee,07275 646 846,david.lee@outlook.com,2025-04,Gold 50GB,29.99,17.54,0.0,0.0,5.4,35.39,29.99,Paid,0.93,False,,None
+e60233d6,CUST_1011,David Lee,07275 646 846,david.lee@outlook.com,2025-05,Gold 50GB,29.99,22.13,0.0,0.0,5.4,35.39,29.99,Paid,0.93,False,,None
+a190f6b6,CUST_1011,David Lee,07275 646 846,david.lee@outlook.com,2025-06,Gold 50GB,29.99,25.26,0.0,0.0,5.4,35.39,29.99,Paid,0.95,False,,None
+e49d7743,CUST_1011,David Lee,07275 646 846,david.lee@outlook.com,2025-07,Gold 50GB,29.99,72.31,11.05,11.05,7.39,48.43,41.04,Paid,0.93,False,,None
+0daaa076,CUST_1011,David Lee,07275 646 846,david.lee@outlook.com,2025-07,Gold 50GB,29.99,38.23,0.0,0.0,5.4,35.39,29.99,Paid,0.94,False,,None
+ec633daa,CUST_1011,David Lee,07275 646 846,david.lee@outlook.com,2025-08,Gold 50GB,29.99,19.68,0.0,0.0,5.4,35.39,29.99,Paid,0.96,False,,None
+419c660d,CUST_1011,David Lee,07275 646 846,david.lee@outlook.com,2025-09,Gold 50GB,29.99,17.87,0.0,0.0,5.4,35.39,29.99,Paid,0.97,False,,None
+9cacf563,CUST_1012,Avery Gonzalez,07376 755 804,avery.gonzalez@icloud.com,2024-11,Platinum 100GB,44.99,54.06,0.0,0.0,8.1,53.09,44.99,Paid,0.95,False,,None
+e03fc56b,CUST_1012,Avery Gonzalez,07376 755 804,avery.gonzalez@icloud.com,2024-12,Platinum 100GB,44.99,33.17,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+aea9ca89,CUST_1012,Avery Gonzalez,07376 755 804,avery.gonzalez@icloud.com,2025-01,Platinum 100GB,44.99,64.08,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+b16be9c3,CUST_1012,Avery Gonzalez,07376 755 804,avery.gonzalez@icloud.com,2025-02,Platinum 100GB,44.99,47.44,0.0,0.0,8.1,53.09,44.99,Paid,1.0,False,,None
+9dbae8ce,CUST_1012,Avery Gonzalez,07376 755 804,avery.gonzalez@icloud.com,2025-03,Platinum 100GB,44.99,66.54,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+d96343e7,CUST_1012,Avery Gonzalez,07376 755 804,avery.gonzalez@icloud.com,2025-04,Platinum 100GB,44.99,58.72,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+8c60fc38,CUST_1012,Avery Gonzalez,07376 755 804,avery.gonzalez@icloud.com,2025-05,Platinum 100GB,44.99,38.18,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+f463e94b,CUST_1012,Avery Gonzalez,07376 755 804,avery.gonzalez@icloud.com,2025-06,Platinum 100GB,44.99,47.94,0.0,0.0,8.1,53.09,44.99,Paid,0.99,False,,None
+0127001d,CUST_1012,Avery Gonzalez,07376 755 804,avery.gonzalez@icloud.com,2025-07,Platinum 100GB,44.99,48.85,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+e5358ccc,CUST_1012,Avery Gonzalez,07376 755 804,avery.gonzalez@icloud.com,2025-07,Platinum 100GB,44.99,41.61,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+a338f6c4,CUST_1012,Avery Gonzalez,07376 755 804,avery.gonzalez@icloud.com,2025-08,Platinum 100GB,44.99,99.36,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+ec232b28,CUST_1012,Avery Gonzalez,07376 755 804,avery.gonzalez@icloud.com,2025-09,Platinum 100GB,44.99,36.96,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+a0652318,CUST_1013,Amelia Hernandez,07963 886 894,amelia.hernandez@gmail.com,2024-11,Platinum 100GB,44.99,101.83,0.54,0.54,8.2,53.73,45.53,Paid,0.94,False,,None
+9bd3fdd1,CUST_1013,Amelia Hernandez,07963 886 894,amelia.hernandez@gmail.com,2024-12,Platinum 100GB,44.99,31.68,0.0,0.0,8.1,53.09,44.99,Paid,0.99,False,,None
+7ca851e6,CUST_1013,Amelia Hernandez,07963 886 894,amelia.hernandez@gmail.com,2025-01,Platinum 100GB,44.99,71.06,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+dadb7096,CUST_1013,Amelia Hernandez,07963 886 894,amelia.hernandez@gmail.com,2025-02,Platinum 100GB,44.99,69.86,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+56b78421,CUST_1013,Amelia Hernandez,07963 886 894,amelia.hernandez@gmail.com,2025-03,Platinum 100GB,44.99,62.06,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+a5671534,CUST_1013,Amelia Hernandez,07963 886 894,amelia.hernandez@gmail.com,2025-04,Platinum 100GB,44.99,39.08,0.0,0.0,8.1,53.09,44.99,Paid,0.95,False,,None
+8c52cd2a,CUST_1013,Amelia Hernandez,07963 886 894,amelia.hernandez@gmail.com,2025-05,Platinum 100GB,44.99,77.36,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+ad0c507e,CUST_1013,Amelia Hernandez,07963 886 894,amelia.hernandez@gmail.com,2025-06,Platinum 100GB,44.99,30.91,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+56a707ae,CUST_1013,Amelia Hernandez,07963 886 894,amelia.hernandez@gmail.com,2025-07,Platinum 100GB,44.99,76.12,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+1577b981,CUST_1013,Amelia Hernandez,07963 886 894,amelia.hernandez@gmail.com,2025-07,Platinum 100GB,44.99,51.21,0.0,0.0,8.1,53.09,44.99,Paid,0.99,False,,None
+189b52c6,CUST_1013,Amelia Hernandez,07963 886 894,amelia.hernandez@gmail.com,2025-08,Platinum 100GB,44.99,35.66,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+58801b72,CUST_1013,Amelia Hernandez,07963 886 894,amelia.hernandez@gmail.com,2025-09,Platinum 100GB,44.99,103.05,1.24,1.24,8.32,54.55,46.23,Paid,0.95,False,,None
+8b7569da,CUST_1014,Andrew Johnson,07924 423 510,andrew.johnson@yahoo.co.uk,2024-11,Silver 20GB,18.99,9.35,0.0,0.0,3.42,22.41,10.76,Partial,0.54,True,,None
+0f53c4d8,CUST_1014,Andrew Johnson,07924 423 510,andrew.johnson@yahoo.co.uk,2024-12,Silver 20GB,18.99,15.2,0.0,0.0,3.42,22.41,18.99,Paid,0.98,False,,None
+6242b9cc,CUST_1014,Andrew Johnson,07924 423 510,andrew.johnson@yahoo.co.uk,2025-01,Silver 20GB,18.99,8.25,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+5bf407f5,CUST_1014,Andrew Johnson,07924 423 510,andrew.johnson@yahoo.co.uk,2025-02,Silver 20GB,18.99,10.19,0.0,0.0,3.42,22.41,18.99,Paid,0.97,False,,None
+146ca42e,CUST_1014,Andrew Johnson,07924 423 510,andrew.johnson@yahoo.co.uk,2025-03,Silver 20GB,18.99,6.13,0.0,0.0,3.42,22.41,18.99,Paid,1.0,False,,None
+a3e4f3df,CUST_1014,Andrew Johnson,07924 423 510,andrew.johnson@yahoo.co.uk,2025-04,Silver 20GB,18.99,10.15,0.0,0.0,3.42,22.41,18.99,Paid,0.96,False,,None
+3822f354,CUST_1014,Andrew Johnson,07924 423 510,andrew.johnson@yahoo.co.uk,2025-05,Silver 20GB,18.99,6.67,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+a9879c26,CUST_1014,Andrew Johnson,07924 423 510,andrew.johnson@yahoo.co.uk,2025-06,Silver 20GB,18.99,7.91,0.0,0.0,3.42,22.41,18.99,Paid,0.97,False,,None
+9094959a,CUST_1014,Andrew Johnson,07924 423 510,andrew.johnson@yahoo.co.uk,2025-07,Silver 20GB,18.99,13.76,0.0,0.0,3.42,22.41,18.99,Paid,0.96,False,,None
+14987bee,CUST_1014,Andrew Johnson,07924 423 510,andrew.johnson@yahoo.co.uk,2025-07,Silver 20GB,18.99,11.6,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+ce248f76,CUST_1014,Andrew Johnson,07924 423 510,andrew.johnson@yahoo.co.uk,2025-08,Silver 20GB,12.0,19.12,0.0,0.0,2.16,14.16,12.0,Paid,0.54,True,I was on Silver plan but billed as Gold,Wrong Plan
+6b9581d4,CUST_1014,Andrew Johnson,07924 423 510,andrew.johnson@yahoo.co.uk,2025-09,Silver 20GB,18.99,7.56,0.0,0.0,3.42,22.41,7.85,Partial,0.48,True,,None
+08aa8b1b,CUST_1015,Amelia Robinson,07680 997 835,amelia.robinson@yahoo.co.uk,2024-11,Platinum 100GB,44.99,63.59,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+3766aab5,CUST_1015,Amelia Robinson,07680 997 835,amelia.robinson@yahoo.co.uk,2024-12,Platinum 100GB,44.99,62.64,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+68ed3e54,CUST_1015,Amelia Robinson,07680 997 835,amelia.robinson@yahoo.co.uk,2025-01,Platinum 100GB,44.99,72.78,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+e2c71395,CUST_1015,Amelia Robinson,07680 997 835,amelia.robinson@yahoo.co.uk,2025-02,Platinum 100GB,44.99,44.66,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+b291f7ed,CUST_1015,Amelia Robinson,07680 997 835,amelia.robinson@yahoo.co.uk,2025-03,Platinum 100GB,44.99,31.33,0.0,0.0,8.1,53.09,44.99,Paid,0.95,False,,None
+18142342,CUST_1015,Amelia Robinson,07680 997 835,amelia.robinson@yahoo.co.uk,2025-04,Platinum 100GB,44.99,102.26,0.8,0.8,8.24,54.03,45.79,Paid,0.95,False,,None
+2c83451d,CUST_1015,Amelia Robinson,07680 997 835,amelia.robinson@yahoo.co.uk,2025-05,Platinum 100GB,44.99,43.4,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+9a3c7a5b,CUST_1015,Amelia Robinson,07680 997 835,amelia.robinson@yahoo.co.uk,2025-06,Platinum 100GB,44.99,44.72,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+0ec30d9e,CUST_1015,Amelia Robinson,07680 997 835,amelia.robinson@yahoo.co.uk,2025-07,Platinum 100GB,44.99,97.31,0.0,0.0,8.1,53.09,44.99,Paid,0.55,True,,None
+c16ebfa8,CUST_1015,Amelia Robinson,07680 997 835,amelia.robinson@yahoo.co.uk,2025-07,Platinum 100GB,44.99,43.43,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+fe6c1936,CUST_1015,Amelia Robinson,07680 997 835,amelia.robinson@yahoo.co.uk,2025-08,Platinum 100GB,44.99,71.75,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+6f3a192b,CUST_1015,Amelia Robinson,07680 997 835,amelia.robinson@yahoo.co.uk,2025-09,Platinum 100GB,29.99,30.92,0.0,0.0,5.4,35.39,29.99,Paid,0.6,True,,None
+428842d5,CUST_1016,Charlotte Thomas,07505 758 569,charlotte.thomas@outlook.com,2024-11,Diamond Unlimited,59.99,126.59,0.0,0.0,10.8,70.79,59.99,Paid,0.97,False,,None
+c26fb64c,CUST_1016,Charlotte Thomas,07505 758 569,charlotte.thomas@outlook.com,2024-12,Diamond Unlimited,59.99,221.06,0.0,0.0,10.8,70.79,59.99,Paid,0.92,False,,None
+50bf9863,CUST_1016,Charlotte Thomas,07505 758 569,charlotte.thomas@outlook.com,2025-01,Diamond Unlimited,59.99,103.27,0.0,0.0,10.8,70.79,59.99,Paid,0.99,False,,None
+a5c9433c,CUST_1016,Charlotte Thomas,07505 758 569,charlotte.thomas@outlook.com,2025-02,Diamond Unlimited,59.99,181.56,0.0,0.0,10.8,70.79,59.99,Paid,0.97,False,,None
+cd59cce0,CUST_1016,Charlotte Thomas,07505 758 569,charlotte.thomas@outlook.com,2025-03,Diamond Unlimited,59.99,109.81,0.0,0.0,10.8,70.79,59.99,Paid,0.95,False,,None
+8ae24d46,CUST_1016,Charlotte Thomas,07505 758 569,charlotte.thomas@outlook.com,2025-04,Diamond Unlimited,59.99,145.13,0.0,0.0,10.8,70.79,59.99,Paid,0.92,False,,None
+fa1628f7,CUST_1016,Charlotte Thomas,07505 758 569,charlotte.thomas@outlook.com,2025-05,Diamond Unlimited,59.99,108.27,0.0,0.0,10.8,70.79,59.99,Paid,0.93,False,,None
+516dd2c0,CUST_1016,Charlotte Thomas,07505 758 569,charlotte.thomas@outlook.com,2025-06,Diamond Unlimited,59.99,182.54,0.0,0.0,10.8,70.79,59.99,Paid,0.95,False,,None
+38ce7762,CUST_1016,Charlotte Thomas,07505 758 569,charlotte.thomas@outlook.com,2025-07,Diamond Unlimited,59.99,129.08,0.0,0.0,10.8,70.79,59.99,Paid,0.98,False,,None
+bf0677ab,CUST_1016,Charlotte Thomas,07505 758 569,charlotte.thomas@outlook.com,2025-07,Diamond Unlimited,59.99,130.51,0.0,0.0,10.8,70.79,59.99,Paid,0.96,False,,None
+d7902882,CUST_1016,Charlotte Thomas,07505 758 569,charlotte.thomas@outlook.com,2025-08,Diamond Unlimited,59.99,192.82,0.0,0.0,10.8,70.79,59.99,Paid,0.98,False,,None
+0e5c327d,CUST_1016,Charlotte Thomas,07505 758 569,charlotte.thomas@outlook.com,2025-09,Diamond Unlimited,59.99,116.54,0.0,0.0,10.8,70.79,59.99,Paid,0.94,False,,None
+471756dd,CUST_1017,David Davis,07862 674 651,david.davis@yahoo.co.uk,2024-11,Family Diamond Unlimited,149.99,181.16,0.0,0.0,27.0,176.99,149.99,Paid,0.96,False,,None
+6ce77cc2,CUST_1017,David Davis,07862 674 651,david.davis@yahoo.co.uk,2024-12,Family Diamond Unlimited,149.99,181.46,0.0,0.0,27.0,176.99,149.99,Paid,0.98,False,,None
+01406629,CUST_1017,David Davis,07862 674 651,david.davis@yahoo.co.uk,2025-01,Family Diamond Unlimited,149.99,98.12,0.0,0.0,27.0,176.99,149.99,Paid,0.98,False,,None
+ebcd02ac,CUST_1017,David Davis,07862 674 651,david.davis@yahoo.co.uk,2025-02,Family Diamond Unlimited,149.99,164.23,0.0,0.0,27.0,176.99,149.99,Paid,0.55,True,I was on Silver plan but billed as Gold,Wrong Plan
+3245b0a1,CUST_1017,David Davis,07862 674 651,david.davis@yahoo.co.uk,2025-03,Family Diamond Unlimited,149.99,121.89,0.0,0.0,27.0,176.99,149.99,Paid,0.98,False,,None
+fb523a11,CUST_1017,David Davis,07862 674 651,david.davis@yahoo.co.uk,2025-04,Family Diamond Unlimited,149.99,198.1,0.0,0.0,27.0,176.99,149.99,Paid,0.97,False,,None
+ca7e7d9f,CUST_1017,David Davis,07862 674 651,david.davis@yahoo.co.uk,2025-05,Family Diamond Unlimited,149.99,141.37,0.0,0.0,27.0,176.99,149.99,Paid,0.72,True,Plan billed incorrectly,Wrong Plan
+f3b9b90b,CUST_1017,David Davis,07862 674 651,david.davis@yahoo.co.uk,2025-06,Family Diamond Unlimited,149.99,103.26,0.0,0.0,27.0,176.99,149.99,Paid,0.96,False,,None
+0c175379,CUST_1017,David Davis,07862 674 651,david.davis@yahoo.co.uk,2025-07,Family Diamond Unlimited,149.99,111.47,0.0,0.0,27.0,176.99,149.99,Paid,0.99,False,,None
+e7f5ed65,CUST_1017,David Davis,07862 674 651,david.davis@yahoo.co.uk,2025-07,Family Diamond Unlimited,149.99,204.48,0.0,0.0,27.0,176.99,149.99,Paid,0.97,False,,None
+93d0f6a5,CUST_1017,David Davis,07862 674 651,david.davis@yahoo.co.uk,2025-08,Family Diamond Unlimited,119.99,197.69,0.0,0.0,21.6,141.59,119.99,Paid,0.49,True,Wrong base charge in invoice,Wrong Plan
+b2ba21e1,CUST_1017,David Davis,07862 674 651,david.davis@yahoo.co.uk,2025-09,Family Diamond Unlimited,149.99,163.2,0.0,0.0,27.0,176.99,149.99,Paid,1.0,False,,None
+ec98bf5c,CUST_1018,Sofia Lewis,07697 508 470,sofia.lewis@outlook.com,2024-11,Gold 50GB,29.99,45.3,0.0,0.0,5.4,35.39,29.99,Paid,0.93,False,,None
+218c4e14,CUST_1018,Sofia Lewis,07697 508 470,sofia.lewis@outlook.com,2024-12,Gold 50GB,29.99,37.89,0.0,0.0,5.4,35.39,29.99,Paid,0.94,False,,None
+62724332,CUST_1018,Sofia Lewis,07697 508 470,sofia.lewis@outlook.com,2025-01,Gold 50GB,29.99,52.28,1.22,1.22,5.62,36.83,31.21,Paid,0.99,False,,None
+80c1ffee,CUST_1018,Sofia Lewis,07697 508 470,sofia.lewis@outlook.com,2025-02,Gold 50GB,29.99,47.39,0.0,0.0,5.4,35.39,29.99,Paid,0.97,False,,None
+e1968452,CUST_1018,Sofia Lewis,07697 508 470,sofia.lewis@outlook.com,2025-03,Gold 50GB,29.99,18.01,0.0,0.0,5.4,35.39,29.99,Paid,0.95,False,,None
+65fe9d9c,CUST_1018,Sofia Lewis,07697 508 470,sofia.lewis@outlook.com,2025-04,Gold 50GB,29.99,16.63,0.0,0.0,5.4,35.39,29.99,Paid,0.98,False,,None
+6e7301e1,CUST_1018,Sofia Lewis,07697 508 470,sofia.lewis@outlook.com,2025-05,Gold 50GB,29.99,30.65,0.0,0.0,5.4,35.39,29.99,Paid,0.94,False,,None
+7b091e55,CUST_1018,Sofia Lewis,07697 508 470,sofia.lewis@outlook.com,2025-06,Gold 50GB,29.99,36.75,0.0,0.0,5.4,35.39,29.99,Paid,0.96,False,,None
+fd06aa29,CUST_1018,Sofia Lewis,07697 508 470,sofia.lewis@outlook.com,2025-07,Gold 50GB,29.99,50.99,0.54,0.54,5.5,36.03,30.53,Paid,0.98,False,,None
+0f6507d5,CUST_1018,Sofia Lewis,07697 508 470,sofia.lewis@outlook.com,2025-07,Gold 50GB,29.99,27.0,0.0,0.0,5.4,35.39,29.99,Paid,1.0,False,,None
+422eff8d,CUST_1018,Sofia Lewis,07697 508 470,sofia.lewis@outlook.com,2025-08,Gold 50GB,29.99,25.44,0.0,0.0,5.4,35.39,29.99,Paid,0.94,False,,None
+6b7d5f1b,CUST_1018,Sofia Lewis,07697 508 470,sofia.lewis@outlook.com,2025-09,Gold 50GB,29.99,23.87,0.0,0.0,5.4,35.39,29.99,Paid,0.94,False,,None
+e75b8db1,CUST_1019,James Thomas,07193 873 148,james.thomas@gmail.com,2024-11,Gold 50GB,29.99,15.45,0.0,0.0,5.4,35.39,29.99,Paid,0.95,False,,None
+997b3987,CUST_1019,James Thomas,07193 873 148,james.thomas@gmail.com,2024-12,Gold 50GB,29.99,20.46,0.0,0.0,5.4,35.39,29.99,Paid,0.93,False,,None
+3aba5275,CUST_1019,James Thomas,07193 873 148,james.thomas@gmail.com,2025-01,Gold 50GB,29.99,36.98,0.0,0.0,5.4,35.39,29.99,Paid,0.97,False,,None
+706a303c,CUST_1019,James Thomas,07193 873 148,james.thomas@gmail.com,2025-02,Gold 50GB,29.99,39.78,0.0,0.0,5.4,35.39,29.99,Paid,0.97,False,,None
+da5757b7,CUST_1019,James Thomas,07193 873 148,james.thomas@gmail.com,2025-03,Gold 50GB,29.99,27.82,0.0,0.0,5.4,35.39,29.99,Paid,0.94,False,,None
+7d3f8005,CUST_1019,James Thomas,07193 873 148,james.thomas@gmail.com,2025-04,Gold 50GB,29.99,34.49,0.0,0.0,5.4,35.39,29.99,Paid,1.0,False,,None
+8f267676,CUST_1019,James Thomas,07193 873 148,james.thomas@gmail.com,2025-05,Gold 50GB,29.99,51.96,1.07,1.07,5.59,36.65,31.06,Paid,0.95,False,,None
+66a66806,CUST_1019,James Thomas,07193 873 148,james.thomas@gmail.com,2025-06,Gold 50GB,29.99,32.4,0.0,0.0,5.4,35.39,29.99,Paid,0.94,False,,None
+e49a3c32,CUST_1019,James Thomas,07193 873 148,james.thomas@gmail.com,2025-07,Gold 50GB,29.99,28.42,0.0,0.0,5.4,35.39,29.99,Paid,0.93,False,,None
+8f106a5b,CUST_1019,James Thomas,07193 873 148,james.thomas@gmail.com,2025-07,Gold 50GB,29.99,46.99,0.0,0.0,5.4,35.39,29.99,Paid,1.0,False,,None
+3f105d02,CUST_1019,James Thomas,07193 873 148,james.thomas@gmail.com,2025-08,Gold 50GB,29.99,51.07,0.48,0.48,5.48,35.95,30.47,Paid,0.93,False,,None
+5b8007f5,CUST_1019,James Thomas,07193 873 148,james.thomas@gmail.com,2025-09,Gold 50GB,29.99,24.32,0.0,0.0,5.4,35.39,29.99,Paid,0.96,False,,None
+bb40c053,CUST_1020,Joseph Garcia,07911 796 532,joseph.garcia@icloud.com,2024-11,Silver 20GB,18.99,8.2,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+41cfaa60,CUST_1020,Joseph Garcia,07911 796 532,joseph.garcia@icloud.com,2024-12,Silver 20GB,18.99,10.81,0.0,0.0,3.42,22.41,18.99,Paid,0.95,False,,None
+140ac87f,CUST_1020,Joseph Garcia,07911 796 532,joseph.garcia@icloud.com,2025-01,Silver 20GB,18.99,11.66,0.0,0.0,3.42,22.41,18.99,Paid,0.98,False,,None
+ed8a1f9d,CUST_1020,Joseph Garcia,07911 796 532,joseph.garcia@icloud.com,2025-02,Silver 20GB,18.99,14.51,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+5e5f8098,CUST_1020,Joseph Garcia,07911 796 532,joseph.garcia@icloud.com,2025-03,Silver 20GB,18.99,12.8,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+54e328ef,CUST_1020,Joseph Garcia,07911 796 532,joseph.garcia@icloud.com,2025-04,Silver 20GB,18.99,20.62,0.16,0.16,3.45,22.6,19.15,Paid,0.93,False,,None
+67195464,CUST_1020,Joseph Garcia,07911 796 532,joseph.garcia@icloud.com,2025-05,Silver 20GB,18.99,13.44,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+adf56a7c,CUST_1020,Joseph Garcia,07911 796 532,joseph.garcia@icloud.com,2025-06,Silver 20GB,18.99,6.06,0.0,0.0,3.42,22.41,18.99,Paid,1.0,False,,None
+8bd6128e,CUST_1020,Joseph Garcia,07911 796 532,joseph.garcia@icloud.com,2025-07,Silver 20GB,18.99,8.6,0.0,0.0,3.42,22.41,18.99,Paid,0.98,False,,None
+3a5c5a7f,CUST_1020,Joseph Garcia,07911 796 532,joseph.garcia@icloud.com,2025-07,Silver 20GB,18.99,13.61,0.0,0.0,3.42,22.41,18.99,Paid,0.95,False,,None
+38a6ab98,CUST_1020,Joseph Garcia,07911 796 532,joseph.garcia@icloud.com,2025-08,Silver 20GB,18.99,15.32,0.0,0.0,3.42,22.41,18.99,Paid,0.98,False,,None
+d6ae53a8,CUST_1020,Joseph Garcia,07911 796 532,joseph.garcia@icloud.com,2025-09,Silver 20GB,18.99,9.01,0.0,0.0,3.42,22.41,18.99,Paid,0.97,False,,None
+fe5a49a0,CUST_1021,Joshua Gonzalez,07710 579 641,joshua.gonzalez@yahoo.co.uk,2024-11,Family Platinum 100GB,119.99,61.05,0.0,0.0,21.6,141.59,119.99,Paid,1.0,False,,None
+db934c5e,CUST_1021,Joshua Gonzalez,07710 579 641,joshua.gonzalez@yahoo.co.uk,2024-12,Family Platinum 100GB,119.99,139.99,11.56,11.56,23.68,155.23,131.55,Paid,0.92,False,,None
+49543030,CUST_1021,Joshua Gonzalez,07710 579 641,joshua.gonzalez@yahoo.co.uk,2025-01,Family Platinum 100GB,119.99,46.18,0.0,0.0,21.6,141.59,119.99,Paid,0.97,False,,None
+81e21599,CUST_1021,Joshua Gonzalez,07710 579 641,joshua.gonzalez@yahoo.co.uk,2025-02,Family Platinum 100GB,119.99,43.68,0.0,0.0,21.6,141.59,119.99,Paid,0.96,False,,None
+5093deda,CUST_1021,Joshua Gonzalez,07710 579 641,joshua.gonzalez@yahoo.co.uk,2025-03,Family Platinum 100GB,119.99,69.74,0.0,0.0,21.6,141.59,119.99,Paid,0.93,False,,None
+739ce2df,CUST_1021,Joshua Gonzalez,07710 579 641,joshua.gonzalez@yahoo.co.uk,2025-04,Family Platinum 100GB,119.99,62.73,0.0,0.0,21.6,141.59,119.99,Paid,0.93,False,,None
+8a20b387,CUST_1021,Joshua Gonzalez,07710 579 641,joshua.gonzalez@yahoo.co.uk,2025-05,Family Platinum 100GB,119.99,77.18,0.0,0.0,21.6,141.59,119.99,Paid,0.95,False,,None
+91de9de8,CUST_1021,Joshua Gonzalez,07710 579 641,joshua.gonzalez@yahoo.co.uk,2025-06,Family Platinum 100GB,119.99,79.2,0.0,0.0,21.6,141.59,119.99,Paid,0.94,False,,None
+c493b979,CUST_1021,Joshua Gonzalez,07710 579 641,joshua.gonzalez@yahoo.co.uk,2025-07,Family Platinum 100GB,119.99,31.56,0.0,0.0,21.6,141.59,119.99,Paid,0.99,False,,None
+31fe9373,CUST_1021,Joshua Gonzalez,07710 579 641,joshua.gonzalez@yahoo.co.uk,2025-07,Family Platinum 100GB,119.99,78.41,0.0,0.0,21.6,141.59,119.99,Paid,0.98,False,,None
+f790fb76,CUST_1021,Joshua Gonzalez,07710 579 641,joshua.gonzalez@yahoo.co.uk,2025-08,Family Platinum 100GB,119.99,72.24,0.0,0.0,21.6,141.59,119.99,Paid,0.93,False,,None
+89b92f7b,CUST_1021,Joshua Gonzalez,07710 579 641,joshua.gonzalez@yahoo.co.uk,2025-09,Family Platinum 100GB,119.99,76.04,0.0,0.0,21.6,141.59,119.99,Paid,0.96,False,,None
+3fe29c3a,CUST_1022,Elizabeth Smith,07796 838 217,elizabeth.smith@btinternet.com,2024-11,Family Platinum 100GB,119.99,36.26,0.0,0.0,21.6,141.59,119.99,Paid,0.94,False,,None
+80ea447b,CUST_1022,Elizabeth Smith,07796 838 217,elizabeth.smith@btinternet.com,2024-12,Family Platinum 100GB,119.99,33.21,0.0,0.0,21.6,141.59,119.99,Paid,0.98,False,,None
+a3e181c0,CUST_1022,Elizabeth Smith,07796 838 217,elizabeth.smith@btinternet.com,2025-01,Family Platinum 100GB,119.99,52.76,0.0,0.0,21.6,141.59,119.99,Paid,0.95,False,,None
+3424bc9e,CUST_1022,Elizabeth Smith,07796 838 217,elizabeth.smith@btinternet.com,2025-02,Family Platinum 100GB,119.99,60.0,0.0,0.0,21.6,141.59,119.99,Paid,0.99,False,,None
+77c1980f,CUST_1022,Elizabeth Smith,07796 838 217,elizabeth.smith@btinternet.com,2025-03,Family Platinum 100GB,119.99,31.98,0.0,0.0,21.6,141.59,119.99,Paid,0.94,False,,None
+3e667a69,CUST_1022,Elizabeth Smith,07796 838 217,elizabeth.smith@btinternet.com,2025-04,Family Platinum 100GB,119.99,115.7,6.27,6.27,22.73,148.99,126.26,Paid,0.98,False,,None
+db7dd7e7,CUST_1022,Elizabeth Smith,07796 838 217,elizabeth.smith@btinternet.com,2025-05,Family Platinum 100GB,119.99,30.49,0.0,0.0,21.6,141.59,119.99,Paid,0.93,False,,None
+4a38d18b,CUST_1022,Elizabeth Smith,07796 838 217,elizabeth.smith@btinternet.com,2025-06,Family Platinum 100GB,119.99,31.66,0.0,0.0,21.6,141.59,119.99,Paid,0.93,False,,None
+dd508bd0,CUST_1022,Elizabeth Smith,07796 838 217,elizabeth.smith@btinternet.com,2025-07,Family Platinum 100GB,119.99,64.47,0.0,0.0,21.6,141.59,119.99,Paid,0.93,False,,None
+5c3a511e,CUST_1022,Elizabeth Smith,07796 838 217,elizabeth.smith@btinternet.com,2025-07,Family Platinum 100GB,119.99,61.82,0.0,0.0,21.6,141.59,119.99,Paid,0.99,False,,None
+5099894e,CUST_1022,Elizabeth Smith,07796 838 217,elizabeth.smith@btinternet.com,2025-08,Family Platinum 100GB,119.99,57.06,0.0,0.0,21.6,141.59,119.99,Paid,0.98,False,,None
+239d89ed,CUST_1022,Elizabeth Smith,07796 838 217,elizabeth.smith@btinternet.com,2025-09,Family Platinum 100GB,119.99,95.09,0.0,0.0,21.6,141.59,119.99,Paid,0.99,False,,None
+fc095672,CUST_1023,Daniel Rodriguez,07887 756 448,daniel.rodriguez@gmail.com,2024-11,Diamond Unlimited,59.99,173.09,0.0,0.0,10.8,70.79,59.99,Paid,0.96,False,,None
+1796cc0f,CUST_1023,Daniel Rodriguez,07887 756 448,daniel.rodriguez@gmail.com,2024-12,Diamond Unlimited,59.99,189.41,0.0,0.0,10.8,70.79,59.99,Paid,0.98,False,,None
+0ba22f7b,CUST_1023,Daniel Rodriguez,07887 756 448,daniel.rodriguez@gmail.com,2025-01,Diamond Unlimited,59.99,93.88,0.0,0.0,10.8,70.79,59.99,Paid,0.94,False,,None
+88c9cf01,CUST_1023,Daniel Rodriguez,07887 756 448,daniel.rodriguez@gmail.com,2025-02,Diamond Unlimited,59.99,107.12,0.0,0.0,10.8,70.79,59.99,Paid,0.94,False,,None
+5a271944,CUST_1023,Daniel Rodriguez,07887 756 448,daniel.rodriguez@gmail.com,2025-03,Diamond Unlimited,59.99,245.9,0.0,0.0,10.8,70.79,59.99,Paid,0.93,False,,None
+eaf951a8,CUST_1023,Daniel Rodriguez,07887 756 448,daniel.rodriguez@gmail.com,2025-04,Diamond Unlimited,59.99,214.25,0.0,0.0,10.8,70.79,59.99,Paid,0.96,False,,None
+5b1c938f,CUST_1023,Daniel Rodriguez,07887 756 448,daniel.rodriguez@gmail.com,2025-05,Diamond Unlimited,59.99,174.41,0.0,0.0,10.8,70.79,59.99,Paid,0.94,False,,None
+200fc0f5,CUST_1023,Daniel Rodriguez,07887 756 448,daniel.rodriguez@gmail.com,2025-06,Diamond Unlimited,59.99,249.38,0.0,0.0,10.8,70.79,59.99,Paid,0.97,False,,None
+f2214790,CUST_1023,Daniel Rodriguez,07887 756 448,daniel.rodriguez@gmail.com,2025-07,Diamond Unlimited,59.99,113.92,0.0,0.0,10.8,70.79,59.99,Paid,0.93,False,,None
+a8c627fc,CUST_1023,Daniel Rodriguez,07887 756 448,daniel.rodriguez@gmail.com,2025-07,Diamond Unlimited,59.99,85.21,0.0,0.0,10.8,70.79,59.99,Paid,0.96,False,,None
+8d3fbb2a,CUST_1023,Daniel Rodriguez,07887 756 448,daniel.rodriguez@gmail.com,2025-08,Diamond Unlimited,59.99,227.61,0.0,0.0,10.8,70.79,59.99,Paid,0.98,False,,None
+0977bb8a,CUST_1023,Daniel Rodriguez,07887 756 448,daniel.rodriguez@gmail.com,2025-09,Diamond Unlimited,59.99,152.33,0.0,0.0,10.8,70.79,59.99,Paid,0.95,False,,None
+2eb59276,CUST_1024,Sofia Garcia,07564 103 839,sofia.garcia@btinternet.com,2024-11,Diamond Unlimited,59.99,247.9,0.0,0.0,10.8,70.79,59.99,Paid,0.99,False,,None
+8737674a,CUST_1024,Sofia Garcia,07564 103 839,sofia.garcia@btinternet.com,2024-12,Diamond Unlimited,59.99,178.37,0.0,0.0,10.8,70.79,59.99,Paid,0.98,False,,None
+571ae7d4,CUST_1024,Sofia Garcia,07564 103 839,sofia.garcia@btinternet.com,2025-01,Diamond Unlimited,59.99,162.73,0.0,0.0,10.8,70.79,59.99,Paid,0.99,False,,None
+2dd421fe,CUST_1024,Sofia Garcia,07564 103 839,sofia.garcia@btinternet.com,2025-02,Diamond Unlimited,59.99,151.69,0.0,0.0,10.8,70.79,59.99,Paid,0.97,False,,None
+47c2acf3,CUST_1024,Sofia Garcia,07564 103 839,sofia.garcia@btinternet.com,2025-03,Diamond Unlimited,59.99,235.1,0.0,0.0,10.8,70.79,59.99,Paid,0.97,False,,None
+9c04f903,CUST_1024,Sofia Garcia,07564 103 839,sofia.garcia@btinternet.com,2025-04,Diamond Unlimited,59.99,187.37,0.0,0.0,10.8,70.79,59.99,Paid,0.93,False,,None
+96646801,CUST_1024,Sofia Garcia,07564 103 839,sofia.garcia@btinternet.com,2025-05,Diamond Unlimited,59.99,201.69,0.0,0.0,10.8,70.79,59.99,Paid,0.93,False,,None
+825def4b,CUST_1024,Sofia Garcia,07564 103 839,sofia.garcia@btinternet.com,2025-06,Diamond Unlimited,59.99,120.38,0.0,0.0,10.8,70.79,59.99,Paid,0.93,False,,None
+4272644f,CUST_1024,Sofia Garcia,07564 103 839,sofia.garcia@btinternet.com,2025-07,Diamond Unlimited,59.99,225.25,0.0,0.0,10.8,70.79,59.99,Paid,0.94,False,,None
+ca2d5416,CUST_1024,Sofia Garcia,07564 103 839,sofia.garcia@btinternet.com,2025-07,Diamond Unlimited,59.99,228.03,0.0,0.0,10.8,70.79,59.99,Paid,0.96,False,,None
+47da108e,CUST_1024,Sofia Garcia,07564 103 839,sofia.garcia@btinternet.com,2025-08,Diamond Unlimited,59.99,141.07,0.0,0.0,10.8,70.79,59.99,Paid,0.93,False,,None
+14fb57ec,CUST_1024,Sofia Garcia,07564 103 839,sofia.garcia@btinternet.com,2025-09,Diamond Unlimited,59.99,146.48,0.0,0.0,10.8,70.79,59.99,Paid,0.94,False,,None
+69d34fae,CUST_1025,James Harris,07282 619 208,james.harris@btinternet.com,2024-11,Diamond Unlimited,59.99,191.65,0.0,0.0,10.8,70.79,59.99,Paid,0.98,False,,None
+2811d419,CUST_1025,James Harris,07282 619 208,james.harris@btinternet.com,2024-12,Diamond Unlimited,59.99,102.25,0.0,0.0,10.8,70.79,59.99,Paid,0.96,False,,None
+dff66fe9,CUST_1025,James Harris,07282 619 208,james.harris@btinternet.com,2025-01,Diamond Unlimited,59.99,120.13,0.0,0.0,10.8,70.79,59.99,Paid,0.93,False,,None
+ddde82d6,CUST_1025,James Harris,07282 619 208,james.harris@btinternet.com,2025-02,Diamond Unlimited,59.99,168.36,0.0,0.0,10.8,70.79,59.99,Paid,0.99,False,,None
+cb8ccfdb,CUST_1025,James Harris,07282 619 208,james.harris@btinternet.com,2025-03,Diamond Unlimited,59.99,153.25,0.0,0.0,10.8,70.79,59.99,Paid,0.97,False,,None
+99f2f5cc,CUST_1025,James Harris,07282 619 208,james.harris@btinternet.com,2025-04,Diamond Unlimited,59.99,200.15,0.0,0.0,10.8,70.79,59.99,Paid,0.93,False,,None
+d24098a3,CUST_1025,James Harris,07282 619 208,james.harris@btinternet.com,2025-05,Diamond Unlimited,59.99,86.23,0.0,0.0,10.8,70.79,59.99,Paid,0.97,False,,None
+14591fa9,CUST_1025,James Harris,07282 619 208,james.harris@btinternet.com,2025-06,Diamond Unlimited,59.99,160.69,0.0,0.0,10.8,70.79,59.99,Paid,0.98,False,,None
+3c9dd6f2,CUST_1025,James Harris,07282 619 208,james.harris@btinternet.com,2025-07,Diamond Unlimited,59.99,179.51,0.0,0.0,10.8,70.79,59.99,Paid,0.94,False,,None
+33f2f0c9,CUST_1025,James Harris,07282 619 208,james.harris@btinternet.com,2025-07,Diamond Unlimited,59.99,99.03,0.0,0.0,10.8,70.79,59.99,Paid,0.92,False,,None
+9f7e715a,CUST_1025,James Harris,07282 619 208,james.harris@btinternet.com,2025-08,Diamond Unlimited,59.99,170.3,0.0,0.0,10.8,70.79,59.99,Paid,0.92,False,,None
+2755aaf5,CUST_1025,James Harris,07282 619 208,james.harris@btinternet.com,2025-09,Diamond Unlimited,59.99,100.76,0.0,0.0,10.8,70.79,59.99,Paid,0.99,False,,None
+28e4cb5e,CUST_1026,Emily Lee,07619 723 303,emily.lee@outlook.com,2024-11,Family Bronze 10GB,34.99,5.54,0.0,0.0,6.3,41.29,34.99,Paid,1.0,False,,None
+5fdf6864,CUST_1026,Emily Lee,07619 723 303,emily.lee@outlook.com,2024-12,Family Bronze 10GB,34.99,11.02,0.55,0.55,6.4,41.94,35.54,Paid,0.99,False,,None
+e431f7bc,CUST_1026,Emily Lee,07619 723 303,emily.lee@outlook.com,2025-01,Family Bronze 10GB,34.99,5.58,0.0,0.0,6.3,41.29,34.99,Paid,0.93,False,,None
+0308675e,CUST_1026,Emily Lee,07619 723 303,emily.lee@outlook.com,2025-02,Family Bronze 10GB,34.99,4.54,0.0,0.0,6.3,41.29,34.99,Paid,0.97,False,,None
+683bbfc4,CUST_1026,Emily Lee,07619 723 303,emily.lee@outlook.com,2025-03,Family Bronze 10GB,34.99,11.38,0.62,0.62,6.41,42.02,35.61,Paid,0.99,False,,None
+6ed3d20c,CUST_1026,Emily Lee,07619 723 303,emily.lee@outlook.com,2025-04,Family Bronze 10GB,34.99,6.46,0.0,0.0,6.3,41.29,34.99,Paid,0.97,False,,None
+91508604,CUST_1026,Emily Lee,07619 723 303,emily.lee@outlook.com,2025-05,Family Bronze 10GB,34.99,6.09,0.0,0.0,6.3,41.29,34.99,Paid,0.92,False,,None
+fbb67eaf,CUST_1026,Emily Lee,07619 723 303,emily.lee@outlook.com,2025-06,Family Bronze 10GB,34.99,10.03,0.02,0.02,6.3,41.31,35.01,Paid,0.97,False,,None
+80294f54,CUST_1026,Emily Lee,07619 723 303,emily.lee@outlook.com,2025-07,Family Bronze 10GB,34.99,6.26,0.0,0.0,6.3,41.29,34.99,Paid,1.0,False,,None
+2e843642,CUST_1026,Emily Lee,07619 723 303,emily.lee@outlook.com,2025-07,Family Bronze 10GB,34.99,7.89,0.0,0.0,6.3,41.29,34.99,Paid,0.98,False,,None
+fad0ccbe,CUST_1026,Emily Lee,07619 723 303,emily.lee@outlook.com,2025-08,Family Bronze 10GB,34.99,6.69,0.0,0.0,6.3,41.29,34.99,Paid,0.95,False,,None
+b9f30d3e,CUST_1026,Emily Lee,07619 723 303,emily.lee@outlook.com,2025-09,Family Bronze 10GB,34.99,7.04,0.0,0.0,6.3,41.29,34.99,Paid,0.95,False,,None
+554074e6,CUST_1027,Daniel Garcia,07652 897 643,daniel.garcia@gmail.com,2024-11,Family Diamond Unlimited,149.99,219.03,0.0,0.0,27.0,176.99,149.99,Paid,0.96,False,,None
+d6013dc2,CUST_1027,Daniel Garcia,07652 897 643,daniel.garcia@gmail.com,2024-12,Family Diamond Unlimited,149.99,80.98,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+60682aaf,CUST_1027,Daniel Garcia,07652 897 643,daniel.garcia@gmail.com,2025-01,Family Diamond Unlimited,149.99,147.35,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+627e59be,CUST_1027,Daniel Garcia,07652 897 643,daniel.garcia@gmail.com,2025-02,Family Diamond Unlimited,149.99,156.28,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+e7bf092a,CUST_1027,Daniel Garcia,07652 897 643,daniel.garcia@gmail.com,2025-03,Family Diamond Unlimited,149.99,118.64,0.0,0.0,27.0,176.99,149.99,Paid,0.97,False,,None
+8a02f48d,CUST_1027,Daniel Garcia,07652 897 643,daniel.garcia@gmail.com,2025-04,Family Diamond Unlimited,149.99,193.6,0.0,0.0,27.0,176.99,149.99,Paid,0.96,False,,None
+0edb7b91,CUST_1027,Daniel Garcia,07652 897 643,daniel.garcia@gmail.com,2025-05,Family Diamond Unlimited,149.99,144.56,0.0,0.0,27.0,176.99,149.99,Paid,0.96,False,,None
+80d83fd7,CUST_1027,Daniel Garcia,07652 897 643,daniel.garcia@gmail.com,2025-06,Family Diamond Unlimited,149.99,161.46,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+4397c57c,CUST_1027,Daniel Garcia,07652 897 643,daniel.garcia@gmail.com,2025-07,Family Diamond Unlimited,149.99,144.63,0.0,0.0,27.0,176.99,149.99,Paid,0.97,False,,None
+159e8436,CUST_1027,Daniel Garcia,07652 897 643,daniel.garcia@gmail.com,2025-07,Family Diamond Unlimited,149.99,170.71,0.0,0.0,27.0,176.99,149.99,Paid,0.98,False,,None
+1e9d760b,CUST_1027,Daniel Garcia,07652 897 643,daniel.garcia@gmail.com,2025-08,Family Diamond Unlimited,149.99,218.21,0.0,0.0,27.0,176.99,149.99,Paid,1.0,False,,None
+ec6e0acd,CUST_1027,Daniel Garcia,07652 897 643,daniel.garcia@gmail.com,2025-09,Family Diamond Unlimited,149.99,83.1,0.0,0.0,27.0,176.99,149.99,Paid,0.73,True,Charged extra for unused data,Overcharge
+9e4f8ce9,CUST_1028,Matthew Thomas,07119 214 471,matthew.thomas@yahoo.co.uk,2024-11,Platinum 100GB,44.99,49.0,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+ad0460bf,CUST_1028,Matthew Thomas,07119 214 471,matthew.thomas@yahoo.co.uk,2024-12,Platinum 100GB,44.99,60.87,0.0,0.0,8.1,53.09,44.99,Paid,0.99,False,,None
+001d5999,CUST_1028,Matthew Thomas,07119 214 471,matthew.thomas@yahoo.co.uk,2025-01,Platinum 100GB,44.99,59.05,0.0,0.0,8.1,53.09,44.99,Paid,0.95,False,,None
+eceb59ea,CUST_1028,Matthew Thomas,07119 214 471,matthew.thomas@yahoo.co.uk,2025-02,Platinum 100GB,44.99,142.93,17.46,17.46,11.24,73.69,62.45,Paid,0.99,False,,None
+7246d300,CUST_1028,Matthew Thomas,07119 214 471,matthew.thomas@yahoo.co.uk,2025-03,Platinum 100GB,44.99,39.23,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+3e70b7a8,CUST_1028,Matthew Thomas,07119 214 471,matthew.thomas@yahoo.co.uk,2025-04,Platinum 100GB,44.99,96.37,0.0,0.0,8.1,53.09,44.99,Paid,0.95,False,,None
+1803964a,CUST_1028,Matthew Thomas,07119 214 471,matthew.thomas@yahoo.co.uk,2025-05,Platinum 100GB,44.99,35.62,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+cf9a7dea,CUST_1028,Matthew Thomas,07119 214 471,matthew.thomas@yahoo.co.uk,2025-06,Platinum 100GB,44.99,69.69,0.0,0.0,8.1,53.09,44.99,Paid,0.95,False,,None
+86118f80,CUST_1028,Matthew Thomas,07119 214 471,matthew.thomas@yahoo.co.uk,2025-07,Platinum 100GB,44.99,101.55,0.65,0.65,8.21,53.85,45.64,Paid,0.94,False,,None
+e36cd7fd,CUST_1028,Matthew Thomas,07119 214 471,matthew.thomas@yahoo.co.uk,2025-07,Platinum 100GB,44.99,72.56,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+6fcdab79,CUST_1028,Matthew Thomas,07119 214 471,matthew.thomas@yahoo.co.uk,2025-08,Platinum 100GB,44.99,51.2,0.0,0.0,8.1,53.09,44.99,Paid,0.99,False,,None
+d9b1227f,CUST_1028,Matthew Thomas,07119 214 471,matthew.thomas@yahoo.co.uk,2025-09,Platinum 100GB,44.99,56.77,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+815262dd,CUST_1029,Emma Davis,07999 680 180,emma.davis@gmail.com,2024-11,Family Gold 50GB,82.99,30.95,0.0,0.0,14.94,97.93,82.99,Paid,0.92,False,,None
+9ce2a921,CUST_1029,Emma Davis,07999 680 180,emma.davis@gmail.com,2024-12,Family Gold 50GB,82.99,21.86,0.0,0.0,14.94,97.93,82.99,Paid,0.96,False,,None
+f6e97b66,CUST_1029,Emma Davis,07999 680 180,emma.davis@gmail.com,2025-01,Family Gold 50GB,82.99,33.11,0.0,0.0,14.94,97.93,82.99,Paid,0.99,False,,None
+49920d27,CUST_1029,Emma Davis,07999 680 180,emma.davis@gmail.com,2025-02,Family Gold 50GB,82.99,23.43,0.0,0.0,14.94,97.93,82.99,Paid,0.94,False,,None
+d9d497b3,CUST_1029,Emma Davis,07999 680 180,emma.davis@gmail.com,2025-03,Family Gold 50GB,82.99,29.89,0.0,0.0,14.94,97.93,82.99,Paid,0.95,False,,None
+87d8ee23,CUST_1029,Emma Davis,07999 680 180,emma.davis@gmail.com,2025-04,Family Gold 50GB,82.99,26.06,0.0,0.0,14.94,97.93,82.99,Paid,0.93,False,,None
+0d8670c1,CUST_1029,Emma Davis,07999 680 180,emma.davis@gmail.com,2025-05,Family Gold 50GB,82.99,21.78,0.0,0.0,14.94,97.93,82.99,Paid,0.94,False,,None
+7aba982f,CUST_1029,Emma Davis,07999 680 180,emma.davis@gmail.com,2025-06,Family Gold 50GB,82.99,19.76,0.0,0.0,14.94,97.93,82.99,Paid,0.95,False,,None
+d64b0770,CUST_1029,Emma Davis,07999 680 180,emma.davis@gmail.com,2025-07,Family Gold 50GB,82.99,63.93,4.88,4.88,15.82,103.69,87.87,Paid,0.93,False,,None
+3d36a0a7,CUST_1029,Emma Davis,07999 680 180,emma.davis@gmail.com,2025-07,Family Gold 50GB,82.99,67.7,8.43,8.43,16.46,107.88,91.42,Paid,0.95,False,,None
+62320363,CUST_1029,Emma Davis,07999 680 180,emma.davis@gmail.com,2025-08,Family Gold 50GB,82.99,35.55,0.0,0.0,14.94,97.93,82.99,Paid,1.0,False,,None
+4b2390c1,CUST_1029,Emma Davis,07999 680 180,emma.davis@gmail.com,2025-09,Family Gold 50GB,82.99,24.56,0.0,0.0,14.94,97.93,82.99,Paid,0.92,False,,None
+d2af7d8e,CUST_1030,Andrew Williams,07878 645 884,andrew.williams@outlook.com,2024-11,Gold 50GB,29.99,34.21,0.0,0.0,5.4,35.39,29.99,Paid,0.93,False,,None
+13beda00,CUST_1030,Andrew Williams,07878 645 884,andrew.williams@outlook.com,2024-12,Gold 50GB,29.99,34.7,0.0,0.0,5.4,35.39,29.99,Paid,0.96,False,,None
+b876a4f3,CUST_1030,Andrew Williams,07878 645 884,andrew.williams@outlook.com,2025-01,Gold 50GB,29.99,16.58,0.0,0.0,5.4,35.39,29.99,Paid,0.95,False,,None
+83b581cf,CUST_1030,Andrew Williams,07878 645 884,andrew.williams@outlook.com,2025-02,Gold 50GB,29.99,23.66,0.0,0.0,5.4,35.39,29.99,Paid,0.99,False,,None
+21cf8f1a,CUST_1030,Andrew Williams,07878 645 884,andrew.williams@outlook.com,2025-03,Gold 50GB,29.99,38.56,0.0,0.0,5.4,35.39,29.99,Paid,0.98,False,,None
+bfcbac8b,CUST_1030,Andrew Williams,07878 645 884,andrew.williams@outlook.com,2025-04,Gold 50GB,29.99,29.16,0.0,0.0,5.4,35.39,29.99,Paid,0.95,False,,None
+74059470,CUST_1030,Andrew Williams,07878 645 884,andrew.williams@outlook.com,2025-05,Gold 50GB,29.99,30.7,0.0,0.0,5.4,35.39,29.99,Paid,0.98,False,,None
+3781ed9a,CUST_1030,Andrew Williams,07878 645 884,andrew.williams@outlook.com,2025-06,Gold 50GB,29.99,20.3,0.0,0.0,5.4,35.39,29.99,Paid,0.92,False,,None
+68c95833,CUST_1030,Andrew Williams,07878 645 884,andrew.williams@outlook.com,2025-07,Gold 50GB,29.99,20.59,0.0,0.0,5.4,35.39,29.99,Paid,0.99,False,,None
+e03198e6,CUST_1030,Andrew Williams,07878 645 884,andrew.williams@outlook.com,2025-07,Gold 50GB,29.99,26.98,0.0,0.0,5.4,35.39,29.99,Paid,0.93,False,,None
+48996799,CUST_1030,Andrew Williams,07878 645 884,andrew.williams@outlook.com,2025-08,Gold 50GB,29.99,51.22,0.42,0.42,5.47,35.88,30.41,Paid,0.99,False,,None
+012f88af,CUST_1030,Andrew Williams,07878 645 884,andrew.williams@outlook.com,2025-09,Gold 50GB,29.99,18.04,0.0,0.0,5.4,35.39,29.99,Paid,0.94,False,,None
+5a19a86f,CUST_1031,Thomas Thomas,07662 269 371,thomas.thomas@icloud.com,2024-11,Family Diamond Unlimited,149.99,93.59,0.0,0.0,27.0,176.99,149.99,Paid,0.93,False,,None
+33cdaacd,CUST_1031,Thomas Thomas,07662 269 371,thomas.thomas@icloud.com,2024-12,Family Diamond Unlimited,149.99,181.03,0.0,0.0,27.0,176.99,149.99,Paid,0.99,False,,None
+c9a785b0,CUST_1031,Thomas Thomas,07662 269 371,thomas.thomas@icloud.com,2025-01,Family Diamond Unlimited,149.99,127.22,0.0,0.0,27.0,176.99,149.99,Paid,0.92,False,,None
+cf200d05,CUST_1031,Thomas Thomas,07662 269 371,thomas.thomas@icloud.com,2025-02,Family Diamond Unlimited,149.99,83.01,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+93c26625,CUST_1031,Thomas Thomas,07662 269 371,thomas.thomas@icloud.com,2025-03,Family Diamond Unlimited,149.99,145.7,0.0,0.0,27.0,176.99,149.99,Paid,0.94,False,,None
+32f1c885,CUST_1031,Thomas Thomas,07662 269 371,thomas.thomas@icloud.com,2025-04,Family Diamond Unlimited,149.99,116.0,0.0,0.0,27.0,176.99,149.99,Paid,0.98,False,,None
+f79ecf92,CUST_1031,Thomas Thomas,07662 269 371,thomas.thomas@icloud.com,2025-05,Family Diamond Unlimited,149.99,185.31,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+c7cbc4c4,CUST_1031,Thomas Thomas,07662 269 371,thomas.thomas@icloud.com,2025-06,Family Diamond Unlimited,149.99,109.01,0.0,0.0,27.0,176.99,149.99,Paid,0.98,False,,None
+b8b1f440,CUST_1031,Thomas Thomas,07662 269 371,thomas.thomas@icloud.com,2025-07,Family Diamond Unlimited,149.99,125.12,0.0,0.0,27.0,176.99,149.99,Paid,0.98,False,,None
+34ac7cf4,CUST_1031,Thomas Thomas,07662 269 371,thomas.thomas@icloud.com,2025-07,Family Diamond Unlimited,149.99,185.07,0.0,0.0,27.0,176.99,149.99,Paid,0.94,False,,None
+c6e9cc70,CUST_1031,Thomas Thomas,07662 269 371,thomas.thomas@icloud.com,2025-08,Family Diamond Unlimited,149.99,119.55,0.0,0.0,27.0,176.99,149.99,Paid,0.93,False,,None
+c5e8fc2d,CUST_1031,Thomas Thomas,07662 269 371,thomas.thomas@icloud.com,2025-09,Family Diamond Unlimited,149.99,191.47,0.0,0.0,27.0,176.99,149.99,Paid,0.98,False,,None
+1f42bb55,CUST_1032,Sofia Miller,07652 873 847,sofia.miller@btinternet.com,2024-11,Platinum 100GB,44.99,50.24,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+4c6d1243,CUST_1032,Sofia Miller,07652 873 847,sofia.miller@btinternet.com,2024-12,Platinum 100GB,44.99,38.84,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+fcbec15f,CUST_1032,Sofia Miller,07652 873 847,sofia.miller@btinternet.com,2025-01,Platinum 100GB,44.99,50.93,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+f03b71bd,CUST_1032,Sofia Miller,07652 873 847,sofia.miller@btinternet.com,2025-02,Platinum 100GB,44.99,60.95,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+3614cfc2,CUST_1032,Sofia Miller,07652 873 847,sofia.miller@btinternet.com,2025-03,Platinum 100GB,44.99,33.23,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+a9ff241c,CUST_1032,Sofia Miller,07652 873 847,sofia.miller@btinternet.com,2025-04,Platinum 100GB,44.99,54.97,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+cc208aed,CUST_1032,Sofia Miller,07652 873 847,sofia.miller@btinternet.com,2025-05,Platinum 100GB,44.99,93.65,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+e5601b37,CUST_1032,Sofia Miller,07652 873 847,sofia.miller@btinternet.com,2025-06,Platinum 100GB,44.99,95.89,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+d2c7a9ab,CUST_1032,Sofia Miller,07652 873 847,sofia.miller@btinternet.com,2025-07,Platinum 100GB,44.99,77.14,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+23f1b0e5,CUST_1032,Sofia Miller,07652 873 847,sofia.miller@btinternet.com,2025-07,Platinum 100GB,44.99,93.8,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+8b430b07,CUST_1032,Sofia Miller,07652 873 847,sofia.miller@btinternet.com,2025-08,Platinum 100GB,44.99,52.51,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+0c1c3139,CUST_1032,Sofia Miller,07652 873 847,sofia.miller@btinternet.com,2025-09,Platinum 100GB,44.99,91.59,0.0,0.0,8.1,53.09,44.99,Paid,0.92,False,,None
+a88af468,CUST_1033,Mia Martinez,07508 787 765,mia.martinez@yahoo.co.uk,2024-11,Family Gold 50GB,82.99,33.66,0.0,0.0,14.94,97.93,82.99,Paid,0.93,False,,None
+75a5eeea,CUST_1033,Mia Martinez,07508 787 765,mia.martinez@yahoo.co.uk,2024-12,Family Gold 50GB,82.99,27.71,0.0,0.0,14.94,97.93,82.99,Paid,1.0,False,,None
+005e1910,CUST_1033,Mia Martinez,07508 787 765,mia.martinez@yahoo.co.uk,2025-01,Family Gold 50GB,82.99,73.85,11.57,11.57,17.02,111.58,94.56,Paid,0.95,False,,None
+d3de0d45,CUST_1033,Mia Martinez,07508 787 765,mia.martinez@yahoo.co.uk,2025-02,Family Gold 50GB,82.99,35.76,0.0,0.0,14.94,97.93,82.99,Paid,0.93,False,,None
+dbf1fdc7,CUST_1033,Mia Martinez,07508 787 765,mia.martinez@yahoo.co.uk,2025-03,Family Gold 50GB,82.99,37.47,0.0,0.0,14.94,97.93,82.99,Paid,1.0,False,,None
+3092d978,CUST_1033,Mia Martinez,07508 787 765,mia.martinez@yahoo.co.uk,2025-04,Family Gold 50GB,82.99,15.26,0.0,0.0,14.94,97.93,82.99,Paid,0.93,False,,None
+78c1f927,CUST_1033,Mia Martinez,07508 787 765,mia.martinez@yahoo.co.uk,2025-05,Family Gold 50GB,82.99,64.57,7.56,7.56,16.3,106.85,90.55,Paid,0.93,False,,None
+bfa7b8e1,CUST_1033,Mia Martinez,07508 787 765,mia.martinez@yahoo.co.uk,2025-06,Family Gold 50GB,82.99,17.85,0.0,0.0,14.94,97.93,82.99,Paid,0.96,False,,None
+c7572128,CUST_1033,Mia Martinez,07508 787 765,mia.martinez@yahoo.co.uk,2025-07,Family Gold 50GB,82.99,18.92,0.0,0.0,14.94,97.93,82.99,Paid,0.97,False,,None
+9c190b74,CUST_1033,Mia Martinez,07508 787 765,mia.martinez@yahoo.co.uk,2025-07,Family Gold 50GB,82.99,24.4,0.0,0.0,14.94,97.93,82.99,Paid,0.93,False,,None
+bb21da08,CUST_1033,Mia Martinez,07508 787 765,mia.martinez@yahoo.co.uk,2025-08,Family Gold 50GB,82.99,38.21,0.0,0.0,14.94,97.93,82.99,Paid,0.92,False,,None
+7e7acc38,CUST_1033,Mia Martinez,07508 787 765,mia.martinez@yahoo.co.uk,2025-09,Family Gold 50GB,82.99,68.43,6.36,6.36,16.08,105.43,89.35,Paid,0.94,False,,None
+4780508e,CUST_1034,Sofia Taylor,07562 223 353,sofia.taylor@outlook.com,2024-11,Silver 20GB,18.99,12.36,0.0,0.0,3.42,22.41,18.99,Paid,0.98,False,,None
+e2e8023c,CUST_1034,Sofia Taylor,07562 223 353,sofia.taylor@outlook.com,2024-12,Silver 20GB,18.99,7.81,0.0,0.0,3.42,22.41,18.99,Paid,0.42,True,Invoice total seems higher than expected,Overcharge
+61483a22,CUST_1034,Sofia Taylor,07562 223 353,sofia.taylor@outlook.com,2025-01,Silver 20GB,18.99,7.32,0.0,0.0,3.42,22.41,18.99,Paid,0.94,False,,None
+df705707,CUST_1034,Sofia Taylor,07562 223 353,sofia.taylor@outlook.com,2025-02,Silver 20GB,18.99,14.41,0.0,0.0,3.42,22.41,18.99,Paid,0.97,False,,None
+69a8bb01,CUST_1034,Sofia Taylor,07562 223 353,sofia.taylor@outlook.com,2025-03,Silver 20GB,18.99,8.98,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+8752a8f5,CUST_1034,Sofia Taylor,07562 223 353,sofia.taylor@outlook.com,2025-04,Silver 20GB,18.99,13.61,0.0,0.0,3.42,22.41,18.99,Paid,0.92,False,,None
+6cac79ec,CUST_1034,Sofia Taylor,07562 223 353,sofia.taylor@outlook.com,2025-05,Silver 20GB,18.99,13.26,0.0,0.0,3.42,22.41,18.99,Paid,0.95,False,,None
+f7047eda,CUST_1034,Sofia Taylor,07562 223 353,sofia.taylor@outlook.com,2025-06,Silver 20GB,18.99,18.61,0.0,0.0,3.42,22.41,18.99,Paid,0.97,False,,None
+c6a5464f,CUST_1034,Sofia Taylor,07562 223 353,sofia.taylor@outlook.com,2025-07,Silver 20GB,18.99,9.55,0.0,0.0,3.42,22.41,18.99,Paid,0.92,False,,None
+a4610b6b,CUST_1034,Sofia Taylor,07562 223 353,sofia.taylor@outlook.com,2025-07,Silver 20GB,18.99,6.35,0.0,0.0,3.42,22.41,18.99,Paid,1.0,False,,None
+2f465254,CUST_1034,Sofia Taylor,07562 223 353,sofia.taylor@outlook.com,2025-08,Silver 20GB,18.99,9.27,0.0,0.0,3.42,22.41,15.92,Partial,0.75,True,,None
+ca1d2098,CUST_1034,Sofia Taylor,07562 223 353,sofia.taylor@outlook.com,2025-09,Silver 20GB,18.99,10.49,0.0,0.0,3.42,22.41,18.99,Paid,0.97,False,,None
+c1fdc7e2,CUST_1035,Abigail Smith,07702 667 335,abigail.smith@icloud.com,2024-11,Platinum 100GB,44.99,50.63,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+d48aeb24,CUST_1035,Abigail Smith,07702 667 335,abigail.smith@icloud.com,2024-12,Platinum 100GB,44.99,69.71,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+fb003618,CUST_1035,Abigail Smith,07702 667 335,abigail.smith@icloud.com,2025-01,Platinum 100GB,44.99,33.24,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+82fc38aa,CUST_1035,Abigail Smith,07702 667 335,abigail.smith@icloud.com,2025-02,Platinum 100GB,44.99,63.82,0.0,0.0,8.1,53.09,44.99,Paid,0.99,False,,None
+b487aec0,CUST_1035,Abigail Smith,07702 667 335,abigail.smith@icloud.com,2025-03,Platinum 100GB,44.99,33.85,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+773d05a2,CUST_1035,Abigail Smith,07702 667 335,abigail.smith@icloud.com,2025-04,Platinum 100GB,44.99,69.43,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+a160fe6a,CUST_1035,Abigail Smith,07702 667 335,abigail.smith@icloud.com,2025-05,Platinum 100GB,44.99,51.7,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+dab1ca8c,CUST_1035,Abigail Smith,07702 667 335,abigail.smith@icloud.com,2025-06,Platinum 100GB,44.99,79.92,0.0,0.0,8.1,53.09,44.99,Paid,0.95,False,,None
+9fc351ea,CUST_1035,Abigail Smith,07702 667 335,abigail.smith@icloud.com,2025-07,Platinum 100GB,44.99,69.28,0.0,0.0,8.1,53.09,44.99,Paid,0.99,False,,None
+8c0bfe41,CUST_1035,Abigail Smith,07702 667 335,abigail.smith@icloud.com,2025-07,Platinum 100GB,44.99,58.59,0.0,0.0,8.1,53.09,44.99,Paid,0.95,False,,None
+44343f29,CUST_1035,Abigail Smith,07702 667 335,abigail.smith@icloud.com,2025-08,Platinum 100GB,44.99,31.31,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+cf07c5bd,CUST_1035,Abigail Smith,07702 667 335,abigail.smith@icloud.com,2025-09,Platinum 100GB,44.99,44.94,0.0,0.0,8.1,53.09,44.99,Paid,0.95,False,,None
+f9157c5d,CUST_1036,Adam Williams,07824 746 160,adam.williams@outlook.com,2024-11,Silver 20GB,18.99,20.53,0.16,0.16,3.45,22.6,19.15,Paid,0.96,False,,None
+9474fb26,CUST_1036,Adam Williams,07824 746 160,adam.williams@outlook.com,2024-12,Silver 20GB,18.99,7.33,0.0,0.0,3.42,22.41,18.99,Paid,0.96,False,,None
+6ce59720,CUST_1036,Adam Williams,07824 746 160,adam.williams@outlook.com,2025-01,Silver 20GB,18.99,13.3,0.0,0.0,3.42,22.41,18.99,Paid,0.97,False,,None
+93b81931,CUST_1036,Adam Williams,07824 746 160,adam.williams@outlook.com,2025-02,Silver 20GB,18.99,13.51,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+e45b8b10,CUST_1036,Adam Williams,07824 746 160,adam.williams@outlook.com,2025-03,Silver 20GB,18.99,8.82,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+8b065c09,CUST_1036,Adam Williams,07824 746 160,adam.williams@outlook.com,2025-04,Silver 20GB,18.99,8.72,0.0,0.0,3.42,22.41,18.99,Paid,0.98,False,,None
+90e1db5c,CUST_1036,Adam Williams,07824 746 160,adam.williams@outlook.com,2025-05,Silver 20GB,18.99,10.88,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+aa044703,CUST_1036,Adam Williams,07824 746 160,adam.williams@outlook.com,2025-06,Silver 20GB,18.99,11.32,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+90f02a1e,CUST_1036,Adam Williams,07824 746 160,adam.williams@outlook.com,2025-07,Silver 20GB,18.99,12.64,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+4a29f12f,CUST_1036,Adam Williams,07824 746 160,adam.williams@outlook.com,2025-07,Silver 20GB,18.99,10.19,0.0,0.0,3.42,22.41,18.99,Paid,1.0,False,,None
+1879cfff,CUST_1036,Adam Williams,07824 746 160,adam.williams@outlook.com,2025-08,Silver 20GB,18.99,12.54,0.0,0.0,3.42,22.41,18.99,Paid,0.96,False,,None
+a13af913,CUST_1036,Adam Williams,07824 746 160,adam.williams@outlook.com,2025-09,Silver 20GB,18.99,26.87,2.44,2.44,3.86,25.29,21.43,Paid,0.93,False,,None
+e0143d2b,CUST_1037,Sofia Johnson,07980 438 172,sofia.johnson@icloud.com,2024-11,Platinum 100GB,44.99,42.55,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+1a3a774a,CUST_1037,Sofia Johnson,07980 438 172,sofia.johnson@icloud.com,2024-12,Platinum 100GB,29.99,73.01,0.0,0.0,5.4,35.39,29.99,Paid,0.65,True,Wrong base charge in invoice,Wrong Plan
+1571db02,CUST_1037,Sofia Johnson,07980 438 172,sofia.johnson@icloud.com,2025-01,Platinum 100GB,44.99,34.09,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+75827d46,CUST_1037,Sofia Johnson,07980 438 172,sofia.johnson@icloud.com,2025-02,Platinum 100GB,44.99,102.75,1.24,2.18,8.49,55.66,47.17,Paid,0.5,True,,None
+2a37983b,CUST_1037,Sofia Johnson,07980 438 172,sofia.johnson@icloud.com,2025-03,Platinum 100GB,44.99,35.6,0.0,0.0,8.1,53.09,44.99,Paid,0.49,True,,None
+211226c6,CUST_1037,Sofia Johnson,07980 438 172,sofia.johnson@icloud.com,2025-04,Platinum 100GB,44.99,46.51,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+5e7adf89,CUST_1037,Sofia Johnson,07980 438 172,sofia.johnson@icloud.com,2025-05,Platinum 100GB,44.99,103.19,1.63,1.63,8.39,55.01,46.62,Paid,0.96,False,,None
+b22a5513,CUST_1037,Sofia Johnson,07980 438 172,sofia.johnson@icloud.com,2025-06,Platinum 100GB,44.99,140.88,10.55,10.55,10.0,65.54,55.54,Paid,0.96,False,,None
+948403db,CUST_1037,Sofia Johnson,07980 438 172,sofia.johnson@icloud.com,2025-07,Platinum 100GB,44.99,98.08,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+3c26ef6a,CUST_1037,Sofia Johnson,07980 438 172,sofia.johnson@icloud.com,2025-07,Platinum 100GB,44.99,95.71,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+90955359,CUST_1037,Sofia Johnson,07980 438 172,sofia.johnson@icloud.com,2025-08,Platinum 100GB,44.99,44.36,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+008c3c46,CUST_1037,Sofia Johnson,07980 438 172,sofia.johnson@icloud.com,2025-09,Platinum 100GB,44.99,49.8,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+86c6834d,CUST_1038,Harper Perez,07597 319 652,harper.perez@outlook.com,2024-11,Family Diamond Unlimited,149.99,198.3,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+306d1e47,CUST_1038,Harper Perez,07597 319 652,harper.perez@outlook.com,2024-12,Family Diamond Unlimited,149.99,225.72,0.0,0.0,27.0,176.99,149.99,Paid,0.94,False,,None
+4649b9ea,CUST_1038,Harper Perez,07597 319 652,harper.perez@outlook.com,2025-01,Family Diamond Unlimited,149.99,247.2,0.0,0.0,27.0,176.99,149.99,Paid,0.94,False,,None
+80a2d97b,CUST_1038,Harper Perez,07597 319 652,harper.perez@outlook.com,2025-02,Family Diamond Unlimited,149.99,111.32,0.0,0.0,27.0,176.99,149.99,Paid,0.97,False,,None
+3bb9269e,CUST_1038,Harper Perez,07597 319 652,harper.perez@outlook.com,2025-03,Family Diamond Unlimited,149.99,105.86,0.0,0.0,27.0,176.99,149.99,Paid,0.97,False,,None
+65d50d10,CUST_1038,Harper Perez,07597 319 652,harper.perez@outlook.com,2025-04,Family Diamond Unlimited,149.99,94.19,0.0,0.0,27.0,176.99,149.99,Paid,0.98,False,,None
+19f09c89,CUST_1038,Harper Perez,07597 319 652,harper.perez@outlook.com,2025-05,Family Diamond Unlimited,149.99,165.89,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+1c2ce29d,CUST_1038,Harper Perez,07597 319 652,harper.perez@outlook.com,2025-06,Family Diamond Unlimited,149.99,247.3,0.0,0.0,27.0,176.99,149.99,Paid,0.97,False,,None
+fecd678e,CUST_1038,Harper Perez,07597 319 652,harper.perez@outlook.com,2025-07,Family Diamond Unlimited,149.99,108.21,0.0,0.0,27.0,176.99,149.99,Paid,0.95,False,,None
+1b33f8da,CUST_1038,Harper Perez,07597 319 652,harper.perez@outlook.com,2025-07,Family Diamond Unlimited,149.99,107.58,0.0,0.0,27.0,176.99,149.99,Paid,0.96,False,,None
+0b10b68f,CUST_1038,Harper Perez,07597 319 652,harper.perez@outlook.com,2025-08,Family Diamond Unlimited,149.99,169.66,0.0,0.0,27.0,176.99,149.99,Paid,0.99,False,,None
+27ae556e,CUST_1038,Harper Perez,07597 319 652,harper.perez@outlook.com,2025-09,Family Diamond Unlimited,149.99,93.5,0.0,0.0,27.0,176.99,149.99,Paid,0.93,False,,None
+3976cd50,CUST_1039,William Thomas,07348 903 584,william.thomas@hotmail.com,2024-11,Platinum 100GB,44.99,102.29,0.94,0.94,8.27,54.2,45.93,Paid,0.95,False,,None
+f8e85755,CUST_1039,William Thomas,07348 903 584,william.thomas@hotmail.com,2024-12,Platinum 100GB,44.99,71.08,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+1cc200b5,CUST_1039,William Thomas,07348 903 584,william.thomas@hotmail.com,2025-01,Platinum 100GB,44.99,95.03,0.0,0.0,8.1,53.09,44.99,Paid,0.99,False,,None
+6da1169b,CUST_1039,William Thomas,07348 903 584,william.thomas@hotmail.com,2025-02,Platinum 100GB,44.99,41.99,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+5b9fd3fc,CUST_1039,William Thomas,07348 903 584,william.thomas@hotmail.com,2025-03,Platinum 100GB,44.99,62.56,0.0,0.0,8.1,53.09,44.99,Paid,0.99,False,,None
+e22a1ae0,CUST_1039,William Thomas,07348 903 584,william.thomas@hotmail.com,2025-04,Platinum 100GB,44.99,78.96,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+7486c995,CUST_1039,William Thomas,07348 903 584,william.thomas@hotmail.com,2025-05,Platinum 100GB,44.99,64.32,0.0,0.0,8.1,53.09,44.99,Paid,0.99,False,,None
+3b001c75,CUST_1039,William Thomas,07348 903 584,william.thomas@hotmail.com,2025-06,Platinum 100GB,44.99,71.85,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+b2dcfbac,CUST_1039,William Thomas,07348 903 584,william.thomas@hotmail.com,2025-07,Platinum 100GB,44.99,45.27,0.0,0.0,8.1,53.09,44.99,Paid,0.94,False,,None
+3d0de475,CUST_1039,William Thomas,07348 903 584,william.thomas@hotmail.com,2025-07,Platinum 100GB,44.99,76.92,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+2053bbf1,CUST_1039,William Thomas,07348 903 584,william.thomas@hotmail.com,2025-08,Platinum 100GB,44.99,43.01,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+bc9c1961,CUST_1039,William Thomas,07348 903 584,william.thomas@hotmail.com,2025-09,Platinum 100GB,44.99,52.35,0.0,0.0,8.1,53.09,44.99,Paid,0.96,False,,None
+70de11e2,CUST_1040,William Brown,07774 541 462,william.brown@hotmail.com,2024-11,Family Silver 20GB,52.99,15.77,0.0,0.0,9.54,62.53,52.99,Paid,0.92,False,,None
+e6fa2e4d,CUST_1040,William Brown,07774 541 462,william.brown@hotmail.com,2024-12,Family Silver 20GB,52.99,15.18,0.0,0.0,9.54,62.53,52.99,Paid,0.94,False,,None
+b1a00cd0,CUST_1040,William Brown,07774 541 462,william.brown@hotmail.com,2025-01,Family Silver 20GB,52.99,20.26,0.13,0.13,9.56,62.68,53.12,Paid,1.0,False,,None
+37238b4d,CUST_1040,William Brown,07774 541 462,william.brown@hotmail.com,2025-02,Family Silver 20GB,52.99,9.05,0.0,0.0,9.54,62.53,52.99,Paid,0.99,False,,None
+4744f163,CUST_1040,William Brown,07774 541 462,william.brown@hotmail.com,2025-03,Family Silver 20GB,52.99,13.04,0.0,0.0,9.54,62.53,52.99,Paid,0.94,False,,None
+b28e282d,CUST_1040,William Brown,07774 541 462,william.brown@hotmail.com,2025-04,Family Silver 20GB,52.99,10.69,0.0,0.0,9.54,62.53,52.99,Paid,0.94,False,,None
+1e368f5b,CUST_1040,William Brown,07774 541 462,william.brown@hotmail.com,2025-05,Family Silver 20GB,52.99,13.43,0.0,0.0,9.54,62.53,52.99,Paid,0.99,False,,None
+3f78dfc8,CUST_1040,William Brown,07774 541 462,william.brown@hotmail.com,2025-06,Family Silver 20GB,52.99,11.93,0.0,0.0,9.54,62.53,23.29,Partial,0.48,True,,None
+3841bd3a,CUST_1040,William Brown,07774 541 462,william.brown@hotmail.com,2025-07,Family Silver 20GB,52.99,6.35,0.0,0.0,9.54,62.53,52.99,Paid,0.99,False,,None
+026b9745,CUST_1040,William Brown,07774 541 462,william.brown@hotmail.com,2025-07,Family Silver 20GB,52.99,6.64,0.0,0.0,9.54,62.53,52.99,Paid,0.93,False,,None
+1f1386bf,CUST_1040,William Brown,07774 541 462,william.brown@hotmail.com,2025-08,Family Silver 20GB,34.99,15.1,0.0,0.0,6.3,41.29,34.99,Paid,0.71,True,,None
+7a78bf7d,CUST_1040,William Brown,07774 541 462,william.brown@hotmail.com,2025-09,Family Silver 20GB,82.99,11.17,0.0,0.0,14.94,97.93,82.99,Paid,0.55,True,,None
+16e5a478,CUST_1041,Avery Ramirez,07846 155 789,avery.ramirez@btinternet.com,2024-11,Silver 20GB,18.99,12.02,0.0,0.0,3.42,22.41,18.99,Paid,0.97,False,,None
+f59bed03,CUST_1041,Avery Ramirez,07846 155 789,avery.ramirez@btinternet.com,2024-12,Silver 20GB,18.99,11.92,0.0,0.0,3.42,22.41,18.99,Paid,0.96,False,,None
+b272bc33,CUST_1041,Avery Ramirez,07846 155 789,avery.ramirez@btinternet.com,2025-01,Silver 20GB,18.99,9.85,0.0,0.0,3.42,22.41,18.99,Paid,1.0,False,,None
+e6ba5212,CUST_1041,Avery Ramirez,07846 155 789,avery.ramirez@btinternet.com,2025-02,Silver 20GB,18.99,13.44,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+1ed6c806,CUST_1041,Avery Ramirez,07846 155 789,avery.ramirez@btinternet.com,2025-03,Silver 20GB,18.99,9.62,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+24d3f2a3,CUST_1041,Avery Ramirez,07846 155 789,avery.ramirez@btinternet.com,2025-04,Silver 20GB,18.99,15.72,0.0,0.0,3.42,22.41,18.99,Paid,0.94,False,,None
+423622bc,CUST_1041,Avery Ramirez,07846 155 789,avery.ramirez@btinternet.com,2025-05,Silver 20GB,18.99,8.81,0.0,0.0,3.42,22.41,18.99,Paid,0.92,False,,None
+17863c03,CUST_1041,Avery Ramirez,07846 155 789,avery.ramirez@btinternet.com,2025-06,Silver 20GB,18.99,8.19,0.0,0.0,3.42,22.41,18.99,Paid,0.95,False,,None
+edd000a3,CUST_1041,Avery Ramirez,07846 155 789,avery.ramirez@btinternet.com,2025-07,Silver 20GB,18.99,19.72,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+6d581fc8,CUST_1041,Avery Ramirez,07846 155 789,avery.ramirez@btinternet.com,2025-07,Silver 20GB,18.99,6.87,0.0,0.0,3.42,22.41,18.99,Paid,0.95,False,,None
+b37001a8,CUST_1041,Avery Ramirez,07846 155 789,avery.ramirez@btinternet.com,2025-08,Silver 20GB,18.99,14.74,0.0,0.0,3.42,22.41,18.99,Paid,1.0,False,,None
+e83d8e83,CUST_1041,Avery Ramirez,07846 155 789,avery.ramirez@btinternet.com,2025-09,Silver 20GB,18.99,8.75,0.0,0.0,3.42,22.41,18.99,Paid,0.95,False,,None
+c092fbd4,CUST_1042,Emma Gonzalez,07845 447 919,emma.gonzalez@gmail.com,2024-11,Platinum 100GB,44.99,100.71,0.31,0.31,8.15,53.45,45.3,Paid,0.99,False,,None
+39aa42db,CUST_1042,Emma Gonzalez,07845 447 919,emma.gonzalez@gmail.com,2024-12,Platinum 100GB,44.99,142.85,10.73,10.73,10.03,65.75,55.72,Paid,0.92,False,,None
+36fa6349,CUST_1042,Emma Gonzalez,07845 447 919,emma.gonzalez@gmail.com,2025-01,Platinum 100GB,44.99,32.98,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+0d3b78a0,CUST_1042,Emma Gonzalez,07845 447 919,emma.gonzalez@gmail.com,2025-02,Platinum 100GB,44.99,52.81,0.0,0.0,8.1,53.09,44.99,Paid,0.95,False,,None
+4a6a2584,CUST_1042,Emma Gonzalez,07845 447 919,emma.gonzalez@gmail.com,2025-03,Platinum 100GB,44.99,33.55,0.0,0.0,8.1,53.09,44.99,Paid,1.0,False,,None
+ddcebea2,CUST_1042,Emma Gonzalez,07845 447 919,emma.gonzalez@gmail.com,2025-04,Platinum 100GB,44.99,63.93,0.0,0.0,8.1,53.09,44.99,Paid,0.92,False,,None
+b9d2cf7d,CUST_1042,Emma Gonzalez,07845 447 919,emma.gonzalez@gmail.com,2025-05,Platinum 100GB,44.99,75.66,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+80167518,CUST_1042,Emma Gonzalez,07845 447 919,emma.gonzalez@gmail.com,2025-06,Platinum 100GB,44.99,75.12,0.0,0.0,8.1,53.09,44.99,Paid,0.93,False,,None
+2b91fd57,CUST_1042,Emma Gonzalez,07845 447 919,emma.gonzalez@gmail.com,2025-07,Platinum 100GB,44.99,51.1,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+53768acd,CUST_1042,Emma Gonzalez,07845 447 919,emma.gonzalez@gmail.com,2025-07,Platinum 100GB,44.99,36.15,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+60ad1cf5,CUST_1042,Emma Gonzalez,07845 447 919,emma.gonzalez@gmail.com,2025-08,Platinum 100GB,44.99,72.28,0.0,0.0,8.1,53.09,44.99,Paid,0.97,False,,None
+e967ea29,CUST_1042,Emma Gonzalez,07845 447 919,emma.gonzalez@gmail.com,2025-09,Platinum 100GB,44.99,45.32,0.0,0.0,8.1,53.09,44.99,Paid,0.98,False,,None
+f1c96f10,CUST_1043,Thomas Miller,07649 559 243,thomas.miller@hotmail.com,2024-11,Gold 50GB,29.99,51.43,0.75,0.75,5.53,36.27,30.74,Paid,0.95,False,,None
+c7d74ab3,CUST_1043,Thomas Miller,07649 559 243,thomas.miller@hotmail.com,2024-12,Gold 50GB,29.99,24.28,0.0,0.0,5.4,35.39,29.99,Paid,0.98,False,,None
+1952dba7,CUST_1043,Thomas Miller,07649 559 243,thomas.miller@hotmail.com,2025-01,Gold 50GB,29.99,19.17,0.0,0.0,5.4,35.39,29.99,Paid,0.99,False,,None
+4784e796,CUST_1043,Thomas Miller,07649 559 243,thomas.miller@hotmail.com,2025-02,Gold 50GB,29.99,18.86,0.0,0.0,5.4,35.39,29.99,Paid,0.97,False,,None
+b421ab30,CUST_1043,Thomas Miller,07649 559 243,thomas.miller@hotmail.com,2025-03,Gold 50GB,29.99,16.79,0.0,0.0,5.4,35.39,29.99,Paid,0.97,False,,None
+54f898a9,CUST_1043,Thomas Miller,07649 559 243,thomas.miller@hotmail.com,2025-04,Gold 50GB,29.99,24.11,0.0,0.0,5.4,35.39,29.99,Paid,0.96,False,,None
+b8deaefa,CUST_1043,Thomas Miller,07649 559 243,thomas.miller@hotmail.com,2025-05,Gold 50GB,29.99,18.51,0.0,0.0,5.4,35.39,29.99,Paid,0.96,False,,None
+8cb3f37e,CUST_1043,Thomas Miller,07649 559 243,thomas.miller@hotmail.com,2025-06,Gold 50GB,29.99,62.68,3.32,3.32,6.0,39.31,33.31,Paid,0.95,False,,None
+3734419e,CUST_1043,Thomas Miller,07649 559 243,thomas.miller@hotmail.com,2025-07,Gold 50GB,29.99,15.58,0.0,0.0,5.4,35.39,29.99,Paid,0.94,False,,None
+c654de7e,CUST_1043,Thomas Miller,07649 559 243,thomas.miller@hotmail.com,2025-07,Gold 50GB,29.99,45.87,0.0,0.0,5.4,35.39,29.99,Paid,0.99,False,,None
+8c24bf3e,CUST_1043,Thomas Miller,07649 559 243,thomas.miller@hotmail.com,2025-08,Gold 50GB,29.99,35.67,0.0,0.0,5.4,35.39,29.99,Paid,1.0,False,,None
+c4cd7092,CUST_1043,Thomas Miller,07649 559 243,thomas.miller@hotmail.com,2025-09,Gold 50GB,29.99,24.64,0.0,0.0,5.4,35.39,29.99,Paid,0.93,False,,None
+f6e000e8,CUST_1044,Harper Anderson,07355 995 177,harper.anderson@hotmail.com,2024-11,Family Platinum 100GB,119.99,57.09,0.0,0.0,21.6,141.59,119.99,Paid,0.96,False,,None
+34f59c98,CUST_1044,Harper Anderson,07355 995 177,harper.anderson@hotmail.com,2024-12,Family Platinum 100GB,119.99,42.97,0.0,0.0,21.6,141.59,119.99,Paid,0.95,False,,None
+7cc28b7f,CUST_1044,Harper Anderson,07355 995 177,harper.anderson@hotmail.com,2025-01,Family Platinum 100GB,119.99,78.32,0.0,0.0,21.6,141.59,119.99,Paid,0.97,False,,None
+c4873b00,CUST_1044,Harper Anderson,07355 995 177,harper.anderson@hotmail.com,2025-02,Family Platinum 100GB,119.99,52.2,0.0,0.0,21.6,141.59,119.99,Paid,0.95,False,,None
+64632bbf,CUST_1044,Harper Anderson,07355 995 177,harper.anderson@hotmail.com,2025-03,Family Platinum 100GB,119.99,145.21,19.76,19.76,25.15,164.9,139.75,Paid,0.97,False,,None
+2a6bbdaf,CUST_1044,Harper Anderson,07355 995 177,harper.anderson@hotmail.com,2025-04,Family Platinum 100GB,119.99,49.76,0.0,0.0,21.6,141.59,119.99,Paid,0.96,False,,None
+13c6bbfd,CUST_1044,Harper Anderson,07355 995 177,harper.anderson@hotmail.com,2025-05,Family Platinum 100GB,119.99,78.2,0.0,0.0,21.6,141.59,119.99,Paid,0.96,False,,None
+8b2e40b2,CUST_1044,Harper Anderson,07355 995 177,harper.anderson@hotmail.com,2025-06,Family Platinum 100GB,119.99,91.96,0.0,0.0,21.6,141.59,119.99,Paid,0.98,False,,None
+50aa1988,CUST_1044,Harper Anderson,07355 995 177,harper.anderson@hotmail.com,2025-07,Family Platinum 100GB,119.99,73.85,0.0,0.0,21.6,141.59,119.99,Paid,0.96,False,,None
+eabc846e,CUST_1044,Harper Anderson,07355 995 177,harper.anderson@hotmail.com,2025-07,Family Platinum 100GB,119.99,129.34,14.93,14.93,24.29,159.21,134.92,Paid,0.95,False,,None
+cb2a35ab,CUST_1044,Harper Anderson,07355 995 177,harper.anderson@hotmail.com,2025-08,Family Platinum 100GB,119.99,40.16,0.0,0.0,21.6,141.59,119.99,Paid,0.96,False,,None
+00313120,CUST_1044,Harper Anderson,07355 995 177,harper.anderson@hotmail.com,2025-09,Family Platinum 100GB,119.99,58.86,0.0,0.0,21.6,141.59,119.99,Paid,0.95,False,,None
+3a72d5d6,CUST_1045,William Johnson,07767 653 956,william.johnson@gmail.com,2024-11,Silver 20GB,18.99,20.29,0.12,0.12,3.44,22.55,19.11,Paid,0.94,False,,None
+12fef7c9,CUST_1045,William Johnson,07767 653 956,william.johnson@gmail.com,2024-12,Silver 20GB,18.99,14.54,0.0,0.0,3.42,22.41,18.99,Paid,0.99,False,,None
+c8c9dbdb,CUST_1045,William Johnson,07767 653 956,william.johnson@gmail.com,2025-01,Silver 20GB,18.99,14.83,0.0,0.0,3.42,22.41,18.99,Paid,0.97,False,,None
+7364776a,CUST_1045,William Johnson,07767 653 956,william.johnson@gmail.com,2025-02,Silver 20GB,18.99,18.06,0.0,0.0,3.42,22.41,18.99,Paid,0.98,False,,None
+e020227d,CUST_1045,William Johnson,07767 653 956,william.johnson@gmail.com,2025-03,Silver 20GB,18.99,7.34,0.0,0.0,3.42,22.41,18.99,Paid,0.98,False,,None
+0f4568bf,CUST_1045,William Johnson,07767 653 956,william.johnson@gmail.com,2025-04,Silver 20GB,18.99,8.11,0.0,0.0,3.42,22.41,18.99,Paid,1.0,False,,None
+e37e720e,CUST_1045,William Johnson,07767 653 956,william.johnson@gmail.com,2025-05,Silver 20GB,18.99,14.28,0.0,0.0,3.42,22.41,18.99,Paid,0.98,False,,None
+f0ff01d3,CUST_1045,William Johnson,07767 653 956,william.johnson@gmail.com,2025-06,Silver 20GB,18.99,20.22,0.06,0.06,3.43,22.48,19.05,Paid,0.98,False,,None
+bb759bf8,CUST_1045,William Johnson,07767 653 956,william.johnson@gmail.com,2025-07,Silver 20GB,18.99,13.66,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+2d1d7477,CUST_1045,William Johnson,07767 653 956,william.johnson@gmail.com,2025-07,Silver 20GB,18.99,6.78,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+11ecbc32,CUST_1045,William Johnson,07767 653 956,william.johnson@gmail.com,2025-08,Silver 20GB,18.99,7.11,0.0,0.0,3.42,22.41,18.99,Paid,0.93,False,,None
+354e8fd7,CUST_1045,William Johnson,07767 653 956,william.johnson@gmail.com,2025-09,Silver 20GB,18.99,26.18,2.1,2.1,3.8,24.89,21.09,Paid,0.96,False,,None
+4cc799b1,CUST_1046,Avery Harris,07969 342 270,avery.harris@hotmail.com,2024-11,Family Gold 50GB,82.99,32.68,0.0,0.0,14.94,97.93,82.99,Paid,0.95,False,,None
+7f452e9f,CUST_1046,Avery Harris,07969 342 270,avery.harris@hotmail.com,2024-12,Family Gold 50GB,82.99,20.81,0.0,0.0,14.94,97.93,82.99,Paid,0.99,False,,None
+03308096,CUST_1046,Avery Harris,07969 342 270,avery.harris@hotmail.com,2025-01,Family Gold 50GB,82.99,37.65,0.0,0.0,14.94,97.93,82.99,Paid,0.94,False,,None
+15f15131,CUST_1046,Avery Harris,07969 342 270,avery.harris@hotmail.com,2025-02,Family Gold 50GB,82.99,39.47,0.0,0.0,14.94,97.93,82.99,Paid,0.97,False,,None
+0f9ce642,CUST_1046,Avery Harris,07969 342 270,avery.harris@hotmail.com,2025-03,Family Gold 50GB,82.99,37.22,0.0,0.0,14.94,97.93,82.99,Paid,0.97,False,,None
+ac1c3567,CUST_1046,Avery Harris,07969 342 270,avery.harris@hotmail.com,2025-04,Family Gold 50GB,82.99,16.79,0.0,0.0,14.94,97.93,82.99,Paid,0.98,False,,None
+7410d25c,CUST_1046,Avery Harris,07969 342 270,avery.harris@hotmail.com,2025-05,Family Gold 50GB,82.99,51.03,0.43,0.43,15.02,98.44,83.42,Paid,0.93,False,,None
+fb9a5856,CUST_1046,Avery Harris,07969 342 270,avery.harris@hotmail.com,2025-06,Family Gold 50GB,82.99,21.79,0.0,0.0,14.94,97.93,82.99,Paid,0.93,False,,None
+cc326b24,CUST_1046,Avery Harris,07969 342 270,avery.harris@hotmail.com,2025-07,Family Gold 50GB,82.99,16.36,0.0,0.0,14.94,97.93,82.99,Paid,0.92,False,,None
+3b0aed49,CUST_1046,Avery Harris,07969 342 270,avery.harris@hotmail.com,2025-07,Family Gold 50GB,82.99,16.17,0.0,0.0,14.94,97.93,82.99,Paid,0.93,False,,None
+cebb3ccd,CUST_1046,Avery Harris,07969 342 270,avery.harris@hotmail.com,2025-08,Family Gold 50GB,82.99,45.03,0.0,0.0,14.94,97.93,82.99,Paid,0.95,False,,None
+fde6a2c5,CUST_1046,Avery Harris,07969 342 270,avery.harris@hotmail.com,2025-09,Family Gold 50GB,82.99,24.01,0.0,0.0,14.94,97.93,82.99,Paid,0.95,False,,None
+917e66b5,CUST_1047,Adam Miller,07985 510 160,adam.miller@outlook.com,2024-11,Family Silver 20GB,52.99,14.92,0.0,0.0,9.54,62.53,52.99,Paid,0.44,True,Billing skipped my additional usage,Missing Charge
+a620dd5b,CUST_1047,Adam Miller,07985 510 160,adam.miller@outlook.com,2024-12,Family Silver 20GB,52.99,11.65,0.0,0.0,9.54,62.53,52.99,Paid,0.65,True,Free data usage not intended,Missing Charge
+ca193a29,CUST_1047,Adam Miller,07985 510 160,adam.miller@outlook.com,2025-01,Family Silver 20GB,52.99,15.66,0.0,0.0,9.54,62.53,52.99,Paid,0.98,False,,None
+490f7826,CUST_1047,Adam Miller,07985 510 160,adam.miller@outlook.com,2025-02,Family Silver 20GB,52.99,7.05,0.0,0.0,9.54,62.53,52.99,Paid,0.92,False,,None
+effd1816,CUST_1047,Adam Miller,07985 510 160,adam.miller@outlook.com,2025-03,Family Silver 20GB,82.99,15.57,0.0,0.0,14.94,97.93,82.99,Paid,0.56,True,,None
+b55f9cd0,CUST_1047,Adam Miller,07985 510 160,adam.miller@outlook.com,2025-04,Family Silver 20GB,52.99,9.69,0.0,0.0,9.54,62.53,52.99,Paid,0.98,False,,None
+4070b0c1,CUST_1047,Adam Miller,07985 510 160,adam.miller@outlook.com,2025-05,Family Silver 20GB,52.99,14.22,0.0,0.0,9.54,62.53,52.99,Paid,0.97,False,,None
+e3383028,CUST_1047,Adam Miller,07985 510 160,adam.miller@outlook.com,2025-06,Family Silver 20GB,52.99,14.8,0.0,0.0,9.54,62.53,52.99,Paid,0.97,False,,None
+7378cbee,CUST_1047,Adam Miller,07985 510 160,adam.miller@outlook.com,2025-07,Family Silver 20GB,52.99,7.37,0.0,0.0,9.54,62.53,52.99,Paid,0.95,False,,None
+e8222809,CUST_1047,Adam Miller,07985 510 160,adam.miller@outlook.com,2025-07,Family Silver 20GB,52.99,9.95,0.0,0.0,9.54,62.53,52.99,Paid,0.99,False,,None
+326645e2,CUST_1047,Adam Miller,07985 510 160,adam.miller@outlook.com,2025-08,Family Silver 20GB,82.99,9.68,0.0,0.0,14.94,97.93,82.99,Paid,0.58,True,,None
+baafa555,CUST_1047,Adam Miller,07985 510 160,adam.miller@outlook.com,2025-09,Family Silver 20GB,52.99,14.35,0.0,0.0,9.54,62.53,52.99,Paid,0.95,False,,None
+339e4f4f,CUST_1048,Adam Gonzalez,07371 902 903,adam.gonzalez@hotmail.com,2024-11,Diamond Unlimited,59.99,83.29,0.0,0.0,10.8,70.79,59.99,Paid,0.95,False,,None
+60e53df5,CUST_1048,Adam Gonzalez,07371 902 903,adam.gonzalez@hotmail.com,2024-12,Diamond Unlimited,59.99,163.79,0.0,0.0,10.8,70.79,59.99,Paid,0.96,False,,None
+eaebde6b,CUST_1048,Adam Gonzalez,07371 902 903,adam.gonzalez@hotmail.com,2025-01,Diamond Unlimited,59.99,181.17,0.0,0.0,10.8,70.79,59.99,Paid,0.96,False,,None
+60ba83c0,CUST_1048,Adam Gonzalez,07371 902 903,adam.gonzalez@hotmail.com,2025-02,Diamond Unlimited,59.99,243.79,0.0,0.0,10.8,70.79,59.99,Paid,0.97,False,,None
+36235997,CUST_1048,Adam Gonzalez,07371 902 903,adam.gonzalez@hotmail.com,2025-03,Diamond Unlimited,59.99,133.02,0.0,0.0,10.8,70.79,59.99,Paid,0.98,False,,None
+4f61cb9d,CUST_1048,Adam Gonzalez,07371 902 903,adam.gonzalez@hotmail.com,2025-04,Diamond Unlimited,59.99,168.62,0.0,0.0,10.8,70.79,59.99,Paid,0.93,False,,None
+323d6a82,CUST_1048,Adam Gonzalez,07371 902 903,adam.gonzalez@hotmail.com,2025-05,Diamond Unlimited,59.99,82.88,0.0,0.0,10.8,70.79,59.99,Paid,0.98,False,,None
+00ea158a,CUST_1048,Adam Gonzalez,07371 902 903,adam.gonzalez@hotmail.com,2025-06,Diamond Unlimited,59.99,100.44,0.0,0.0,10.8,70.79,59.99,Paid,0.92,False,,None
+19482224,CUST_1048,Adam Gonzalez,07371 902 903,adam.gonzalez@hotmail.com,2025-07,Diamond Unlimited,59.99,129.86,0.0,0.0,10.8,70.79,59.99,Paid,0.96,False,,None
+534e02c8,CUST_1048,Adam Gonzalez,07371 902 903,adam.gonzalez@hotmail.com,2025-07,Diamond Unlimited,59.99,139.18,0.0,0.0,10.8,70.79,59.99,Paid,0.92,False,,None
+7338e423,CUST_1048,Adam Gonzalez,07371 902 903,adam.gonzalez@hotmail.com,2025-08,Diamond Unlimited,59.99,130.97,0.0,0.0,10.8,70.79,59.99,Paid,1.0,False,,None
+b5bb2cc3,CUST_1048,Adam Gonzalez,07371 902 903,adam.gonzalez@hotmail.com,2025-09,Diamond Unlimited,59.99,224.0,0.0,0.0,10.8,70.79,59.99,Paid,0.99,False,,None
+f8fc12f7,CUST_1049,Sofia Thompson,07848 902 669,sofia.thompson@btinternet.com,2024-11,Family Gold 50GB,82.99,34.51,0.0,0.0,14.94,97.93,82.99,Paid,0.94,False,,None
+040ccf01,CUST_1049,Sofia Thompson,07848 902 669,sofia.thompson@btinternet.com,2024-12,Family Gold 50GB,82.99,20.71,0.0,0.0,14.94,97.93,82.99,Paid,0.98,False,,None
+9549d5b1,CUST_1049,Sofia Thompson,07848 902 669,sofia.thompson@btinternet.com,2025-01,Family Gold 50GB,82.99,16.45,0.0,0.0,14.94,97.93,82.99,Paid,0.98,False,,None
+fb1e83ee,CUST_1049,Sofia Thompson,07848 902 669,sofia.thompson@btinternet.com,2025-02,Family Gold 50GB,82.99,65.89,8.56,8.56,16.48,108.03,91.55,Paid,0.95,False,,None
+38dd53d8,CUST_1049,Sofia Thompson,07848 902 669,sofia.thompson@btinternet.com,2025-03,Family Gold 50GB,82.99,19.9,0.0,0.0,14.94,97.93,82.99,Paid,0.98,False,,None
+debf384e,CUST_1049,Sofia Thompson,07848 902 669,sofia.thompson@btinternet.com,2025-04,Family Gold 50GB,82.99,18.67,0.0,0.0,14.94,97.93,82.99,Paid,0.68,True,Free data usage not intended,Missing Charge
+f6d76736,CUST_1049,Sofia Thompson,07848 902 669,sofia.thompson@btinternet.com,2025-05,Family Gold 50GB,119.99,47.53,0.0,0.0,21.6,141.59,119.99,Paid,0.42,True,,None
+d962067f,CUST_1049,Sofia Thompson,07848 902 669,sofia.thompson@btinternet.com,2025-06,Family Gold 50GB,82.99,32.25,0.0,0.0,14.94,97.93,82.99,Paid,0.94,False,,None
+9fd1ccbf,CUST_1049,Sofia Thompson,07848 902 669,sofia.thompson@btinternet.com,2025-07,Family Gold 50GB,82.99,25.39,0.0,0.0,14.94,97.93,82.99,Paid,0.95,False,,None
+61c04e9c,CUST_1049,Sofia Thompson,07848 902 669,sofia.thompson@btinternet.com,2025-07,Family Gold 50GB,82.99,52.22,0.97,0.97,15.11,99.07,83.96,Paid,0.98,False,,None
+ed7283fc,CUST_1049,Sofia Thompson,07848 902 669,sofia.thompson@btinternet.com,2025-08,Family Gold 50GB,82.99,19.51,0.0,0.0,14.94,97.93,82.99,Paid,0.99,False,,None
+9bde3cc0,CUST_1049,Sofia Thompson,07848 902 669,sofia.thompson@btinternet.com,2025-09,Family Gold 50GB,82.99,37.44,0.0,0.0,14.94,97.93,82.99,Paid,1.0,False,,None
